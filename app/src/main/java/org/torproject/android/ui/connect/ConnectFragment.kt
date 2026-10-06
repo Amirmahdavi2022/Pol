@@ -48,6 +48,9 @@ private const val DEFAULT_THROTTLE_INTERVAL = 4000L
 // Pol
 private const val POL_CHANNEL_URL = "https://t.me/parsv2r"
 private val POL_BRIDGE_TYPES = listOf("obfs4", "webtunnel", "snowflake", "meek_lite", "dnstt")
+private const val POL_COLOR_OFF = 0xFF3B3860.toInt()
+private const val POL_COLOR_STARTING = 0xFF6D28D9.toInt()
+private const val POL_COLOR_ON = 0xFF0F9F8F.toInt()
 
 class ConnectFragment : Fragment(),
     ExitNodeBottomSheet.ExitNodeSelectedCallback {
@@ -78,12 +81,21 @@ class ConnectFragment : Fragment(),
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.lifecycle.repeatOnLifecycle(Lifecycle.State.STARTED) {
                 viewModel.uiState.collect { state ->
-                    if (state == ConnectUiState.NoInternet)
-                        binding.switchConnect.visibility = View.GONE
-                    else binding.switchConnect.visibility = View.VISIBLE
+                    // Pol: the switch only carries the connect logic, the round button is the UI.
+                    binding.switchConnect.visibility = View.GONE
+                    // Pol: remember a start that never reached "connected", to tell the user
+                    // when every way failed instead of silently going back to the off screen.
+                    if (state is ConnectUiState.Starting) polWasConnecting = true
+                    if (state is ConnectUiState.On) polWasConnecting = false
                     when (state) {
                         is ConnectUiState.NoInternet -> doLayoutNoInternet()
-                        is ConnectUiState.Off -> doLayoutOff()
+                        is ConnectUiState.Off -> {
+                            turnOffConnectSwitchWithoutEvent()
+                            doLayoutOff()
+                            if (polWasConnecting && !polUserStopped) showPolFailedDialog()
+                            polWasConnecting = false
+                            polUserStopped = false
+                        }
                         is ConnectUiState.Starting -> {
                             binding.switchConnect.isChecked = true
                             state.bootstrapPercent?.let {
@@ -108,8 +120,11 @@ class ConnectFragment : Fragment(),
             viewLifecycleOwner.lifecycle.repeatOnLifecycle(Lifecycle.State.STARTED) {
                 viewModel.logState.collect { logline ->
                     LocalizedLogsToDisplay.updateLabelIfDisplayed(logline, context)?.let {
-                        binding.tvSubtitle.text = it
                         viewModel.updateSubtitleState(it)
+                        // Pol: while connecting the subtitle shows which way is being tried instead.
+                        if (viewModel.uiState.value !is ConnectUiState.Starting) {
+                            binding.tvSubtitle.text = it
+                        }
                     }
                 }
             }
@@ -126,8 +141,57 @@ class ConnectFragment : Fragment(),
             }, DEFAULT_THROTTLE_INTERVAL)
         }
         binding.switchConnect.setOnCheckedChangeListener(onCheckChanged)
+
+        // Pol: one big round button. Throttled like the original switch.
+        binding.ivStatus.setOnClickListener { orb ->
+            if (viewModel.uiState.value is ConnectUiState.NoInternet) return@setOnClickListener
+            orb.isEnabled = false
+            orb.postDelayed({ orb.isEnabled = true }, DEFAULT_THROTTLE_INTERVAL)
+            val turnOn = !binding.switchConnect.isChecked
+            if (!turnOn) polUserStopped = true
+            binding.switchConnect.isChecked = turnOn
+        }
+        binding.tvSubtitle.setOnClickListener {
+            LogBottomSheet.show(parentFragmentManager)
+        }
+
         refreshMenuList(requireContext())
     }
+
+    private var polWasConnecting = false
+    private var polUserStopped = false
+
+    private fun showPolFailedDialog() {
+        val ctx = context ?: return
+        if (!isAdded) return
+        AlertDialog.Builder(ctx, R.style.OrbotDialogTheme)
+            .setTitle(R.string.pol_failed_title)
+            .setMessage(R.string.pol_failed_message)
+            .setPositiveButton(R.string.pol_get_bridges) { _, _ -> openBridgeBot() }
+            .setNegativeButton(android.R.string.cancel, null)
+            .show()
+    }
+
+    private fun openBridgeBot() {
+        Toast.makeText(requireContext(), R.string.pol_get_bridges_hint, Toast.LENGTH_LONG).show()
+        openUrl(OrbotConstants.GET_BRIDES_TELEGRAM_BOT.toString())
+    }
+
+    private fun setOrbColor(color: Int) {
+        binding.ivStatus.backgroundTintList = android.content.res.ColorStateList.valueOf(color)
+    }
+
+    private fun polMethodName(transport: Transport): String = getString(
+        when (transport) {
+            Transport.NONE -> R.string.pol_method_direct
+            Transport.SNOWFLAKE, Transport.SNOWFLAKE_AMP, Transport.SNOWFLAKE_SQS -> R.string.pol_method_snowflake
+            Transport.CUSTOM -> R.string.pol_method_custom
+            Transport.WEBTUNNEL -> R.string.pol_webtunnel
+            Transport.OBFS4 -> R.string.pol_method_obfs4
+            Transport.MEEK -> R.string.pol_method_meek
+            Transport.DNSTT -> R.string.pol_method_dnstt
+        }
+    )
 
     private val onCheckChanged: CompoundButton.OnCheckedChangeListener = { _, value ->
         if (value) {
@@ -268,6 +332,7 @@ class ConnectFragment : Fragment(),
     }
 
     fun stopTorAndVpn() {
+        polUserStopped = true
         doLayoutOff()
         setState(TorService.ACTION_STOP)
         binding.tvSubtitle.text = ""
@@ -313,6 +378,9 @@ class ConnectFragment : Fragment(),
     private fun startTorConnection() = setState(TorService.ACTION_START)
 
     fun attemptToStartTor() {
+        // Pol has no manual transport picker, so every connect is an automatic one.
+        Prefs.smartConnect = true
+        polUserStopped = false
         Prefs.putUseVpn(!Prefs.isPowerUserMode)
         if (Prefs.isPowerUserMode) {
             // if the user hasn't met all the conditions of power user mode
@@ -360,119 +428,76 @@ class ConnectFragment : Fragment(),
 
     fun refreshMenuList(context: Context) {
 
-        val connectStr =
-            if (Prefs.smartConnect) R.string.smart_connect else when (Prefs.transport) {
-                Transport.NONE -> R.string.direct_connect
-                Transport.MEEK -> R.string.bridge_meek_azure
-                Transport.OBFS4 -> R.string.built_in_bridges_obfs4
-                Transport.SNOWFLAKE -> R.string.snowflake
-                Transport.SNOWFLAKE_AMP -> R.string.snowflake_amp
-                Transport.SNOWFLAKE_SQS -> R.string.snowflake_sqs
-                Transport.WEBTUNNEL -> R.string.pol_webtunnel
-                Transport.DNSTT -> R.string.bridge_dnstt
-                Transport.CUSTOM -> R.string.custom_bridges
-            }
-
-        val connectStrLabel =
-            getString(R.string.set_transport) + ": ${context.getString(connectStr)}"
-
-        val listItems =
-            arrayListOf(
-                OrbotMenuAction(
-                    R.string.btn_configure,
-                    R.drawable.ic_settings_gear,
-                    statusString = connectStrLabel
-                ) { openConfigureTorConnection() },
-                OrbotMenuAction(R.string.btn_change_exit, 0) {
-                    ExitNodeBottomSheet().show(
-                        requireActivity().supportFragmentManager,
-                        "ExitNodeBottomSheet"
-                    )
-                },
-                OrbotMenuAction(R.string.btn_refresh, R.drawable.ic_refresh) { sendNewnymSignal() },
-                OrbotMenuAction(R.string.pol_get_bridges, R.drawable.ic_vpn_key) {
-                    Toast.makeText(context, R.string.pol_get_bridges_hint, Toast.LENGTH_LONG).show()
-                    openUrl(OrbotConstants.GET_BRIDES_TELEGRAM_BOT.toString())
-                },
-                OrbotMenuAction(R.string.pol_channel, R.drawable.ic_heart) {
-                    openUrl(POL_CHANNEL_URL)
-                })
-        if (!Prefs.isPowerUserMode) listItems.add(
-            0,
-            OrbotMenuAction(R.string.btn_choose_apps, R.drawable.ic_choose_apps) {
-                findNavController().navigate(R.id.connectToApps)
-            })
+        // Pol: no transport / exit / app pickers on the main screen, only these two.
+        val listItems = arrayListOf(
+            OrbotMenuAction(R.string.pol_get_bridges, R.drawable.ic_vpn_key) { openBridgeBot() },
+            OrbotMenuAction(R.string.pol_channel, R.drawable.ic_heart) { openUrl(POL_CHANNEL_URL) },
+        )
         binding.lvConnected.adapter = ConnectMenuActionAdapter(context, listItems)
     }
 
 
     private fun doLayoutNoInternet() {
-
-        binding.ivStatus.setImageResource(R.drawable.orbiesleeping)
-        binding.ivStatus.setOnClickListener(null)
         stopAnimations()
-
-        binding.tvSubtitle.visibility = View.VISIBLE
-
+        setOrbColor(POL_COLOR_OFF)
+        binding.ivStatus.alpha = 0.5f
         binding.progressBar.visibility = View.INVISIBLE
-        binding.tvTitle.text = getString(R.string.no_internet_title)
-        binding.tvSubtitle.text = getString(R.string.no_internet_subtitle)
-
+        binding.tvTitle.text = getString(R.string.pol_no_internet_title)
+        binding.tvSubtitle.visibility = View.VISIBLE
+        binding.tvSubtitle.text = getString(R.string.pol_no_internet_subtitle)
         binding.lvConnected.visibility = View.VISIBLE
     }
 
     // this context param is because we call this method from a screenshot taking test script
     fun doLayoutOn(context: Context = requireContext()) {
         // Pol: automatic mode stays on after connecting; SmartConnect remembers what worked.
-        binding.ivStatus.setImageResource(R.drawable.orbieon)
+        stopAnimations()
+        setOrbColor(POL_COLOR_ON)
+        binding.ivStatus.alpha = 1f
         binding.tvSubtitle.visibility = View.VISIBLE
         binding.progressBar.visibility = View.INVISIBLE
-        binding.tvTitle.text = context.getString(R.string.connected_title)
+        binding.tvTitle.text = context.getString(R.string.pol_title_on)
+        binding.tvSubtitle.text = context.getString(R.string.pol_subtitle_on)
         binding.lvConnected.visibility = View.VISIBLE
-
         refreshMenuList(context)
-
-        binding.ivStatus.setOnClickListener {
-            LogBottomSheet.show(parentFragmentManager)
-        }
     }
 
     private fun doLayoutOff() {
         viewModel.updateSubtitleState()
-        binding.ivStatus.setImageResource(R.drawable.orbiesleeping)
-        refreshMenuList(requireContext())
         stopAnimations()
+        setOrbColor(POL_COLOR_OFF)
+        binding.ivStatus.alpha = 1f
+        refreshMenuList(requireContext())
         binding.tvSubtitle.visibility = View.VISIBLE
         binding.progressBar.visibility = View.INVISIBLE
         binding.lvConnected.visibility = View.VISIBLE
-        binding.tvTitle.text = getString(R.string.secure_your_connection_title)
-        binding.tvSubtitle.text = getString(R.string.secure_your_connection_subtitle)
-        binding.ivStatus.setOnClickListener(null)
+        binding.tvTitle.text = getString(R.string.pol_title_off)
+        binding.tvSubtitle.text = getString(R.string.pol_subtitle_off)
     }
 
     private fun doLayoutStarting(context: Context) {
+        val percent = (viewModel.uiState.value as? ConnectUiState.Starting)?.bootstrapPercent ?: 0
+
+        setOrbColor(POL_COLOR_STARTING)
+        binding.ivStatus.alpha = 1f
         binding.tvSubtitle.visibility = View.VISIBLE
-        binding.tvSubtitle.text = viewModel.subtitleState.value
+        binding.tvSubtitle.text = if (percent <= 0) {
+            context.getString(R.string.pol_status_preparing)
+        } else {
+            context.getString(R.string.pol_status_trying, polMethodName(Prefs.transport), percent)
+        }
         with(binding.progressBar) {
             visibility = View.VISIBLE
-            progress = (viewModel.uiState.value as ConnectUiState.Starting).bootstrapPercent ?: 0
+            progress = percent
         }
 
-
-        binding.ivStatus.setImageResource(R.drawable.orbie_stuck)
-        val animHover = AnimationUtils.loadAnimation(context, R.anim.hover)
-        animHover.repeatMode = Animation.REVERSE
-        binding.ivStatus.animation = animHover
-        animHover.start()
-
-        val animShadow = AnimationUtils.loadAnimation(context, R.anim.shadow)
-        animShadow.repeatMode = Animation.REVERSE
-        binding.ivShadow.animation = animShadow
-        animShadow.start()
-        binding.tvTitle.text = context.getString(R.string.trying_to_connect_title)
-        binding.tvSubtitle.setOnClickListener {
-            LogBottomSheet.show(parentFragmentManager)
+        if (binding.ivStatus.animation == null) {
+            val animHover = AnimationUtils.loadAnimation(context, R.anim.hover)
+            animHover.repeatMode = Animation.REVERSE
+            binding.ivStatus.animation = animHover
+            animHover.start()
         }
+        binding.tvTitle.text = context.getString(R.string.pol_title_starting)
     }
 
 

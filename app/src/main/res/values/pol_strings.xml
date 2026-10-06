@@ -8,4 +8,21 @@
     <string name="pol_clip_message">You copied %1$d bridge lines. Connect with them?</string>
     <string name="pol_clip_use">Use them</string>
     <string name="pol_clip_saved_reconnect">Bridges saved. Disconnect and connect again to use them.</string>
+    <string name="pol_title_off">Ready to connect</string>
+    <string name="pol_subtitle_off">Tap the circle. Pol tries every way on its own until one works.</string>
+    <string name="pol_title_starting">Finding a way through…</string>
+    <string name="pol_title_on">Connected</string>
+    <string name="pol_subtitle_on">Tap the circle to disconnect.</string>
+    <string name="pol_status_preparing">Getting fresh bridges and checking your line…</string>
+    <string name="pol_status_trying">Trying: %1$s · %2$d%%</string>
+    <string name="pol_method_direct">direct connection</string>
+    <string name="pol_method_snowflake">Snowflake</string>
+    <string name="pol_method_custom">private bridges</string>
+    <string name="pol_method_obfs4">obfs4 bridges</string>
+    <string name="pol_method_meek">meek</string>
+    <string name="pol_method_dnstt">DNS tunnel</string>
+    <string name="pol_failed_title">Nothing got through</string>
+    <string name="pol_failed_message">None of the ways worked on your line right now. Get private bridges from the Telegram bot, copy them and come back. Pol will pick them up and connect.</string>
+    <string name="pol_no_internet_title">No internet</string>
+    <string name="pol_no_internet_subtitle">Turn on Wi-Fi or mobile data first.</string>
 </resources>

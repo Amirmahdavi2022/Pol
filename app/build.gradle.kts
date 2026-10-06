@@ -17,8 +17,8 @@ kotlin {
 }
 
 // Pol: fixed versioning instead of upstream's git-describe based one.
-val polVersionCode = 1
-val polVersionName = "1.0.0"
+val polVersionCode = 2
+val polVersionName = "1.1.0"
 
 configure<ApplicationExtension> {
     namespace = "org.torproject.android"

@@ -8,4 +8,21 @@
     <string name="pol_clip_message">%1$d تا پل کپی کردی. باهاشون وصل بشم؟</string>
     <string name="pol_clip_use">آره، وصل شو</string>
     <string name="pol_clip_saved_reconnect">پل‌ها ذخیره شد. یه بار قطع و وصل کن تا ازشون استفاده بشه.</string>
+    <string name="pol_title_off">آماده‌ی اتصال</string>
+    <string name="pol_subtitle_off">روی دایره بزن. پُل خودش همه‌ی راه‌ها رو امتحان می‌کنه تا یکی وصل بشه.</string>
+    <string name="pol_title_starting">در حال پیدا کردن راه…</string>
+    <string name="pol_title_on">وصل شدی</string>
+    <string name="pol_subtitle_on">برای قطع اتصال دوباره روی دایره بزن.</string>
+    <string name="pol_status_preparing">در حال گرفتن پل تازه و بررسی خطت…</string>
+    <string name="pol_status_trying">در حال امتحان: %1$s · %2$d٪</string>
+    <string name="pol_method_direct">اتصال مستقیم</string>
+    <string name="pol_method_snowflake">Snowflake</string>
+    <string name="pol_method_custom">پل‌های اختصاصی</string>
+    <string name="pol_method_obfs4">پل‌های obfs4</string>
+    <string name="pol_method_meek">meek</string>
+    <string name="pol_method_dnstt">تونل DNS</string>
+    <string name="pol_failed_title">فعلاً هیچ راهی جواب نداد</string>
+    <string name="pol_failed_message">هیچ‌کدوم از روش‌ها الان روی خطت وصل نشد. از ربات تلگرام پل اختصاصی بگیر، کپی کن و برگرد. پُل خودش پیداشون می‌کنه و وصل می‌شه.</string>
+    <string name="pol_no_internet_title">اینترنت وصل نیست</string>
+    <string name="pol_no_internet_subtitle">اول وای‌فای یا دیتای گوشی رو روشن کن.</string>
 </resources>

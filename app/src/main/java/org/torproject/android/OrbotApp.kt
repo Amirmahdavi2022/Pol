@@ -45,6 +45,7 @@ class OrbotApp : Application() {
 
         Prefs.setContext(applicationContext)
         Prefs.orbotServiceLogClear()
+        applyPolDefaultLanguage()
         LocaleHelper.onAttach(applicationContext)
 
         Languages.setup(OrbotActivity::class.java, R.string.menu_settings)
@@ -65,6 +66,24 @@ class OrbotApp : Application() {
         super.onConfigurationChanged(newConfig)
 
         setLocale()
+    }
+
+    /**
+     * Pol: Android 13+ ignores the in-app locale helper and uses the per-app language the system
+     * stores. Set Persian once on first run; after that the user's own choice in system settings wins.
+     */
+    private fun applyPolDefaultLanguage() {
+        if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.TIRAMISU) return
+        val prefs = getSharedPreferences("pol", android.content.Context.MODE_PRIVATE)
+        if (prefs.getBoolean("locale_init", false)) return
+        try {
+            val lm = getSystemService(android.app.LocaleManager::class.java)
+            if (lm != null && lm.applicationLocales.isEmpty) {
+                lm.applicationLocales = android.os.LocaleList.forLanguageTags("fa")
+            }
+        } catch (_: Exception) {
+        }
+        prefs.edit().putBoolean("locale_init", true).apply()
     }
 
     fun setLocale() {

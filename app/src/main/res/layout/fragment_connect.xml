@@ -12,29 +12,32 @@
         android:backgroundTint="@color/new_background">
 
 
+        <!-- Pol: the big round button is the whole UI. Tapping it connects / disconnects. -->
         <ImageView
             android:id="@+id/ivStatus"
-            android:layout_width="148dp"
-            android:layout_height="166dp"
-            android:layout_marginTop="6dp"
-            android:contentDescription="Orbie"
-            android:src="@drawable/orbiesleeping"
+            android:layout_width="196dp"
+            android:layout_height="196dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/pol_orb"
+            android:clickable="true"
+            android:contentDescription="@string/connect"
+            android:focusable="true"
+            android:padding="18dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_pol_foreground"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="HardcodedText" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/ivShadow"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            android:contentDescription="Shadow"
-            android:src="@drawable/orbieshadow"
+            android:layout_height="16dp"
+            android:contentDescription="@null"
+            android:visibility="invisible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/ivStatus"
-            tools:ignore="HardcodedText,ImageContrastCheck" />
+            app:layout_constraintTop_toBottomOf="@id/ivStatus" />
 
         <TextView
             android:id="@+id/tvTitle"
@@ -72,7 +75,7 @@
             android:paddingEnd="@dimen/alert_dialog_margin"
             android:text="@string/secure_your_connection_subtitle"
             android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+            android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
             android:textColor="#cccccc"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -82,9 +85,9 @@
         <ListView
             android:id="@+id/lvConnected"
             android:layout_width="match_parent"
-            android:layout_height="220dp"
+            android:layout_height="130dp"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="28dp"
             android:layout_marginEnd="24dp"
             android:dividerHeight="1dp"
             android:drawSelectorOnTop="true"
@@ -108,6 +111,7 @@
             android:paddingEnd="@dimen/button_horizontal_med_margin"
             android:paddingBottom="@dimen/button_horizontal_small_margin"
             android:text="@string/connect"
+            android:visibility="gone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/lvConnected" />

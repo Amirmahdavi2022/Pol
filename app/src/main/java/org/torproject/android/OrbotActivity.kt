@@ -109,11 +109,8 @@ class OrbotActivity : BaseActivity() {
         val bottomNavigationContainer = findViewById<View>(R.id.bottomNavContainer)
 
         navController.addOnDestinationChangedListener { _, destination, _ ->
-            if (destination.id == R.id.connectFragment || destination.id == R.id.moreFragment || destination.id == R.id.kindnessFragment) {
-                bottomNavigationContainer.visibility = View.VISIBLE
-            } else {
-                bottomNavigationContainer.visibility = View.GONE
-            }
+            // Pol: single-screen app, the bottom tabs (Snowflake volunteering, More) stay hidden.
+            bottomNavigationContainer.visibility = View.GONE
         }
 
         val navOptionsLeftToRight = NavOptions.Builder()
