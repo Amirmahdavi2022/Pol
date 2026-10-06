@@ -15,19 +15,35 @@
         <!-- Pol: the big round button is the whole UI. Tapping it connects / disconnects. -->
         <ImageView
             android:id="@+id/ivStatus"
-            android:layout_width="196dp"
-            android:layout_height="196dp"
-            android:layout_marginTop="40dp"
-            android:background="@drawable/pol_orb"
+            android:layout_width="252dp"
+            android:layout_height="252dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/pol_orb_off"
             android:clickable="true"
             android:contentDescription="@string/connect"
             android:focusable="true"
-            android:padding="18dp"
+            android:paddingStart="78dp"
+            android:paddingTop="52dp"
+            android:paddingEnd="78dp"
+            android:paddingBottom="100dp"
             android:scaleType="fitCenter"
-            android:src="@drawable/ic_pol_foreground"
+            android:src="@drawable/ic_pol_mark"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvOrbLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="74dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/pol_orb_connect"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            app:layout_constraintBottom_toBottomOf="@id/ivStatus"
+            app:layout_constraintEnd_toEndOf="@id/ivStatus"
+            app:layout_constraintStart_toStartOf="@id/ivStatus" />
 
         <ImageView
             android:id="@+id/ivShadow"

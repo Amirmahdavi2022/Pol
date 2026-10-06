@@ -48,9 +48,6 @@ private const val DEFAULT_THROTTLE_INTERVAL = 4000L
 // Pol
 private const val POL_CHANNEL_URL = "https://t.me/parsv2r"
 private val POL_BRIDGE_TYPES = listOf("obfs4", "webtunnel", "snowflake", "meek_lite", "dnstt")
-private const val POL_COLOR_OFF = 0xFF3B3860.toInt()
-private const val POL_COLOR_STARTING = 0xFF6D28D9.toInt()
-private const val POL_COLOR_ON = 0xFF0F9F8F.toInt()
 
 class ConnectFragment : Fragment(),
     ExitNodeBottomSheet.ExitNodeSelectedCallback {
@@ -154,6 +151,16 @@ class ConnectFragment : Fragment(),
         binding.tvSubtitle.setOnClickListener {
             LogBottomSheet.show(parentFragmentManager)
         }
+        // Pol: the button shrinks a little under the finger so the tap feels physical.
+        binding.ivStatus.setOnTouchListener { v, event ->
+            when (event.actionMasked) {
+                android.view.MotionEvent.ACTION_DOWN ->
+                    v.animate().scaleX(0.95f).scaleY(0.95f).setDuration(120).start()
+                android.view.MotionEvent.ACTION_UP, android.view.MotionEvent.ACTION_CANCEL ->
+                    v.animate().scaleX(1f).scaleY(1f).setDuration(160).start()
+            }
+            false
+        }
 
         refreshMenuList(requireContext())
     }
@@ -177,8 +184,9 @@ class ConnectFragment : Fragment(),
         openUrl(OrbotConstants.GET_BRIDES_TELEGRAM_BOT.toString())
     }
 
-    private fun setOrbColor(color: Int) {
-        binding.ivStatus.backgroundTintList = android.content.res.ColorStateList.valueOf(color)
+    private fun setOrb(background: Int, label: Int) {
+        binding.ivStatus.setBackgroundResource(background)
+        binding.tvOrbLabel.setText(label)
     }
 
     private fun polMethodName(transport: Transport): String = getString(
@@ -439,7 +447,7 @@ class ConnectFragment : Fragment(),
 
     private fun doLayoutNoInternet() {
         stopAnimations()
-        setOrbColor(POL_COLOR_OFF)
+        setOrb(R.drawable.pol_orb_off, R.string.pol_orb_connect)
         binding.ivStatus.alpha = 0.5f
         binding.progressBar.visibility = View.INVISIBLE
         binding.tvTitle.text = getString(R.string.pol_no_internet_title)
@@ -452,7 +460,7 @@ class ConnectFragment : Fragment(),
     fun doLayoutOn(context: Context = requireContext()) {
         // Pol: automatic mode stays on after connecting; SmartConnect remembers what worked.
         stopAnimations()
-        setOrbColor(POL_COLOR_ON)
+        setOrb(R.drawable.pol_orb_on, R.string.pol_orb_disconnect)
         binding.ivStatus.alpha = 1f
         binding.tvSubtitle.visibility = View.VISIBLE
         binding.progressBar.visibility = View.INVISIBLE
@@ -465,7 +473,7 @@ class ConnectFragment : Fragment(),
     private fun doLayoutOff() {
         viewModel.updateSubtitleState()
         stopAnimations()
-        setOrbColor(POL_COLOR_OFF)
+        setOrb(R.drawable.pol_orb_off, R.string.pol_orb_connect)
         binding.ivStatus.alpha = 1f
         refreshMenuList(requireContext())
         binding.tvSubtitle.visibility = View.VISIBLE
@@ -478,7 +486,7 @@ class ConnectFragment : Fragment(),
     private fun doLayoutStarting(context: Context) {
         val percent = (viewModel.uiState.value as? ConnectUiState.Starting)?.bootstrapPercent ?: 0
 
-        setOrbColor(POL_COLOR_STARTING)
+        setOrb(R.drawable.pol_orb_starting, R.string.pol_orb_connecting)
         binding.ivStatus.alpha = 1f
         binding.tvSubtitle.visibility = View.VISIBLE
         binding.tvSubtitle.text = if (percent <= 0) {
@@ -492,10 +500,8 @@ class ConnectFragment : Fragment(),
         }
 
         if (binding.ivStatus.animation == null) {
-            val animHover = AnimationUtils.loadAnimation(context, R.anim.hover)
-            animHover.repeatMode = Animation.REVERSE
-            binding.ivStatus.animation = animHover
-            animHover.start()
+            val pulse = AnimationUtils.loadAnimation(context, R.anim.pol_pulse)
+            binding.ivStatus.startAnimation(pulse)
         }
         binding.tvTitle.text = context.getString(R.string.pol_title_starting)
     }

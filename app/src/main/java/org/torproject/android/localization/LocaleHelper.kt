@@ -19,6 +19,27 @@ import java.util.*
 object LocaleHelper {
     fun onAttach(context: Context): Context = setLocale(context, Prefs.defaultLocale)
 
+    /**
+     * Pol: on Android 13+ the activity is created with whatever language the system has for the
+     * app, and OrbotActivity handles locale changes itself (configChanges="locale"), so it never
+     * picks up a language set at runtime. Wrap the base context instead: the per-app language the
+     * user chose in system settings if there is one, otherwise Pol's default (Persian).
+     */
+    fun wrapForPerAppLanguage(context: Context): Context {
+        var tag: String? = null
+        try {
+            val lm = context.getSystemService(android.app.LocaleManager::class.java)
+            val list = lm?.applicationLocales
+            if (list != null && !list.isEmpty) tag = list.get(0).toLanguageTag()
+        } catch (_: Throwable) {
+        }
+        val locale = Locale.forLanguageTag(tag ?: Prefs.defaultLocale.replace('_', '-'))
+        val configuration = android.content.res.Configuration(context.resources.configuration)
+        configuration.setLocale(locale)
+        configuration.setLayoutDirection(locale)
+        return context.createConfigurationContext(configuration)
+    }
+
     private fun setLocale(context: Context, language: String): Context {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             return context

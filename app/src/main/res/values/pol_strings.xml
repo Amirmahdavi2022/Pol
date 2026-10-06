@@ -25,4 +25,7 @@
     <string name="pol_failed_message">None of the ways worked on your line right now. Get private bridges from the Telegram bot, copy them and come back. Pol will pick them up and connect.</string>
     <string name="pol_no_internet_title">No internet</string>
     <string name="pol_no_internet_subtitle">Turn on Wi-Fi or mobile data first.</string>
+    <string name="pol_orb_connect">Connect</string>
+    <string name="pol_orb_connecting">Connecting</string>
+    <string name="pol_orb_disconnect">Disconnect</string>
 </resources>

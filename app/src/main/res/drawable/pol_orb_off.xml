@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pol: round connect button, "off" state. Soft halo + gradient disc + thin light rim. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="50%"
+                android:startColor="#667C3AED"
+                android:centerColor="#227C3AED"
+                android:endColor="#007C3AED" />
+        </shape>
+    </item>
+    <item
+        android:bottom="22dp"
+        android:left="22dp"
+        android:right="22dp"
+        android:top="22dp">
+        <shape android:shape="oval">
+            <gradient
+                android:angle="315"
+                android:startColor="#FF8B5CF6"
+                android:endColor="#FF4F46E5"
+                android:type="linear" />
+            <stroke
+                android:width="2dp"
+                android:color="#55FFFFFF" />
+        </shape>
+    </item>
+</layer-list>

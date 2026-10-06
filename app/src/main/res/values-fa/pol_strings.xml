@@ -25,4 +25,7 @@
     <string name="pol_failed_message">هیچ‌کدوم از روش‌ها الان روی خطت وصل نشد. از ربات تلگرام پل اختصاصی بگیر، کپی کن و برگرد. پُل خودش پیداشون می‌کنه و وصل می‌شه.</string>
     <string name="pol_no_internet_title">اینترنت وصل نیست</string>
     <string name="pol_no_internet_subtitle">اول وای‌فای یا دیتای گوشی رو روشن کن.</string>
+    <string name="pol_orb_connect">اتصال</string>
+    <string name="pol_orb_connecting">در حال اتصال</string>
+    <string name="pol_orb_disconnect">قطع اتصال</string>
 </resources>

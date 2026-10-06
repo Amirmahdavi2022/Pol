@@ -26,9 +26,21 @@ open class BaseActivity : AppCompatActivity() {
     // we need this for on the fly locale changes, especially for supported locales
     override fun attachBaseContext(newBase: Context) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            super.attachBaseContext(newBase)
+            super.attachBaseContext(LocaleHelper.wrapForPerAppLanguage(newBase))
         } else
             super.attachBaseContext(LocaleHelper.onAttach(newBase))
+    }
+
+    // Pol: AppCompat may hand the activity an override configuration built from the app-level
+    // config; keep the language from the wrapped base context so it can't fall back to English.
+    override fun applyOverrideConfiguration(overrideConfiguration: android.content.res.Configuration?) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU && overrideConfiguration != null) {
+            try {
+                overrideConfiguration.setLocales(baseContext.resources.configuration.locales)
+            } catch (_: Throwable) {
+            }
+        }
+        super.applyOverrideConfiguration(overrideConfiguration)
     }
 
     override fun onResume() {
