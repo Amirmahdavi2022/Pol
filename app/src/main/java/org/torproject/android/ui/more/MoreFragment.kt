@@ -39,7 +39,7 @@ class MoreFragment : Fragment() {
     private fun updateStatus() {
         val labelHttp = getString(R.string.http_port)
         val labelSocks = getString(R.string.socks_port)
-        val labels = listOf(labelHttp, labelSocks, "Orbot", "Tor")
+        val labels = listOf(labelHttp, labelSocks, "Pol", "Tor")
         val labelWidth = labels.maxOf { it.length } + 6
         val isLeftToRight = StringUtils.isLeftToRight()
         fun row(label: String, value: String): String {
@@ -63,7 +63,7 @@ class MoreFragment : Fragment() {
         val info = pm.getPackageInfo(requireActivity().packageName, 0)
         val normalizedVersion = info.versionName?.substringBefore("tor")?.dropLast(1)
 
-        rows += row("Orbot", "$normalizedVersion")
+        rows += row("Pol", "$normalizedVersion")
         rows += row("Tor", getTorVersion())
 
         binding.tvPortAndVersionInfo.text = rows.joinToString("\n")

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Orbot</string>
-    <string name="app_description">Orbot é unha aplicación de proxy libre que permite a outras aplicacións usar a internet dun xeito máis seguro. Orbot usa Tor para encriptar o teu tráfico de internet ocultando e rebotándoo a través dunha serie de ordenadores ao redor do mundo. Tor é software libre e unha rede aberta que axuda a defenderte contra unha forma de vixiancia na rede que ameaza a liberdade e privacidade persoal, actividades confidenciáis de negocios e relacións, e estado de seguridade coñecido como análise de tráfico.</string>
+    <string name="app_name">Pol</string>
+    <string name="app_description">Pol é unha aplicación de proxy libre que permite a outras aplicacións usar a internet dun xeito máis seguro. Pol usa Tor para encriptar o teu tráfico de internet ocultando e rebotándoo a través dunha serie de ordenadores ao redor do mundo. Tor é software libre e unha rede aberta que axuda a defenderte contra unha forma de vixiancia na rede que ameaza a liberdade e privacidade persoal, actividades confidenciáis de negocios e relacións, e estado de seguridade coñecido como análise de tráfico.</string>
     <string name="menu_settings">Axustes</string>
     <string name="menu_log">Rexistro (log)</string>
     <string name="menu_about">Sobre</string>
     <string name="menu_exit">Saír </string>
-    <string name="wizard_details_msg">Orbot é unha aplicación de código-aberto que contén a Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks e LibEvent. Proporciona un proxy HTTP (8118) e un proxy SOCKS (9050) na rede Tor. Orbot tamén pode, nun dispositivo con acceso root, enviar todo o tráfico de internet a través de Tor.</string>
+    <string name="wizard_details_msg">Pol é unha aplicación de código-aberto que contén a Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks e LibEvent. Proporciona un proxy HTTP (8118) e un proxy SOCKS (9050) na rede Tor. Pol tamén pode, nun dispositivo con acceso root, enviar todo o tráfico de internet a través de Tor.</string>
     <string name="pref_general_group">Xeral</string>
-    <string name="pref_start_boot_title">Inciar Orbot no Arranque</string>
-    <string name="pref_start_boot_summary">Iniciar Orbot automáticamente cando o seu dispositivo Android arranque</string>
+    <string name="pref_start_boot_title">Inciar Pol no Arranque</string>
+    <string name="pref_start_boot_summary">Iniciar Pol automáticamente cando o seu dispositivo Android arranque</string>
     <string name="pref_node_configuration">Configuración de Nós</string>
     <string name="pref_node_configuration_summary">Estes son axustes avanzados que poden reducir o seu anonimato</string>
     <string name="pref_entrance_node">Nós de Entrada</string>
@@ -70,7 +70,7 @@
     <string name="restore_backup">Restaurar respaldo</string>
     <string name="confirm_service_deletion">Confirme a eliminación do servizo</string>
     <string name="service_type">Tipo de servizo</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">Por favor, reinicie Orbot para activar os cambios</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Por favor, reinicie Pol para activar os cambios</string>
     <string name="disable">Desactivar</string>
     <string name="enable">Activar</string>
     <string name="consider_disable_battery_optimizations">Servizos aloxados en execución, considera desactivar as optimizacións da batería</string>
@@ -138,12 +138,12 @@
     <string name="btn_configure">Escoller como conectarse</string>
     <string name="snowflake_amp">Snowflake (AMP)</string>
     <string name="snowflake_subtitle">Conectarse a través de voluntarios de Tor. Evita algúns bloqueos.</string>
-    <string name="no_internet_subtitle">Precísase conexión a Internet para utilizar Orbot.</string>
+    <string name="no_internet_subtitle">Precísase conexión a Internet para utilizar Pol.</string>
     <string name="pref_circuit_padding_summary">Activar o recheo do circuito para defenderse contra algunhas formas de análise de tráfico</string>
     <string name="direct_connect">Conexión directa con Tor</string>
-    <string name="status_starting_up">Orbot está a se iniciar…</string>
+    <string name="status_starting_up">Pol está a se iniciar…</string>
     <string name="status_activated">Conectado á rede Tor</string>
-    <string name="status_disabled">Orbot está desactivado</string>
+    <string name="status_disabled">Pol está desactivado</string>
     <string name="couldn_t_start_tor_process_">No se pudio inciar o proceso Tor:</string>
     <string name="unable_to_start_tor">Incapaz de arrancar Tor</string>
     <string name="set_transport">Establecer transporte</string>

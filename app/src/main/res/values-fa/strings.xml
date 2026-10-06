@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Orbot</string>
-    <string name="app_description">Orbot برنامهٔ پراکسی رایگانی است که به دیگر برنامه‌ها این امکان را داده را تا از اینترنت با امنیت بیشتری استفاده کند. Orbot از Tor برای رمزگذاری ترافیک اینترنت‌تان استفاده می‌کند و سپس با عبوردادن آن از مجموعه‌ای از رایانه‌ها در سراسر جهان، آن را پنهان می‌سازد. Tor یک نرم‌افزار آزاد و شبکه‌ای باز است که به شما کمک می‌کند در برابر شکلی از نظارت بر شبکه موسوم به تجزیه‌وتحلیل ترافیک، که آزادی فردی و حریم‌خصوصی، فعالیت‌ها و روابط تجاری محرمانه، و امنیت ملی را تهدید می‌کند، دفاع کنید.</string>
-    <string name="menu_settings">تنظیمات Orbot</string>
+    <string name="app_name">پُل</string>
+    <string name="app_description">پُل برنامهٔ پراکسی رایگانی است که به دیگر برنامه‌ها این امکان را داده را تا از اینترنت با امنیت بیشتری استفاده کند. پُل از Tor برای رمزگذاری ترافیک اینترنت‌تان استفاده می‌کند و سپس با عبوردادن آن از مجموعه‌ای از رایانه‌ها در سراسر جهان، آن را پنهان می‌سازد. Tor یک نرم‌افزار آزاد و شبکه‌ای باز است که به شما کمک می‌کند در برابر شکلی از نظارت بر شبکه موسوم به تجزیه‌وتحلیل ترافیک، که آزادی فردی و حریم‌خصوصی، فعالیت‌ها و روابط تجاری محرمانه، و امنیت ملی را تهدید می‌کند، دفاع کنید.</string>
+    <string name="menu_settings">تنظیمات پُل</string>
     <string name="menu_log">گزارش</string>
     <string name="menu_about">درباره</string>
     <string name="menu_exit">خروج</string>
     <string name="wizard_details_msg">روبوت پیازی نرم‌افزاری آزاد است که شامل تور، ‏IPtProxy (لایره‌برد, میک, دانه‌برفی)، hev-socks5-tunnel و LibEvent می‌شود. این کاره یک تونل وی‌پی‌ان، پیشکار HTTP محلی (فقط HTTPS روی درگاه ۸۱۱۸) و پیشکار ساکس (۹۰۵۰) را به شبکهٔ تور فراهم می‌کند.</string>
     <string name="pref_general_group">عمومی</string>
-    <string name="pref_start_boot_title">شروع Orbot هنگام راه‌اندازی</string>
-    <string name="pref_start_boot_summary">شروع خودکار Orbot و اتصال به Tor هنگامی که دستگاه اندرویدیتان راه‌اندازی می‌شود</string>
+    <string name="pref_start_boot_title">شروع پُل هنگام راه‌اندازی</string>
+    <string name="pref_start_boot_summary">شروع خودکار پُل و اتصال به Tor هنگامی که دستگاه اندرویدیتان راه‌اندازی می‌شود</string>
     <string name="pref_node_configuration">پیکربندی گره</string>
     <string name="pref_node_configuration_summary">این‌ها تنظیمات پیشرفته‌ای هستند که می‌توانند ناشناسی شما را کاهش دهند</string>
     <string name="pref_entrance_node">گره‌های ورودی</string>
@@ -70,7 +70,7 @@
     <string name="restore_backup">بازگردانی پشتیبان‌گیری</string>
     <string name="confirm_service_deletion">حذف خدمت را تأیید کنید</string>
     <string name="service_type">نوع خدمت</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">برای فعال‌سازی تغییرات، Orbot را راه‌اندازی مجدد کنید</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">برای فعال‌سازی تغییرات، پُل را راه‌اندازی مجدد کنید</string>
     <string name="disable">غیرفعال‌سازی</string>
     <string name="enable">فعال‌سازی</string>
     <string name="consider_disable_battery_optimizations">خدمات میزبانی‌شده درحال اجرا هستند، غیرفعال‌سازی بهینه‌سازی‌های باتری را در نظر بگیرید</string>
@@ -135,8 +135,8 @@
     <string name="direct_connect_subtitle">بهترین روش اتصال به Tor. درصورت مسدودنبودن Tor از آن استفاده کنید.</string>
     <string name="power_user_mode">حالت کاربری حرفه‌ای</string>
     <string name="apps_other_apps">دیگر برنامه‌ها</string>
-    <string name="power_user_description">برای کاربران آشنا با Tor. اجازه می‌دهد تا Orbot را بدون تنظیمات VPN شروع کند و درگاه‌های باز HTTP و SOCKS را نشان می‌دهد</string>
-    <string name="app_suggested_subtitle">Orbot بهترین کارایی را با برنامه‌های شبکهٔ اجتماعی و پیام‌رسان دارد.</string>
+    <string name="power_user_description">برای کاربران آشنا با Tor. اجازه می‌دهد تا پُل را بدون تنظیمات VPN شروع کند و درگاه‌های باز HTTP و SOCKS را نشان می‌دهد</string>
+    <string name="app_suggested_subtitle">پُل بهترین کارایی را با برنامه‌های شبکهٔ اجتماعی و پیام‌رسان دارد.</string>
     <string name="apps_suggested_title">برنامه‌های توصیه‌شده</string>
     <string name="pref_isolate_port">جداسازی درگاه‌های مقصد</string>
     <string name="pref_isolate_port_summary">برای هر درگاه مقصد از مدار متفاوتی استفاده کنید</string>
@@ -148,7 +148,7 @@
     <string name="many_ways">راه‌های زیادی برای دستیابی به Tor وجود دارد. شاید برای شما برخی بهتر از دیگران کار کنند.</string>
     <string name="asking">درحال پرسیدن…</string>
     <string name="no_internet_title">به اینترنت وصل شوید</string>
-    <string name="no_internet_subtitle">برای استفاده از Orbot نیاز به اتصال اینترنتی دارید.</string>
+    <string name="no_internet_subtitle">برای استفاده از پُل نیاز به اتصال اینترنتی دارید.</string>
     <string name="kindness_config_detail">اینکه چگونه و چه زمانی دستگاه شما می‌تواند به‌عنوان یک پراکسی Snowflake برای سایر کاربران Tor عمل کند را پیکربندی کنید.</string>
     <string name="log_copied">گزارش‌ها رونوشت شدند</string>
     <string name="btn_copy_log">رونوشت گزارش‌ها</string>
@@ -158,7 +158,7 @@
     <string name="menu_kindness">مهربانی</string>
     <string name="option_only_on_wifi">فقط روی Wi-Fi</string>
     <string name="option_only_when_charging">فقط هنگام شارژ</string>
-    <string name="root_warning">Orbot تشخیص داده که دستگاه شما روت (root) شده است، که می‌تواند باعث بروز مشکلات امنیتی شود.</string>
+    <string name="root_warning">پُل تشخیص داده که دستگاه شما روت (root) شده است، که می‌تواند باعث بروز مشکلات امنیتی شود.</string>
     <string name="pref_detect_root_summary">هشدار در آغازبه‌کار، درصورت فعال‌بودن مجوز‌های ریشه روی این دستگاه</string>
     <string name="pref_detect_root_title">تشخیص ریشه</string>
     <string name="system_vpn_settings">تنظیمات VPN اندروید</string>
@@ -174,13 +174,13 @@
     <string name="app_icon_chooser_label_fit_grit">FitGrit</string>
     <string name="app_icon_chooser_label_birdie">Birdie</string>
     <string name="power_user_mode_permission">نیازمند مجوز هشدارها و یادآوری‌ها برای حالت کاربر حرفه‌ای</string>
-    <string name="power_user_mode_permission_msg">لطفاً برای استفاده از حالت کاربر حرفه‌ای به Orbot اجازه دهید هشدار و یادآوری را تنظیم کند. در حقیقت این برنامه هیچ هشداری روی دستگاه‌تان تنظیم نخواهد کرد. این مجوز برای درحال اجرا نگه‌داشتن سرویس Orbot ، در هنگامی که به‌عنوان VPN سراسری سیستم استفاده نمی‌شود، لازم است.</string>
+    <string name="power_user_mode_permission_msg">لطفاً برای استفاده از حالت کاربر حرفه‌ای به پُل اجازه دهید هشدار و یادآوری را تنظیم کند. در حقیقت این برنامه هیچ هشداری روی دستگاه‌تان تنظیم نخواهد کرد. این مجوز برای درحال اجرا نگه‌داشتن سرویس پُل ، در هنگامی که به‌عنوان VPN سراسری سیستم استفاده نمی‌شود، لازم است.</string>
     <string name="error_no_password_set">برای استفاده از ویژگی صفحهٔ قفل باید گذرواژه‌ای برای افزارهٔ اندرویدیتان تنظیم کنید</string>
     <string name="unlock_app_msg" formatted="true">لطفاً برای استفاده از ‎%s قفل دستگاه‌تان را باز کنید</string>
     <string name="error_asking_tor_for_bridges">خطا در پرسش از Tor برای چگونگی اتصال</string>
     <string name="invalid_bridge_format">قالب پل نامعتبر</string>
-    <string name="device_lock_unsupported">اصالت‌سنجی Orbot روی دستگاه شما پشتیبانی نمی‌شود</string>
-    <string name="device_lock_security_update_needed">برای استفاده از اصالت‌سنجی Orbot باید به‌روزرسانی‌های امنیتی اندروید را برای دستگاه‌تان بارگیری کنید</string>
+    <string name="device_lock_unsupported">اصالت‌سنجی پُل روی دستگاه شما پشتیبانی نمی‌شود</string>
+    <string name="device_lock_security_update_needed">برای استفاده از اصالت‌سنجی پُل باید به‌روزرسانی‌های امنیتی اندروید را برای دستگاه‌تان بارگیری کنید</string>
     <string name="enter_bridge_address">ورود نشانی پل</string>
     <string name="built_in_bridges_obfs4">پل توکار (obfs4)</string>
     <string name="bridges_via_telegram">پل‌های Tor ‏(obfs4) از طریق تلگرام</string>
@@ -269,17 +269,17 @@
     <string name="pref_proxy_ss_title">آدرس پیکربندی ShadowSocks</string>
     <string name="pref_proxy_ss_summary">آدرس کامل پیکربندی ShadowSocks که با ss:// شروع می‌شود</string>
     <string name="battery_optimization_title">غیرفعال کردن بهینه‌سازی باتری</string>
-    <string name="battery_optimization_pref_msg">تنظیم برای برخی از کاربرانی که گمان می‌کنند دستگاهشان هنگام اجرای Orbot در پس‌زمینه، آن را به‌طور زودهنگام از کار می‌اندازد.</string>
-    <string name="battery_optimization_dialog_msg">برخی از دستگاه‌های Android ممکن است Orbot را به دلیل اجرا در پس‌زمینه از کار بیندازند. برای اکثر کاربرانی که می‌خواهند مطمئن شوند Orbot متصل و در حال اجرا می‌ماند، کافی است Orbot را در تنظیمات سیستم به عنوان یک وی پی ان یا فیلترشکن \"همیشه روشن\" تنظیم کنند. با این حال، در صورت لزوم، می‌توانید از انجام هرگونه بهینه‌سازی باتری توسط Orbot توسط دستگاه خود جلوگیری کنید.</string>
-    <string name="battery_optimization_dialog_msg_instructions">در صفحه بعد، Orbot → اجازه استفاده در پس‌زمینه → نامحدود را انتخاب کنید.</string>
+    <string name="battery_optimization_pref_msg">تنظیم برای برخی از کاربرانی که گمان می‌کنند دستگاهشان هنگام اجرای پُل در پس‌زمینه، آن را به‌طور زودهنگام از کار می‌اندازد.</string>
+    <string name="battery_optimization_dialog_msg">برخی از دستگاه‌های Android ممکن است پُل را به دلیل اجرا در پس‌زمینه از کار بیندازند. برای اکثر کاربرانی که می‌خواهند مطمئن شوند پُل متصل و در حال اجرا می‌ماند، کافی است پُل را در تنظیمات سیستم به عنوان یک وی پی ان یا فیلترشکن \"همیشه روشن\" تنظیم کنند. با این حال، در صورت لزوم، می‌توانید از انجام هرگونه بهینه‌سازی باتری توسط پُل توسط دستگاه خود جلوگیری کنید.</string>
+    <string name="battery_optimization_dialog_msg_instructions">در صفحه بعد، پُل → اجازه استفاده در پس‌زمینه → نامحدود را انتخاب کنید.</string>
     <string name="battery_optimization_dialog_msg_disclaimer">توجه داشته باشید که در اکثر دستگاه‌ها، غیرفعال کردن بهینه‌سازی باتری، باتری دستگاه شما را سریع‌تر از حالت عادی خالی می‌کند…</string>
     <string name="battery_optimizations_dialog_btn_disable">تنظیمات بهینه‌سازی باتری را باز کنید</string>
-    <string name="battery_optimizations_dialog_msg_power_user">برخی از دستگاه‌های Android ممکن است وقتی Orbot به عنوان یک سرویس پس‌زمینه در حالت کاربر قدرتمند اجرا می‌شود، آن را متوقف کنند. شما همیشه می‌توانید بهینه‌سازی باتری را بعداً از طریق تنظیمات Orbot غیرفعال/دوباره فعال کنید…</string>
-    <string name="battery_optimizations_are_disabled">بهینه‌سازی باتری در حال حاضر برای Orbot غیرفعال است…</string>
-    <string name="battery_optimizations_are_enabled">بهینه‌سازی باتری در حال حاضر برای Orbot فعال است. این حالت پیش‌فرض است و برای اکثر کاربران منطقی است…</string>
+    <string name="battery_optimizations_dialog_msg_power_user">برخی از دستگاه‌های Android ممکن است وقتی پُل به عنوان یک سرویس پس‌زمینه در حالت کاربر قدرتمند اجرا می‌شود، آن را متوقف کنند. شما همیشه می‌توانید بهینه‌سازی باتری را بعداً از طریق تنظیمات پُل غیرفعال/دوباره فعال کنید…</string>
+    <string name="battery_optimizations_are_disabled">بهینه‌سازی باتری در حال حاضر برای پُل غیرفعال است…</string>
+    <string name="battery_optimizations_are_enabled">بهینه‌سازی باتری در حال حاضر برای پُل فعال است. این حالت پیش‌فرض است و برای اکثر کاربران منطقی است…</string>
     <string name="btn_connect_anyway">به هر حال وصل شوید</string>
     <string name="btn_connect_anyway_stop_showing">وصل شوید و این هشدار را خاموش کنید</string>
-    <string name="open_proxy_needs_local_network_permission">در اندروید ۱۷ و بالاتر، Orbot برای باز کردن پروکسی در تمام رابط‌ها به مجوز Allow Access to Nearby Devices نیاز دارد.</string>
+    <string name="open_proxy_needs_local_network_permission">در اندروید ۱۷ و بالاتر، پُل برای باز کردن پروکسی در تمام رابط‌ها به مجوز Allow Access to Nearby Devices نیاز دارد.</string>
     <string name="volunteer_mode_title">به حالت مهربانی خوش آمدید</string>
     <string name="volunteer_mode_weekly_label">این هفته</string>
     <string name="volunteer_mode_alltime_label">جمعا</string>
@@ -298,7 +298,7 @@
     <string name="kindness_quality_upgrade_title">پروکسی Snowflake خود را ارتقا دهید</string>
     <string name="kindness_quality_upgrade_line1">وقتی حالت مهربانی روی وای‌فای فعال باشد، پروکسی شما می‌تواند قدرتمندتر باشد.</string>
     <string name="kindness_quality_upgrade_line2">برای ارتقا، UPnP را روی روتر Wi-Fi خود برای این دستگاه فعال کنید.</string>
-    <string name="kindness_quality_upgrade_need_local_network">در اندروید ۱۷ و بالاتر، باید مجوز دسترسی به دستگاه‌های نزدیک را نیز به Orbot بدهید تا به روتر شما دسترسی داشته باشد.</string>
+    <string name="kindness_quality_upgrade_need_local_network">در اندروید ۱۷ و بالاتر، باید مجوز دسترسی به دستگاه‌های نزدیک را نیز به پُل بدهید تا به روتر شما دسترسی داشته باشد.</string>
     <string name="kindness_quality_upgrade_perm_granted">مجوز دسترسی به دستگاه‌های نزدیک در این دستگاه اعطا شده است.</string>
     <string name="grant_permission">اعطای مجوز</string>
     <string name="set_permission_in_settings">تنظیم مجوز در تنظیمات</string>
@@ -306,14 +306,14 @@
     <string name="testing_explanation_approved">شما کاندیدای بسیار خوبی برای تبدیل شدن به یک پروکسی Snowflake در شبکه Tor هستید.</string>
     <string name="testing_continue">ادامه</string>
     <string name="testing_explanation_declined">در حال حاضر نمی‌توانید یک پروکسی Snowflake مفید باشید. اگر مرتباً این پیام را مشاهده می‌کنید، دوباره روی یک شبکه دیگر امتحان کنید.</string>
-    <string name="testing_explanation_other_vpn">حالت مهربانی را نمی‌توان هنگام استفاده از VPN فعال کرد. تنها استثنا، ویژگی VPN اوربات است. برای تبدیل شدن به پروکسی اسنوفلیک، باید VPN خود را حذف کنید یا به استفاده از اوربات روی بیاورید.</string>
+    <string name="testing_explanation_other_vpn">حالت مهربانی را نمی‌توان هنگام استفاده از VPN فعال کرد. تنها استثنا، ویژگی VPN پُل است. برای تبدیل شدن به پروکسی اسنوفلیک، باید VPN خود را حذف کنید یا به استفاده از پُل روی بیاورید.</string>
     <string name="testing_explanation_other_vpn_bubble">تنظیمات VPN سیستم را باز کنید…</string>
     <string name="testing_explanation_no_net">به اینترنت متصل شوید تا ببینید آیا کاندید مناسبی برای حالت مهربانی هستید یا خیر</string>
     <string name="kindness_mode_disclaimer_bridge">اگر در کشوری با سانسور بالا زندگی می‌کنید، از حالت مهربانی استفاده نکنید.</string>
     <string name="kindness_mode_unsupported_country">شما %s را به عنوان کشور خود انتخاب کردید، اما متأسفانه حالت مهربانی نمی‌تواند به افرادی که در این منطقه هستند کمک کند تا به Tor متصل شوند. اگر فکر می‌کنید این پیام را اشتباهاً می‌بینید، می‌توانید کشور خود را پاک کنید و بررسی کنید که آیا واجد شرایط پروکسی Snowflake هستید یا خیر.</string>
     <string name="private_dns">دی ان است خصوصی</string>
     <string name="private_dns_strict">فعال‌سازی دقیق DNS خصوصی…</string>
-    <string name="private_dns_explanation">‹استفاده از Strict Private DNS با یک resolver خاص، وب‌سایت‌ها و سرویس‌های onion که خارج از VPN اوربات بازدید می‌کنید را فاش می‌کند. لطفاً Private DNS خود را روی Automatic تنظیم کنید.</string>
+    <string name="private_dns_explanation">‹استفاده از Strict Private DNS با یک resolver خاص، وب‌سایت‌ها و سرویس‌های onion که خارج از VPN پُل بازدید می‌کنید را فاش می‌کند. لطفاً Private DNS خود را روی Automatic تنظیم کنید.</string>
     <string name="activate_kindness_mode">حالت مهربانی را فعال کنید</string>
     <string name="running_kindness_mode_on_android">اجرای حالت مهربانی در اندروید</string>
     <string name="kindness_mode_runs_when_the_device_is_connected_to_wifi">حالت مهربانی (Kindness mode) زمانی اجرا می‌شود که دستگاه به وای‌فای متصل باشد.</string>
@@ -321,7 +321,7 @@
     <string name="we_recommend_charging_the_device_when_running_kindness_mode">توصیه می‌کنیم هنگام اجرای حالت مهربانی، دستگاه را شارژ کنید.</string>
     <string name="turn_off_kindness_mode_when_you_use_another_vpn_on_this_device">وقتی از VPN دیگری در این دستگاه استفاده می‌کنید، حالت Kindness را خاموش کنید.</string>
     <string name="test_connection">تست اتصال</string>
-    <string name="orbot_will_test_your_connection_to_determine_if_you_can_be_a_snowflake_proxy_for_others">Orbot اتصال شما را آزمایش می‌کند تا مشخص کند که آیا می‌توانید برای دیگران یک پروکسی Snowflake باشید یا خیر.</string>
+    <string name="orbot_will_test_your_connection_to_determine_if_you_can_be_a_snowflake_proxy_for_others">پُل اتصال شما را آزمایش می‌کند تا مشخص کند که آیا می‌توانید برای دیگران یک پروکسی Snowflake باشید یا خیر.</string>
     <string name="the_test_will_try_to_connect_directly_to_the_tor_network">این آزمایش سعی خواهد کرد مستقیماً به شبکه Tor متصل شود.</string>
     <string name="if_you_are_using_tor_bridges_they_will_temporarily_be_disconnected">اگر از پل‌های Tor استفاده می‌کنید، آنها موقتاً قطع خواهند شد.</string>
     <string name="i_acknowledge_i_have_read_the_above">من تایید می‌کنم که مطالب بالا را خوانده‌ام.</string>

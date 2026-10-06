@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Orbot</string>
-    <string name="app_description">Orbot — гэта свабодная праграма для проксі-злучэнняў, яна дазваляе іншым дадаткам больш бяспечна выкарыстоўваць інтэрнэт-злучэнне. Orbot ужывае Tor для шыфравання інтэрнэт-трафіка, які потым хаваецца падчас перасылання праз некалькі кампутараў у розных частках планеты. Tor з\'яўляецца свабодным праграмным дадаткам, а таксама адкрытай сеткай, якая дапамагае абараніцца ад сачэння ў сетках, якая пагражае асабістай волі і прыватным жыцці, прыватнасці бізнес-дзейнасці і кантактаў, а таксама дзяржаўнай праграме бяспекі, вядомай як аналіз трафіка.</string>
+    <string name="app_name">Pol</string>
+    <string name="app_description">Pol — гэта свабодная праграма для проксі-злучэнняў, яна дазваляе іншым дадаткам больш бяспечна выкарыстоўваць інтэрнэт-злучэнне. Pol ужывае Tor для шыфравання інтэрнэт-трафіка, які потым хаваецца падчас перасылання праз некалькі кампутараў у розных частках планеты. Tor з\'яўляецца свабодным праграмным дадаткам, а таксама адкрытай сеткай, якая дапамагае абараніцца ад сачэння ў сетках, якая пагражае асабістай волі і прыватным жыцці, прыватнасці бізнес-дзейнасці і кантактаў, а таксама дзяржаўнай праграме бяспекі, вядомай як аналіз трафіка.</string>
     <string name="menu_settings">Налады</string>
     <string name="menu_log">Журнал</string>
     <string name="menu_about">Пра праграму</string>
     <string name="menu_exit">Выйсце</string>
     <!--Welcome Wizard strings (DJH)-->
-    <string name="wizard_details_msg">Orbot — гэта праграма з адкрытым зыходным кодам, якая ўтрымоўвае Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks, і LibEvent. Яно прапануе лакальны HTTP- (8118) і SOCKS-проксі (9050) у сетку Tor. Orbot таксама дазваляе на прыладах з правамі root перасылаць увесь інтэрнэт-трафік праз Tor.</string>
+    <string name="wizard_details_msg">Pol — гэта праграма з адкрытым зыходным кодам, якая ўтрымоўвае Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks, і LibEvent. Яно прапануе лакальны HTTP- (8118) і SOCKS-проксі (9050) у сетку Tor. Pol таксама дазваляе на прыладах з правамі root перасылаць увесь інтэрнэт-трафік праз Tor.</string>
     <!--END Welcome Wizard strings (DJH)-->
     <string name="pref_general_group">Агульныя</string>
-    <string name="pref_start_boot_title">Запускаць Orbot пры загрузцы</string>
-    <string name="pref_start_boot_summary">Аўтаматычна запускаць Orbot і падлучацца да сеткі Tor пры загрузцы вашай Android-прылады</string>
+    <string name="pref_start_boot_title">Запускаць Pol пры загрузцы</string>
+    <string name="pref_start_boot_summary">Аўтаматычна запускаць Pol і падлучацца да сеткі Tor пры загрузцы вашай Android-прылады</string>
     <!--New Wizard Strings-->
     <!--Title Screen-->
     <!--Warning screen-->
@@ -78,7 +78,7 @@
     <string name="restore_backup">Аднавіць з копіі</string>
     <string name="confirm_service_deletion">Пацверджанне выдалення службы</string>
     <string name="service_type">Тып службы</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">Калі ласка, перазапусціце Orbot для ўступу змены ў сілу</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Калі ласка, перазапусціце Pol для ўступу змены ў сілу</string>
     <string name="disable">Адключыць</string>
     <string name="enable">Уключыць</string>
     <string name="consider_disable_battery_optimizations">Размешчаныя службы працуюць, падумайце аб адключэнні аптымізацыі батарэі</string>

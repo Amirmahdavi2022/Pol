@@ -24,9 +24,41 @@ object SmartConnect {
     private var connectionTimeout = TimeSource.Monotonic.markNow()
     private var connectionGuard: Timer? = null
 
+    /**
+     * Pol: transports already attempted during the current automatic run.
+     */
+    private val tried = mutableSetOf<Transport>()
+
+    /**
+     * Pol: order in which automatic mode walks through the transports after the first one
+     * (MOAT's pick or the last transport that worked) didn't reach 100%.
+     */
+    private val chain = listOf(
+        Transport.SNOWFLAKE,
+        Transport.CUSTOM,
+        Transport.WEBTUNNEL,
+        Transport.OBFS4,
+        Transport.MEEK,
+    )
+
+    private fun normalize(transport: Transport): Transport = when (transport) {
+        Transport.SNOWFLAKE_AMP, Transport.SNOWFLAKE_SQS -> Transport.SNOWFLAKE
+        else -> transport
+    }
+
+    private fun isUsable(context: Context, transport: Transport): Boolean = when (transport) {
+        Transport.CUSTOM -> Prefs.bridgesList.isNotEmpty()
+        Transport.WEBTUNNEL -> !BuiltInBridges.getInstance(context)?.webtunnel.isNullOrEmpty()
+        else -> true
+    }
+
+    private fun nextTransport(context: Context): Transport? =
+        chain.firstOrNull { it !in tried && isUsable(context, it) }
+
     @JvmStatic
     fun handle(context: Context, startTor: () -> Exception?, reconfigure: () -> Boolean, stopTor: (e: Exception?) -> Unit, completed: () -> Unit) {
         progress = 0
+        tried.clear()
 
         if (!Prefs.smartConnect) {
             val exception = startTor()
@@ -34,22 +66,37 @@ object SmartConnect {
         }
 
         ioScope.launch {
-            var conf: Pair<Transport, List<String>>? = null
+            val lastGood = Prefs.lastGoodTransport
 
-            try {
-                conf = AutoConf.`do`(context)
-            }
-            catch (_: Throwable) {}
+            if (lastGood != null && lastGood != Transport.NONE && isUsable(context, lastGood)) {
+                // Pol: something worked last time, start with it and skip the MOAT lookup.
+                Prefs.transport = lastGood
+            } else {
+                var conf: Pair<Transport, List<String>>? = null
 
-            Prefs.transport = conf?.first ?: Transport.NONE
+                try {
+                    conf = AutoConf.`do`(context)
+                }
+                catch (_: Throwable) {}
 
-            conf?.second?.let {
-                if (it.isNotEmpty()) {
-                    Prefs.bridgesList = it
+                Prefs.transport = conf?.first ?: Transport.NONE
+
+                conf?.second?.let {
+                    if (it.isNotEmpty()) {
+                        Prefs.bridgesList = it
+                    }
                 }
             }
 
-            Prefs.transport.start(context)
+            tried.add(normalize(Prefs.transport))
+
+            try {
+                Prefs.transport.start(context)
+            }
+            catch (_: Exception) {
+                // The guard below moves on to the next transport when this one gets nowhere.
+            }
+
             val exception = startTor()
 
             if (exception != null) {
@@ -66,10 +113,12 @@ object SmartConnect {
             connectionGuard = Timer()
             connectionGuard?.schedule(object : TimerTask() {
                 override fun run() {
-                    // Since we seem to have a working connection now, disable smart connect.
+                    // We have a working connection: remember what did it for next time.
+                    // Pol keeps automatic mode on, so a transport that later gets blocked
+                    // is simply skipped on the next connect.
                     if (progress >= 100) {
                         stopConnectionGuard()
-                        Prefs.smartConnect = false
+                        Prefs.lastGoodTransport = Prefs.transport
 
                         mainScope.launch {
                             completed()
@@ -82,59 +131,34 @@ object SmartConnect {
 
                     connectionAlive()
 
-                    var connected = false
+                    Prefs.transport.stop()
 
-                    do {
-                        when (Prefs.transport) {
-                            Transport.NONE -> {
-                                Prefs.transport = Transport.SNOWFLAKE
+                    while (true) {
+                        val next = nextTransport(context)
 
-                                try {
-                                    Prefs.transport.start(context)
-                                    connected = true
-                                }
-                                catch(_: Exception) {}
+                        if (next == null) {
+                            stopConnectionGuard()
+
+                            // Nothing worked: forget the last good transport, so the next
+                            // attempt asks MOAT for fresh settings and bridges.
+                            Prefs.lastGoodTransport = null
+
+                            mainScope.launch {
+                                stopTor(Exception("Smart Connect failed"))
                             }
-                            Transport.SNOWFLAKE, Transport.SNOWFLAKE_AMP,Transport.SNOWFLAKE_SQS -> {
-                                Prefs.transport.stop()
 
-                                Prefs.transport = if (Prefs.bridgesList.isNotEmpty()) {
-                                    Transport.CUSTOM
-                                }
-                                else {
-                                    Transport.OBFS4
-                                }
-
-                                try {
-                                    Prefs.transport.start(context)
-                                    connected = true
-                                }
-                                catch(_: Exception) {}
-                            }
-                            Transport.CUSTOM -> {
-                                Prefs.transport.stop()
-
-                                Prefs.transport = Transport.OBFS4
-
-                                try {
-                                    Prefs.transport.start(context)
-                                    connected = true
-                                }
-                                catch (_: Exception) {}
-                            }
-                            else -> {
-                                stopConnectionGuard()
-
-                                Prefs.transport.stop()
-
-                                mainScope.launch {
-                                    stopTor(Exception("Smart Connect failed"))
-                                }
-
-                                return
-                            }
+                            return
                         }
-                    } while (!connected)
+
+                        tried.add(next)
+                        Prefs.transport = next
+
+                        try {
+                            Prefs.transport.start(context)
+                            break
+                        }
+                        catch (_: Exception) {}
+                    }
 
                     if (!reconfigure()) {
                         // That didn't start? Ok, then try next transport immediately.

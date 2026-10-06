@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Orbot</string>
-    <string name="app_description">Orbot je besplatna proxy aplikacija koja omogućuje ostalim aplikacijama da koriste internet sigurnije. Orbot koristi Tor za enkripciju Vašeg Internet prometa, a zatim ga skriva šaljući ga kroz seriju računala diljem svijeta. Tor je besplatan software i otvorena mreža koja pomaže u borbi protiv nadzora mreže koji ugrožava osobne slobode i privatnost, povjerljive poslovne aktivnosti i odnose, te pomaže u borbi protiv analize prometa.</string>
-    <string name="menu_settings">Orbot postavke</string>
+    <string name="app_name">Pol</string>
+    <string name="app_description">Pol je besplatna proxy aplikacija koja omogućuje ostalim aplikacijama da koriste internet sigurnije. Pol koristi Tor za enkripciju Vašeg Internet prometa, a zatim ga skriva šaljući ga kroz seriju računala diljem svijeta. Tor je besplatan software i otvorena mreža koja pomaže u borbi protiv nadzora mreže koji ugrožava osobne slobode i privatnost, povjerljive poslovne aktivnosti i odnose, te pomaže u borbi protiv analize prometa.</string>
+    <string name="menu_settings">Pol postavke</string>
     <string name="menu_log">Dnevnik</string>
     <string name="menu_about">Informacije</string>
     <string name="menu_exit">Izlaz</string>
     <!--Welcome Wizard strings (DJH)-->
     <!--END Welcome Wizard strings (DJH)-->
     <string name="pref_general_group">Općenito</string>
-    <string name="pref_start_boot_title">Pokreni Orbot pri pokretanju</string>
-    <string name="pref_start_boot_summary">Automatski pokreni Orbot i poveži Tor kad se Android uređaj pokrene</string>
+    <string name="pref_start_boot_title">Pokreni Pol pri pokretanju</string>
+    <string name="pref_start_boot_summary">Automatski pokreni Pol i poveži Tor kad se Android uređaj pokrene</string>
     <!--New Wizard Strings-->
     <!--Title Screen-->
     <!--Warning screen-->
@@ -65,7 +65,7 @@
     <string name="pref_torrc_dialog">Prilagođeni Torrc</string>
     <string name="save">Spremi</string>
     <string name="name">Ime</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">Ponovno pokrenite Orbot da bi omogućili promjene</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Ponovno pokrenite Pol da bi omogućili promjene</string>
     <string name="hidden_services">Onion usluge</string>
     <string name="enable">Omogući</string>
     <string name="btn_refresh">Osvježi vezu</string>
@@ -89,9 +89,9 @@
     <string name="snowflake">Snowflake</string>
     <string name="snowflake_subtitle">Povezuje se preko Tor volontera. Zaobilazi neka blokiranja Tor-a.</string>
     <string name="setting_padding">Unutarnji odmak</string>
-    <string name="status_starting_up">Orbot se pokreće…</string>
+    <string name="status_starting_up">Pol se pokreće…</string>
     <string name="status_activated">Spojen na Tor mrežu</string>
-    <string name="status_disabled">Orbot je deaktiviran</string>
+    <string name="status_disabled">Pol je deaktiviran</string>
     <string name="status_shutting_down">OrbotService se gasi</string>
     <string name="couldn_t_start_tor_process_">Nije moguće započeti Tor proces:</string>
     <string name="unable_to_start_tor">Nije moguće pokrenuti Tor:</string>
@@ -99,13 +99,13 @@
     <string name="setting_app_icon_title">Ikona aplikacije</string>
     <string name="search_for_apps">Traži aplikacije</string>
     <string name="setting_unlock_pass_title">Zaključaj ekran</string>
-    <string name="setting_app_icon_description">Odaberi kako se Orbot prikazuje na tvom uređaju</string>
+    <string name="setting_app_icon_description">Odaberi kako se Pol prikazuje na tvom uređaju</string>
     <string name="apps_updated_msg">Aplikacije su aktualizirane</string>
     <string name="title_safety">Sigurnost</string>
     <string name="setting_block_screenshot_title">Blokiraj snimanje ekrana</string>
     <string name="setting_block_screenshot_description">Sprečava bilo koga da snima snimke ekrana ove aplikacije</string>
-    <string name="setting_unlock_pass_description">Za otvaranje Orbota zatraži unos PIN-a, lozinke ili potez prstom preko ekrana</string>
+    <string name="setting_unlock_pass_description">Za otvaranje Pola zatraži unos PIN-a, lozinke ili potez prstom preko ekrana</string>
     <string name="setting_unlock_with_biometrics_title">Koristi biometriju (opcionalno)</string>
-    <string name="setting_unlock_with_biometrics_description">Otključaj Orbot otiskom prsta ili Face ID-om ako su postavljeni na tvom uređaju.</string>
+    <string name="setting_unlock_with_biometrics_description">Otključaj Pol otiskom prsta ili Face ID-om ako su postavljeni na tvom uređaju.</string>
     <string name="btn_choose_apps">Odaberi aplikacije</string>
 </resources>

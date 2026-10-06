@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Orbot</string>
+    <string name="app_name">Pol</string>
     <string name="menu_settings">Gosodiadau</string>
     <string name="menu_log">Log</string>
     <string name="menu_about">Amdanom ni</string>
@@ -31,20 +31,20 @@
     <string name="menu_more">Mwy</string>
     <string name="next">Nesaf</string>
     <string name="enable">Galluogi</string>
-    <string name="app_description">Mae Orbot yn ap dirprwy rhad ac am ddim sy\'n grymuso apiau eraill i ddefnyddio\'r rhyngrwyd yn fwy diogel. Mae Orbot yn defnyddio Tor i amgryptio eich traffig Rhyngrwyd ac yna\'n ei guddio trwy bownsio trwy gyfres o gyfrifiaduron ledled y byd. Mae Tor yn feddalwedd am ddim ac yn rhwydwaith agored sy\'n eich helpu i amddiffyn yn erbyn math o wyliadwriaeth rhwydwaith sy\'n bygwth rhyddid personol a phreifatrwydd, gweithgareddau busnes cyfrinachol a pherthnasoedd, a diogelwch y wladwriaeth a elwir yn ddadansoddiad traffig.</string>
+    <string name="app_description">Mae Pol yn ap dirprwy rhad ac am ddim sy\'n grymuso apiau eraill i ddefnyddio\'r rhyngrwyd yn fwy diogel. Mae Pol yn defnyddio Tor i amgryptio eich traffig Rhyngrwyd ac yna\'n ei guddio trwy bownsio trwy gyfres o gyfrifiaduron ledled y byd. Mae Tor yn feddalwedd am ddim ac yn rhwydwaith agored sy\'n eich helpu i amddiffyn yn erbyn math o wyliadwriaeth rhwydwaith sy\'n bygwth rhyddid personol a phreifatrwydd, gweithgareddau busnes cyfrinachol a pherthnasoedd, a diogelwch y wladwriaeth a elwir yn ddadansoddiad traffig.</string>
     <string name="pref_proxy_host_summary">Enw gwesteiwr Gweinydd Dirprwy</string>
     <string name="pref_proxy_port_summary">Porth Gweinydd dirprwyol</string>
     <string name="pref_proxy_port_title">Porthladd Procsi Allan</string>
     <string name="pref_node_configuration_summary">Mae\'r rhain yn osodiadau datblygedig a all leihau eich anhysbysrwydd</string>
-    <string name="wizard_details_msg">Mae Orbot yn gymhwysiad ffynhonnell agored sy\'n cynnwys Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks a LibEvent. Mae\'n darparu twnnel VPN, dirprwy HTTP Connect lleol (HTTPS yn unig ar borthladd 8118) a dirprwy SOCKS (9050) i mewn i rwydwaith Tor.</string>
+    <string name="wizard_details_msg">Mae Pol yn gymhwysiad ffynhonnell agored sy\'n cynnwys Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks a LibEvent. Mae\'n darparu twnnel VPN, dirprwy HTTP Connect lleol (HTTPS yn unig ar borthladd 8118) a dirprwy SOCKS (9050) i mewn i rwydwaith Tor.</string>
     <string name="fingerprints_nicks_countries_and_addresses_for_the_last_hop">Olion bysedd, nicks, gwledydd a chyfeiriadau ar gyfer y hop olaf</string>
     <string name="pref_entrance_node_summary">Olion bysedd, nicks, gwledydd a chyfeiriadau ar gyfer y hop gyntaf</string>
     <string name="pref_proxy_type_title">Math Dirprwy Allannol</string>
-    <string name="pref_start_boot_summary">Dechreuwch Orbot yn awtomatig a chysylltwch Tor pan fydd eich dyfais Android yn cychwyn</string>
+    <string name="pref_start_boot_summary">Dechreuwch Pol yn awtomatig a chysylltwch Tor pan fydd eich dyfais Android yn cychwyn</string>
     <string name="pref_proxy_type_summary">Protocol i\'w ddefnyddio ar gyfer gweinydd dirprwyol</string>
     <string name="pref_proxy_title">Dirprwy Rhwydwaith Allanol (Dewisol)</string>
     <string name="pref_proxy_host_title">Gwesteiwr Procsi Allan</string>
-    <string name="pref_start_boot_title">Dechreuwch Orbot ar Boot</string>
+    <string name="pref_start_boot_title">Dechreuwch Pol ar Boot</string>
     <string name="pref_proxy_username_summary">Enw defnyddiwr dirprwy (Dewisol)</string>
     <string name="pref_proxy_username_title">Enw Defnyddiwr Procsi Allan</string>
     <string name="pref_proxy_password_title">Cyfrinair Procsi Allan</string>
@@ -108,7 +108,7 @@
     <string name="pref_dnsport_title">Porth DNS Tor</string>
     <string name="pref_reduced_circuit_padding">Padin cylched llai</string>
     <string name="pref_torrc_dialog">Torrc Custom</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">Ailgychwynnwch Orbot i alluogi\'r newidiadau</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Ailgychwynnwch Pol i alluogi\'r newidiadau</string>
     <string name="v3_client_auth_activity_title">Awdurdodi Cleient</string>
     <string name="btn_change_exit">Newid allanfa</string>
     <string name="backup_port_exist">Gwall: Mae gwasanaeth Onion eisoes yn defnyddio porth %s</string>
@@ -133,7 +133,7 @@
     <string name="backup_restored">Copi wrth gefn wedi\'i adfer</string>
     <string name="v3_onion">Parth .onion</string>
     <string name="v3_key_hash">x25519 Allwedd Breifat yn Sylfaen32</string>
-    <string name="status_starting_up">Mae Orbot yn cychwyn…</string>
+    <string name="status_starting_up">Mae Pol yn cychwyn…</string>
     <string name="status_activated">Wedi cysylltu â rhwydwaith Tor</string>
     <string name="set_transport">Gosod Trafnidiaeth</string>
 </resources>

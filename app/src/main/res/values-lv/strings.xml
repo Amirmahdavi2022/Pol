@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Orbot</string>
-    <string name="app_description">Orbot ir starpniekserveru bezmaksas lietotne, kas sniedz iespēju citām lietotnēm drošāk lietot internetu. Orbot izmanto Tor, lai šifrētu Jūsu interneta datplūsmu, tad to paslēpj, pārsūtot to caur daudziem datoriem visā pasaulē. Tor ir bezmaksas programmatūra un atvērts tīkls, kas palīdz Jums aizsargāties pret tīkla uzraudzības veidu - datplūsmas analīzi -, ar kuras palīdzību tiek apdraudēta personiskā brīvība un privātums, konfidenciālas lietišķas darbības un attiecības, kā arī valsts drošība.</string>
-    <string name="menu_settings">Orbot iestatījumi</string>
+    <string name="app_name">Pol</string>
+    <string name="app_description">Pol ir starpniekserveru bezmaksas lietotne, kas sniedz iespēju citām lietotnēm drošāk lietot internetu. Pol izmanto Tor, lai šifrētu Jūsu interneta datplūsmu, tad to paslēpj, pārsūtot to caur daudziem datoriem visā pasaulē. Tor ir bezmaksas programmatūra un atvērts tīkls, kas palīdz Jums aizsargāties pret tīkla uzraudzības veidu - datplūsmas analīzi -, ar kuras palīdzību tiek apdraudēta personiskā brīvība un privātums, konfidenciālas lietišķas darbības un attiecības, kā arī valsts drošība.</string>
+    <string name="menu_settings">Pol iestatījumi</string>
     <string name="menu_log">Žurnāls</string>
     <string name="menu_about">Par lietotni</string>
     <string name="menu_exit">Iziet</string>
     <string name="pref_general_group">Vispārīgie</string>
-    <string name="pref_start_boot_title">Startēt Orbot, kad ielādējas</string>
-    <string name="pref_start_boot_summary">Automātiski startēt Orbot, un veidot savienojumu ar Tor, kad Jūsu Android ierīce ielādējas</string>
+    <string name="pref_start_boot_title">Startēt Pol, kad ielādējas</string>
+    <string name="pref_start_boot_summary">Automātiski startēt Pol, un veidot savienojumu ar Tor, kad Jūsu Android ierīce ielādējas</string>
     <string name="pref_node_configuration">Tīkla mezgla konfigurācija</string>
     <string name="pref_node_configuration_summary">Šie it lietpratīgie iestatījumi, kuri var samazināt Jūsu anonimitāti</string>
     <string name="pref_entrance_node">Ieejas mezgli</string>
@@ -58,7 +58,7 @@
     <string name="hidden_services">Slēptie pakalpojumi</string>
     <string name="save">Saglabāt</string>
     <string name="name">Vārds</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">Lūdzu pārstartējiet Orbot, lai iespējotu izmaiņas</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Lūdzu pārstartējiet Pol, lai iespējotu izmaiņas</string>
     <string name="disable">Atspējot</string>
     <string name="confirm">Apstipriniet</string>
     <string name="version">Versija:</string>
@@ -68,7 +68,7 @@
     <string name="pref_reduced_circuit_padding">Samazināts ķēžu polsterējums</string>
     <string name="pref_disable_ipv4_summary">Norāda, ka izejas nedrīkst izveidot savienojumu ar IPv4 adresēm</string>
     <string name="menu_new_identity">Jauna identitāte</string>
-    <string name="wizard_details_msg">Orbot — atvērtā pirmkoda programmatūra, kas ietver Tor, IPtProxy (Lyrebird, Meek, Snowflake), hev-socks5-tunnel un LibEvent. Tā nodrošina VPN tuneli, tas ir vietējo HTTP Connect (ports: 8118, tikai HTTPS) un SOCKS (ports: 9050) starpniekserveri uz Tor tīklu.</string>
+    <string name="wizard_details_msg">Pol — atvērtā pirmkoda programmatūra, kas ietver Tor, IPtProxy (Lyrebird, Meek, Snowflake), hev-socks5-tunnel un LibEvent. Tā nodrošina VPN tuneli, tas ir vietējo HTTP Connect (ports: 8118, tikai HTTPS) un SOCKS (ports: 9050) starpniekserveri uz Tor tīklu.</string>
     <string name="secure_your_connection_subtitle">Paslēpiet lietotnes no tīkla uzraudzības un iegūstiet piekļuvi, ja tās ir bloķētas.</string>
     <string name="connected_title">Savienots</string>
     <string name="btn_configure">Izvēlieties, kā pieslēgties</string>
@@ -130,7 +130,7 @@
     <string name="menu_more">Vairāk</string>
     <string name="connect">Veidot savienojumu</string>
     <string name="next">Nākamais</string>
-    <string name="no_internet_subtitle">Lai izmantotu Orbot, ir nepieciešams interneta savienojums.</string>
+    <string name="no_internet_subtitle">Lai izmantotu Pol, ir nepieciešams interneta savienojums.</string>
     <string name="not_sure">Neesat pārliecināts\?</string>
     <string name="snowflake_subtitle">Savieno ar Tor brīvprātīgo starpniecību. Apiet dažas Tor bloķēšanas iespējas.</string>
     <string name="ask_tor">Jautājiet Toram</string>
@@ -149,19 +149,19 @@
     <string name="direct_connect">Tiešais savienojums ar Tor</string>
     <string name="pref_isolate_port">Izolēt galamērķa ostas</string>
     <string name="asking">ASKING…</string>
-    <string name="power_user_description">Lietotājiem, kas pārzina Tor. Ļauj palaist Orbot bez VPN iestatījuma un parāda atvērtos SOCKS un HTTP portus</string>
+    <string name="power_user_description">Lietotājiem, kas pārzina Tor. Ļauj palaist Pol bez VPN iestatījuma un parāda atvērtos SOCKS un HTTP portus</string>
     <string name="snowflake_amp">Sniegpārsliņa (AMP)</string>
     <string name="menu_kindness">Labestība</string>
-    <string name="root_warning">Orbot ir konstatējis, ka jūsu ierīcei ir saknes, kas var radīt drošības problēmas.</string>
+    <string name="root_warning">Pol ir konstatējis, ka jūsu ierīcei ir saknes, kas var radīt drošības problēmas.</string>
     <string name="snowflake">Sniegpārsliņa (oriģināls)</string>
     <string name="kindness_config_detail">Konfigurējiet, kā un kad jūsu ierīce var darboties kā Snowflake starpniekserveris citiem Tor lietotājiem.</string>
     <string name="pref_isolate_protocol_summary">Katram savienojuma protokolam izmantojiet atšķirīgu ķēdi</string>
-    <string name="app_suggested_subtitle">Orbot vislabāk darbojas ar ziņapmaiņas un sociālo mediju lietotnēm.</string>
+    <string name="app_suggested_subtitle">Pol vislabāk darbojas ar ziņapmaiņas un sociālo mediju lietotnēm.</string>
     <string name="direct_connect_subtitle">Labākais veids, kā izveidot savienojumu ar Tor. Izmantojiet, ja Tor nav bloķēts.</string>
     <string name="many_ways">Ir vairāki veidi, kā sasniegt Tor. Daži no tiem jums var darboties labāk nekā citi.</string>
-    <string name="status_starting_up">Orbot startē…</string>
+    <string name="status_starting_up">Pol startē…</string>
     <string name="status_activated">Izveidots savienojums ar tīklu Tor</string>
-    <string name="status_disabled">Orbot ir deaktivēts</string>
+    <string name="status_disabled">Pol ir deaktivēts</string>
     <string name="couldn_t_start_tor_process_">Neizdevās palaist Tor\'a procesu:</string>
     <string name="unable_to_start_tor">Nevar startēt Tor:</string>
     <string name="set_transport">Iestatīt transportu</string>
@@ -175,7 +175,7 @@
     <string name="title_safety">Drošība</string>
     <string name="loading">Ielādē…</string>
     <string name="open_settings">Atvērt iestatījumus</string>
-    <string name="orbot_vpn">Orbot VPN</string>
+    <string name="orbot_vpn">Pol VPN</string>
     <string name="apps_updated_msg">Lietotnes atjauninātas</string>
     <string name="setting_app_icon_title">Lietotnes ikona</string>
     <string name="country_clear">Noņemt valsti</string>

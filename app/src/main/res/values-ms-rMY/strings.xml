@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Orbot</string>
+    <string name="app_name">Pol</string>
     <string name="menu_settings">Tetapan</string>
     <string name="menu_log">Log</string>
     <string name="menu_about">Tentang</string>
     <string name="menu_exit">Keluar</string>
     <string name="pref_general_group">Umum</string>
-    <string name="pref_start_boot_title">Mulakan Orbot semasa Boot</string>
-    <string name="pref_start_boot_summary">Mula Orbot secara automatik dan sambung Tor ketika peranti Android boot</string>
+    <string name="pref_start_boot_title">Mulakan Pol semasa Boot</string>
+    <string name="pref_start_boot_summary">Mula Pol secara automatik dan sambung Tor ketika peranti Android boot</string>
     <string name="pref_node_configuration">Konfigurasi Nod</string>
     <string name="pref_node_configuration_summary">Ini ialah tetapan lanjutan yang boleh mengurangkan kadar anonymity anda</string>
     <string name="pref_entrance_node">Nod Kemasukan</string>
@@ -58,9 +58,9 @@
     <string name="connect">Sambung</string>
     <string name="newnym">Anda bertukar ke identiti Tor baharu!</string>
     <string name="pref_socks_title">Tor SOCKS</string>
-    <string name="status_starting_up">Orbot telah dimulakan..</string>
+    <string name="status_starting_up">Pol telah dimulakan..</string>
     <string name="status_activated">Bersambung ke rangkaian Tor</string>
-    <string name="status_disabled">\"Orbot telah dinyah-aktifkan</string>
+    <string name="status_disabled">\"Pol telah dinyah-aktifkan</string>
     <string name="couldn_t_start_tor_process_">Tidak boleh memulakan proses Tor:</string>
     <string name="unable_to_start_tor">Tidak dapat memulakan Tor:</string>
     <string name="set_transport">Tetapkan Pengangkutan</string>

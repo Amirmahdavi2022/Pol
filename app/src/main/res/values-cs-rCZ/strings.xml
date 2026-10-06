@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Orbot</string>
-    <string name="app_description">Orbot je bezplatný proxy server, který umožňuje bezpečnější použití internetu v ostatních apklikacích. Orbot používá Tor pro šifrování internetového provozu a skrývá se díky předávání provozu přes více počítačů po celém světě. Tor je bezplatný software a otevřená síť, která vám pomáhá chránit se před sledováním sítě, které ohrožuje osobní svobodu, bezpečnost, důvěrné obchodní aktivity a vztahy a před státním sledováním, označovaným jako anylýza provozu.</string>
-    <string name="menu_settings">Nastavení Orbotu</string>
+    <string name="app_name">Pol</string>
+    <string name="app_description">Pol je bezplatný proxy server, který umožňuje bezpečnější použití internetu v ostatních apklikacích. Pol používá Tor pro šifrování internetového provozu a skrývá se díky předávání provozu přes více počítačů po celém světě. Tor je bezplatný software a otevřená síť, která vám pomáhá chránit se před sledováním sítě, které ohrožuje osobní svobodu, bezpečnost, důvěrné obchodní aktivity a vztahy a před státním sledováním, označovaným jako anylýza provozu.</string>
+    <string name="menu_settings">Nastavení Polu</string>
     <string name="menu_log">Log</string>
     <string name="menu_about">O aplikaci</string>
     <string name="menu_exit">Konec</string>
     <string name="pref_general_group">Obecné</string>
-    <string name="pref_start_boot_title">Spustit Orbot při startu systému</string>
-    <string name="pref_start_boot_summary">Automaticky spustit Orbot a připojit se k Tor po startu zařízení</string>
+    <string name="pref_start_boot_title">Spustit Pol při startu systému</string>
+    <string name="pref_start_boot_summary">Automaticky spustit Pol a připojit se k Tor po startu zařízení</string>
     <string name="pref_node_configuration">Konfigurace uzlu (nodu)</string>
     <string name="pref_node_configuration_summary">Tato rozšířená nastavení mohou snížit vaši anonymitu</string>
     <string name="pref_entrance_node">Vstupní nody</string>
@@ -57,7 +57,7 @@
     <string name="pref_torrc_dialog">Vlastní Torrs</string>
     <string name="save">Uložit</string>
     <string name="name">Jméno</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">Pro projevení změn restartujte Orbot</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Pro projevení změn restartujte Pol</string>
     <string name="menu_new_identity">Nová identita</string>
     <string name="hidden_services">Služby Onion</string>
     <string name="version">Verze:</string>
@@ -76,7 +76,7 @@
     <string name="trying_to_connect_title">Připojování…</string>
     <string name="btn_refresh">Obnovit</string>
     <string name="pref_circuit_padding">Vycpávky obvodů</string>
-    <string name="no_internet_subtitle">K používání služby Orbot potřebujete připojení k internetu.</string>
+    <string name="no_internet_subtitle">K používání služby Pol potřebujete připojení k internetu.</string>
     <string name="pref_isolate_dest_summary">Pro každou cílovou adresu použijte jiný okruh</string>
     <string name="v3_hosted_services">Hostované služby Onion</string>
     <string name="pref_disable_ipv4_summary">Informuje exity, že jsou upřednostňovány adresy IPv6</string>
@@ -92,7 +92,7 @@
     <string name="v3_backup_key">Autorizační klíč záložního klienta</string>
     <string name="smart_connect">Smart Connect (výchozí)</string>
     <string name="apps_other_apps">Další aplikace</string>
-    <string name="wizard_details_msg">Orbot je open-source aplikace, která obsahuje Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks a LibEvent. Poskytuje tunel VPN, místní proxy server HTTP Connect (HTTPS pouze na portu 8118) a proxy server SOCKS (9050) do sítě Tor.</string>
+    <string name="wizard_details_msg">Pol je open-source aplikace, která obsahuje Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks a LibEvent. Poskytuje tunel VPN, místní proxy server HTTP Connect (HTTPS pouze na portu 8118) a proxy server SOCKS (9050) do sítě Tor.</string>
     <string name="pref_reduced_circuit_padding_summary">Použití algoritmů pro vyplňování s nižší režií ke snížení spotřeby dat a baterie</string>
     <string name="copy_address_to_clipboard">Kopírování adresy do schránky</string>
     <string name="option_only_when_charging">Pouze při nabíjení</string>
@@ -117,7 +117,7 @@
     <string name="pref_disable_ipv4">Informuje exity, že jsou upřednostňovány adresy IPv6</string>
     <string name="pref_isolate_port">Izolovat cílové porty</string>
     <string name="asking">PTÁTE SE…</string>
-    <string name="power_user_description">Pro uživatele, kteří znají Tor. Umožňuje spustit Orbot bez nastavení VPN a zobrazuje otevřené porty SOCKS a HTTP</string>
+    <string name="power_user_description">Pro uživatele, kteří znají Tor. Umožňuje spustit Pol bez nastavení VPN a zobrazuje otevřené porty SOCKS a HTTP</string>
     <string name="app_services">Služby aplikací</string>
     <string name="snowflake_amp">Sněhová vločka (AMP)</string>
     <string name="backup_saved_at_external_storage">Zálohování uložené v externím úložišti</string>
@@ -129,7 +129,7 @@
     <string name="pref_prefer_ipv6_summary">Informuje exity, že jsou upřednostňovány adresy IPv6</string>
     <string name="pref_reduced_circuit_padding">Zmenšené polstrování obvodů</string>
     <string name="v3_client_auth_activity_title">Autorizace klienta</string>
-    <string name="root_warning">Orbot zjistil, že vaše zařízení je rootnuté, což může způsobit bezpečnostní problémy.</string>
+    <string name="root_warning">Pol zjistil, že vaše zařízení je rootnuté, což může způsobit bezpečnostní problémy.</string>
     <string name="btn_change_exit">Změna výstupu</string>
     <string name="snowflake">Sněhová vločka (v originále)</string>
     <string name="backup_port_exist">Chyba: Služba Onion již používá port %s</string>
@@ -148,7 +148,7 @@
     <string name="bridge_snowflake_amp">Připojení přes jiné uživatele Toru pomocí aplikace Snowflake (metoda 2 - AMP)</string>
     <string name="volunteer_mode">Režim laskavosti</string>
     <string name="strict_nodes_description">Nastavení Vyloučit uzly považujte za požadavek pro sestavení všech obvodů. To může narušit funkčnost, pokud s nastavením Exclude Nodes nebude možné vygenerovat žádné obvody.</string>
-    <string name="app_suggested_subtitle">Orbot nejlépe funguje s aplikacemi pro zasílání zpráv a sociální sítě.</string>
+    <string name="app_suggested_subtitle">Pol nejlépe funguje s aplikacemi pro zasílání zpráv a sociální sítě.</string>
     <string name="secure_your_connection_title">Připraveno k připojení</string>
     <string name="v3_delete_client_authorization_confirm">Odstranění autorizace klienta</string>
     <string name="pref_http_summary">Port, na kterém Tor nabízí svůj proxy server HTTP (výchozí: 8118 nebo 0 pro vypnutí)</string>
@@ -161,10 +161,10 @@
     <string name="v3_key_hash">x25519 Soukromý klíč v Base32</string>
     <string name="pref_detect_root_summary">Varovat při spuštění, pokud jsou na tomto zařízení zapnuta oprávnění root</string>
     <string name="pref_detect_root_title">Rozpoznání root</string>
-    <string name="status_starting_up">Orbot se spouští…</string>
+    <string name="status_starting_up">Pol se spouští…</string>
     <string name="status_activated">Připojen k síti Tor</string>
-    <string name="status_disabled">\"Orbot je deaktivován</string>
-    <string name="status_shutting_down">Orbot se vypíná</string>
+    <string name="status_disabled">\"Pol je deaktivován</string>
+    <string name="status_shutting_down">Pol se vypíná</string>
     <string name="couldn_t_start_tor_process_">Nelze spustit Tor proces:</string>
     <string name="unable_to_start_tor">Nelze spustit Tor:</string>
     <string name="set_transport">Nastavit transport</string>

@@ -16,13 +16,9 @@ kotlin {
     jvmToolchain(24)
 }
 
-val orbotBaseVersionCode = 1796300100
-fun getVersionName(): Provider<String> {
-    // Gets the version name from the latest Git tag
-    return providers.exec {
-        commandLine("git", "describe", "--tags", "--always")
-    }.standardOutput.asText.map { it.trim() }
-}
+// Pol: fixed versioning instead of upstream's git-describe based one.
+val polVersionCode = 1
+val polVersionName = "1.0.0"
 
 configure<ApplicationExtension> {
     namespace = "org.torproject.android"
@@ -33,9 +29,9 @@ configure<ApplicationExtension> {
     }
 
     defaultConfig {
-        applicationId = namespace
-        versionCode = orbotBaseVersionCode
-        versionName = getVersionName().get()
+        applicationId = "app.pol.android"
+        versionCode = polVersionCode
+        versionName = polVersionName
         minSdk = 24
         targetSdk = 37
         multiDexEnabled = true
@@ -71,7 +67,13 @@ configure<ApplicationExtension> {
             if (keystorePropertiesFile.canRead()) {
                 keystoreProperties.load(FileInputStream(keystorePropertiesFile))
             }
-            if (!keystoreProperties.stringPropertyNames().isEmpty()) {
+            val envStore = System.getenv("SIGN_STORE")
+            if (!envStore.isNullOrEmpty()) {
+                storeFile = file(envStore)
+                storePassword = System.getenv("SIGN_STORE_PASS")
+                keyAlias = System.getenv("SIGN_KEY_ALIAS")
+                keyPassword = System.getenv("SIGN_KEY_PASS")
+            } else if (!keystoreProperties.stringPropertyNames().isEmpty()) {
                 keyAlias = keystoreProperties["keyAlias"] as String
                 keyPassword = keystoreProperties["keyPassword"] as String
                 storeFile = file(keystoreProperties["storeFile"] as String)
@@ -151,21 +153,24 @@ val updateBuiltinBridges = tasks.register<UpdateBridgeConfig>("updateBuiltinBrid
 androidComponents {
     onVariants { variant ->
         variant.outputs.forEach { output ->
-            if (output.versionCode.get() == orbotBaseVersionCode) {
+            if (output.versionCode.get() == polVersionCode) {
                 val incrementMap =
                     mapOf("armeabi-v7a" to 1, "arm64-v8a" to 2, "x86" to 4, "x86_64" to 5)
                 val increment =
                     incrementMap[output.filters.find { it.filterType.name == "ABI" }?.identifier]
                         ?: 0
-                output.versionCode = (orbotBaseVersionCode) + increment
+                // universal = x*10, per-ABI = x*10 + n, so every APK has a unique code
+                output.versionCode = polVersionCode * 10 + increment
             }
         }
         base {
-            archivesName.set("Orbot-${android.defaultConfig.versionName}")
+            archivesName.set("Pol-${android.defaultConfig.versionName}")
         }
         if (variant.buildType == "release") {
+            // Pol: built-in bridges are refreshed by the CI workflow right before
+            // the build, so the upstream "stale bridges / dirty tree" gate stays off.
             updateBuiltinBridges.configure {
-                enabledForVariant.set(true)
+                enabledForVariant.set(false)
             }
             variant.sources.assets?.addGeneratedSourceDirectory(
                 updateBuiltinBridges,

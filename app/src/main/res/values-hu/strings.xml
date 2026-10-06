@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Orbot</string>
-    <string name="app_description">Az Orbot egy ingyenes proxy alkalmazás, ami képessé tesz alkalmazásokat, hogy biztonságosabban használhassák az internetet. Az Orbot Tor-t használ, hogy titkosítsa az internetforgalmadat és elrejtse azáltal, hogy pattogtatja számítógépek sorozatain keresztül a világ körül. A Tor ingyenes szoftver és nyitott hálózat, ami segít megvédeni a hálózati felügyelettől, ami fenyegeti a személyi szabadságot és magánéletet, a bizalmas céges tevékenységeket és kapcsolatokat, és állambiztonság címén a forgalomelemzéstől.</string>
+    <string name="app_name">Pol</string>
+    <string name="app_description">Az Pol egy ingyenes proxy alkalmazás, ami képessé tesz alkalmazásokat, hogy biztonságosabban használhassák az internetet. Az Pol Tor-t használ, hogy titkosítsa az internetforgalmadat és elrejtse azáltal, hogy pattogtatja számítógépek sorozatain keresztül a világ körül. A Tor ingyenes szoftver és nyitott hálózat, ami segít megvédeni a hálózati felügyelettől, ami fenyegeti a személyi szabadságot és magánéletet, a bizalmas céges tevékenységeket és kapcsolatokat, és állambiztonság címén a forgalomelemzéstől.</string>
     <string name="menu_settings">Beállítások</string>
     <string name="menu_log">Log</string>
     <string name="menu_about">Rólunk</string>
     <string name="menu_exit">Kilépés</string>
-    <string name="wizard_details_msg">Az Orbot egy nyilt forráskódú alkalmazás ami Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks, és LibEvent alkalmazásokat tartalmaz. Helyi HTTP proxyt (8118) és SOCKS proxyt (9050) biztosít a Tor hálózatba. Az Orbot továbbá képes arra, hogy rootolt eszközön a teljes internet forgalmat keresztül küldje a Tor-on.</string>
+    <string name="wizard_details_msg">Az Pol egy nyilt forráskódú alkalmazás ami Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks, és LibEvent alkalmazásokat tartalmaz. Helyi HTTP proxyt (8118) és SOCKS proxyt (9050) biztosít a Tor hálózatba. Az Pol továbbá képes arra, hogy rootolt eszközön a teljes internet forgalmat keresztül küldje a Tor-on.</string>
     <string name="pref_general_group">Általános</string>
-    <string name="pref_start_boot_title">Az Orbot indítása rendszerindításkor</string>
-    <string name="pref_start_boot_summary">Automatikusan elindítja az Orbot-ot és csatlakozik a hálózathoz, amikor az Android eszköz betölt</string>
+    <string name="pref_start_boot_title">Az Pol indítása rendszerindításkor</string>
+    <string name="pref_start_boot_summary">Automatikusan elindítja az Pol-ot és csatlakozik a hálózathoz, amikor az Android eszköz betölt</string>
     <string name="pref_node_configuration">Csomópont konfiguráció</string>
     <string name="pref_node_configuration_summary">Ezek haladó beállítások, amelyek csökkenthetik a névtelenséged.</string>
     <string name="pref_entrance_node">Belépő csomópontok</string>
@@ -70,7 +70,7 @@
     <string name="restore_backup">Mentés visszaállítása</string>
     <string name="confirm_service_deletion">Szolgáltatás törlés jóváhagyása</string>
     <string name="service_type">Szolgáltatás típus</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">Kérlek indítsd újra az Orbot-ot a változások engedélyezéséhez</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Kérlek indítsd újra az Pol-ot a változások engedélyezéséhez</string>
     <string name="disable">Kikapcsol</string>
     <string name="enable">Engedélyezés</string>
     <string name="consider_disable_battery_optimizations">Vegye fontolóra az akkumulátor optimalizálás tiltását</string>
@@ -94,9 +94,9 @@
     <string name="btn_refresh">Frissítés</string>
     <string name="license">Licensz:</string>
     <string name="connected_title">Csatlakozva</string>
-    <string name="status_starting_up">Az Orbot indul…</string>
+    <string name="status_starting_up">Az Pol indul…</string>
     <string name="status_activated">Csatlakozva a Tor hálózathoz</string>
-    <string name="status_disabled">Az Orbot deaktiválva</string>
+    <string name="status_disabled">Az Pol deaktiválva</string>
     <string name="status_shutting_down">A TorService leáll</string>
     <string name="couldn_t_start_tor_process_">Nem indítható el a Tor folyamat:</string>
     <string name="unable_to_start_tor">A Tor indítása sikertelen:</string>

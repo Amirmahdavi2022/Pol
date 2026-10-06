@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_description">Orbot es una aplicación de proxy gratuita que permite a otras aplicaciones utilizar Internet de forma más segura. Orbot usa Tor para encriptar tu tráfico de Internet y luego lo oculta rebotando a través de una serie de computadoras en todo el mundo. Tor es un software gratuito y una red abierta que te ayuda a defenderte contra una forma de vigilancia de la red que amenaza la libertad personal y la privacidad, las actividades y relaciones comerciales confidenciales y la seguridad del estado conocida como análisis de tráfico.</string>
+    <string name="app_description">Pol es una aplicación de proxy gratuita que permite a otras aplicaciones utilizar Internet de forma más segura. Pol usa Tor para encriptar tu tráfico de Internet y luego lo oculta rebotando a través de una serie de computadoras en todo el mundo. Tor es un software gratuito y una red abierta que te ayuda a defenderte contra una forma de vigilancia de la red que amenaza la libertad personal y la privacidad, las actividades y relaciones comerciales confidenciales y la seguridad del estado conocida como análisis de tráfico.</string>
     <string name="menu_settings">Ajustes</string>
     <string name="menu_log">Registro</string>
-    <string name="wizard_details_msg">Orbot es una aplicación de código abierto que contiene Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks y LibEvent. Proporciona un túnel VPN, un proxy HTTP Connect local (HTTPS solo en el puerto 8118) y un proxy SOCKS (9050) en la red Tor.</string>
+    <string name="wizard_details_msg">Pol es una aplicación de código abierto que contiene Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks y LibEvent. Proporciona un túnel VPN, un proxy HTTP Connect local (HTTPS solo en el puerto 8118) y un proxy SOCKS (9050) en la red Tor.</string>
     <string name="pref_entrance_node_dialog">Agrega los nodos de Entrada</string>
     <string name="pref_entrance_node_summary">Fingerprints, nicks, países y direcciones para el primer salto</string>
     <string name="ports_reachable_behind_a_restrictive_firewall">Puertos accesibles detrás de un firewall restrictivo</string>
@@ -53,7 +53,7 @@
     <string name="onion_port">Puerto Cebolla</string>
     <string name="backup_service">Servicio de copia de seguridad <i>(Advertencia: esto podría exponer la configuración de tu servicio a otras aplicaciones)</i></string>
     <string name="restore_backup">Restaurar copia de seguridad</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">Reinicia Orbot para habilitar los cambios</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Reinicia Pol para habilitar los cambios</string>
     <string name="consider_enable_battery_optimizations">No hay servicios alojados en ejecución, considera habilitar optimizaciones de batería</string>
     <string name="menu_new_identity">Nueva identidad</string>
     <string name="secure_your_connection_subtitle">Oculta las aplicaciones de la supervisión de la red y obten acceso cuando están bloqueadas.</string>
@@ -62,16 +62,16 @@
     <string name="pref_reduced_circuit_padding_summary">Usa algoritmos de relleno de gastos generales más bajos para reducir el uso de datos y batería</string>
     <string name="pref_open_proxy_on_all_interfaces_summary">Permite que las personas conectadas al mismo Wi-Fi, los dispositivos conectados y cualquier otra persona que pueda conectarse a tu IP acceda a Tor</string>
     <string name="direct_connect_subtitle">La mejor manera de conectarse a Tor. Usar si Tor no está bloqueado.</string>
-    <string name="app_suggested_subtitle">Orbot funciona mejor con aplicaciones de mensajería y redes sociales.</string>
+    <string name="app_suggested_subtitle">Pol funciona mejor con aplicaciones de mensajería y redes sociales.</string>
     <string name="log_copied">Registro copiado</string>
     <string name="apps_other_apps">Otras aplicaciones</string>
     <string name="no_internet_title">Conectarse al Internet</string>
-    <string name="app_name">Orbot</string>
+    <string name="app_name">Pol</string>
     <string name="menu_about">Acerca de</string>
     <string name="menu_exit">Salir</string>
     <string name="pref_general_group">Información General</string>
-    <string name="pref_start_boot_title">Iniciar Orbot en el arranque</string>
-    <string name="pref_start_boot_summary">Inicia automáticamente Orbot y conecta Tor cuando arranques tu dispositivo Android</string>
+    <string name="pref_start_boot_title">Iniciar Pol en el arranque</string>
+    <string name="pref_start_boot_summary">Inicia automáticamente Pol y conecta Tor cuando arranques tu dispositivo Android</string>
     <string name="pref_node_configuration">Configuración de nodos</string>
     <string name="pref_node_configuration_summary">Estas son configuraciones avanzadas que pueden reducir tu anonimato</string>
     <string name="pref_entrance_node">Nodos de Entrada</string>
@@ -143,14 +143,14 @@
     <string name="connect">Conectar</string>
     <string name="next">Siguiente</string>
     <string name="power_user_mode">Modo de usuarie avanzado</string>
-    <string name="power_user_description">Para usuaries familiarizados con Tor. Te permite iniciar Orbot sin la configuración de VPN y muestra SOCKS abiertos y puertos HTTP</string>
+    <string name="power_user_description">Para usuaries familiarizados con Tor. Te permite iniciar Pol sin la configuración de VPN y muestra SOCKS abiertos y puertos HTTP</string>
     <string name="apps_suggested_title">Aplicaciones sugeridas</string>
     <string name="btn_copy_log">Copiar registro</string>
     <string name="not_sure">¿No estás segure\?</string>
     <string name="ask_tor">Preguntale a Tor</string>
     <string name="many_ways">Hay muchas formas de conectarse a Tor. Algunas pueden funcionar mejor que otros para ti.</string>
     <string name="asking">PREGUNTANDO…</string>
-    <string name="no_internet_subtitle">Necesitas una conexión a Internet para usar Orbot.</string>
+    <string name="no_internet_subtitle">Necesitas una conexión a Internet para usar Pol.</string>
     <string name="kindness_config_detail">Configura cómo y cuándo tu dispositivo puede actuar como un proxy Snowflake para otros usuarios de Tor.</string>
     <string name="menu_more">Mas</string>
     <string name="option_only_when_charging">Solo cuando estes cargando tu telefono</string>

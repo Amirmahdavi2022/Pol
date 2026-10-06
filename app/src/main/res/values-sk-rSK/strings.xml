@@ -8,15 +8,15 @@
     <!--Permissions screen-->
     <!--TipsAndTricks screen-->
     <!--Transparent Proxy screen-->
-    <string name="app_name">Orbot</string>
-    <string name="app_description">Orbot je bezplatná aplikácia proxy, ktorá umožňuje iným aplikáciám bezpečnejšie využívať internet. Orbot používa Tor na šifrovanie vášho internetového prenosu a potom ho skryje tým, že skáče po sérii počítačov po celom svete. Tor je slobodný softvér a otvorená sieť, ktorá vám pomáha brániť proti určitému druhu sieťového dohľadu, ktorý ohrozuje osobnú slobodu a súkromie, dôverné obchodné činnosti a vzťahy a štátnu bezpečnosť známu ako dopravná analýza.</string>
+    <string name="app_name">Pol</string>
+    <string name="app_description">Pol je bezplatná aplikácia proxy, ktorá umožňuje iným aplikáciám bezpečnejšie využívať internet. Pol používa Tor na šifrovanie vášho internetového prenosu a potom ho skryje tým, že skáče po sérii počítačov po celom svete. Tor je slobodný softvér a otvorená sieť, ktorá vám pomáha brániť proti určitému druhu sieťového dohľadu, ktorý ohrozuje osobnú slobodu a súkromie, dôverné obchodné činnosti a vzťahy a štátnu bezpečnosť známu ako dopravná analýza.</string>
     <string name="menu_settings">Nastavenia</string>
     <string name="menu_log">Denník</string>
     <string name="menu_about">O Programe</string>
     <string name="menu_exit">Ukončenie</string>
-    <string name="wizard_details_msg">Orbot je open-source aplikácia, ktorá obsahuje Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks a LibEvent. Poskytuje tunel VPN, miestny proxy server HTTP Connect (HTTPS len na porte 8118) a proxy server SOCKS (9050) do siete Tor.</string>
+    <string name="wizard_details_msg">Pol je open-source aplikácia, ktorá obsahuje Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks a LibEvent. Poskytuje tunel VPN, miestny proxy server HTTP Connect (HTTPS len na porte 8118) a proxy server SOCKS (9050) do siete Tor.</string>
     <string name="pref_general_group">Všeobecné</string>
-    <string name="pref_start_boot_title">Spustiť Orbot pri štarte</string>
+    <string name="pref_start_boot_title">Spustiť Pol pri štarte</string>
     <string name="consider_enable_battery_optimizations">Nie sú spustené žiadne hostované služby, zvážte povolenie optimalizácie batérie</string>
     <string name="v3_hosted_services">Hostované služby Onion</string>
     <string name="v3_key_hash">x25519 Súkromný kľúč v Base32</string>
@@ -89,7 +89,7 @@
     <string name="backup_saved_at_external_storage">Zálohovanie uložené v externom úložisku</string>
     <string name="backup_restored">Obnovená záloha</string>
     <string name="restore_backup">Obnovenie zálohovania</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">Reštartujte Orbot, aby sa zmeny povolili</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Reštartujte Pol, aby sa zmeny povolili</string>
     <string name="disable">Zakázať</string>
     <string name="enable">Povoliť</string>
     <string name="pref_connection_padding">Vypĺňanie pripojenia</string>
@@ -105,7 +105,7 @@
     <string name="bridge_snowflake_amp">Pripojenie prostredníctvom iných používateľov Tor pomocou aplikácie Snowflake (metóda 2)</string>
     <string name="snowflake_proxy_msg_title">Zobraziť oznámenie o pripojení</string>
     <string name="snowflake_proxy_msg_description">Zobrazenie správy, keď niekomu pomôžete obísť cenzúru</string>
-    <string name="pref_start_boot_summary">Automatické spustenie Orbotu a pripojenie Tor pri spustení zariadenia so systémom Android</string>
+    <string name="pref_start_boot_summary">Automatické spustenie Polu a pripojenie Tor pri spustení zariadenia so systémom Android</string>
     <string name="pref_entrance_node_summary">Odtlačky prstov, zárezy, krajiny a adresy pre prvý skok</string>
     <string name="pref_proxy_type_summary">Protokol, ktorý sa má použiť pre proxy server</string>
     <string name="fingerprints_nicks_countries_and_addresses_to_exclude">Odtlačky prstov, zárezy, krajiny a adresy na vylúčenie</string>
@@ -145,9 +145,9 @@
     <string name="apps_suggested_title">Navrhované aplikácie</string>
     <string name="not_sure">Nie ste si istí\?</string>
     <string name="no_internet_title">Pripojenie k internetu</string>
-    <string name="no_internet_subtitle">Na používanie služby Orbot potrebujete internetové pripojenie.</string>
+    <string name="no_internet_subtitle">Na používanie služby Pol potrebujete internetové pripojenie.</string>
     <string name="power_user_mode">Režim Power User</string>
-    <string name="power_user_description">Pre používateľov, ktorí poznajú Tor. Umožňuje spustiť Orbot bez nastavenia VPN a zobrazuje otvorené porty SOCKS a HTTP</string>
+    <string name="power_user_description">Pre používateľov, ktorí poznajú Tor. Umožňuje spustiť Pol bez nastavenia VPN a zobrazuje otvorené porty SOCKS a HTTP</string>
     <string name="setting_padding">Vypchávky</string>
     <string name="option_only_on_wifi">Iba v sieti Wifi</string>
     <string name="option_only_when_charging">Len pri nabíjaní</string>
@@ -156,7 +156,7 @@
     <string name="pref_isolate_protocol">Izolácia klientskych protokolov</string>
     <string name="pref_isolate_protocol_summary">Pre každý pripojovací protokol použite iný obvod</string>
     <string name="smart_connect">Smart Connect (predvolené)</string>
-    <string name="app_suggested_subtitle">Orbot funguje najlepšie s aplikáciami na zasielanie správ a sociálnymi médiami.</string>
+    <string name="app_suggested_subtitle">Pol funguje najlepšie s aplikáciami na zasielanie správ a sociálnymi médiami.</string>
     <string name="apps_other_apps">Ostatné aplikácie</string>
     <string name="ask_tor">Spýtajte sa Tora</string>
     <string name="asking">PÝTAŤ SA…</string>
@@ -165,12 +165,12 @@
     <string name="many_ways">Existuje mnoho spôsobov, ako dosiahnuť Tor. Niektoré z nich vám môžu vyhovovať viac ako iné.</string>
     <string name="snowflake_subtitle">Spája sa prostredníctvom dobrovoľníkov Tor. Obchádza niektoré blokovania Tor.</string>
     <string name="log_copied">Záznam skopírovaný</string>
-    <string name="root_warning">Orbot zistil, že vaše zariadenie je rootnuté, čo môže spôsobiť bezpečnostné problémy.</string>
+    <string name="root_warning">Pol zistil, že vaše zariadenie je rootnuté, čo môže spôsobiť bezpečnostné problémy.</string>
     <string name="direct_connect">Priame pripojenie k sieti Tor</string>
     <string name="pref_detect_root_summary">Varovať pri spustení, ak sú na tomto zariadení zapnuté oprávnenia root</string>
     <string name="pref_detect_root_title">Rozpoznanie root</string>
-    <string name="status_starting_up">Orbot štartuje…</string>
+    <string name="status_starting_up">Pol štartuje…</string>
     <string name="status_activated">Pripojený do Tor siete</string>
-    <string name="status_disabled">Orbot je deaktivovaný</string>
+    <string name="status_disabled">Pol je deaktivovaný</string>
     <string name="set_transport">Nastaviť transport</string>
 </resources>

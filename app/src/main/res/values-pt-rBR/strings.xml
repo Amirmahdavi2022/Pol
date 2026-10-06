@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Orbot</string>
-    <string name="app_description">Orbot é um aplicativo de proxy livre que permite que outros aplicativos acessem a internet com mais segurança. Orbot usa o Tor para criptografar seu tráfego na internet e então o esconde \"pulando\" entre uma série de computadores ao redor do mundo. Tor é um software livre e de rede aberta que ajuda você a se defender de certas formas de vigilância que ameaçam privacidade e liberdade pessoais, atividades e relações comerciais confidenciais e segurança estatal conhecida como análise de tráfego.</string>
-    <string name="menu_settings">Configurações do Orbot</string>
+    <string name="app_name">Pol</string>
+    <string name="app_description">Pol é um aplicativo de proxy livre que permite que outros aplicativos acessem a internet com mais segurança. Pol usa o Tor para criptografar seu tráfego na internet e então o esconde \"pulando\" entre uma série de computadores ao redor do mundo. Tor é um software livre e de rede aberta que ajuda você a se defender de certas formas de vigilância que ameaçam privacidade e liberdade pessoais, atividades e relações comerciais confidenciais e segurança estatal conhecida como análise de tráfego.</string>
+    <string name="menu_settings">Configurações do Pol</string>
     <string name="menu_log">Registro</string>
     <string name="menu_about">Sobre</string>
     <string name="menu_exit">Sair</string>
     <!--Welcome Wizard strings (DJH)-->
-    <string name="wizard_details_msg">O Orbot é um aplicativo de código aberto que inclui Tor, IPtProxy (Lyrebird, Meek, Snowflake), hev-socks5-tunnel e LibEvent. Ele fornece um túnel VPN, um proxy HTTP Connect local (somente HTTPS na porta 8118) e um proxy SOCKS (9050) para a rede Tor.</string>
+    <string name="wizard_details_msg">O Pol é um aplicativo de código aberto que inclui Tor, IPtProxy (Lyrebird, Meek, Snowflake), hev-socks5-tunnel e LibEvent. Ele fornece um túnel VPN, um proxy HTTP Connect local (somente HTTPS na porta 8118) e um proxy SOCKS (9050) para a rede Tor.</string>
     <!--END Welcome Wizard strings (DJH)-->
     <string name="pref_general_group">Geral</string>
-    <string name="pref_start_boot_title">Iniciar o Orbot durante o Boot</string>
-    <string name="pref_start_boot_summary">Iniciar o Orbot automaticamente e conectar o Tor durante a inicialização do seu aparelho Android</string>
+    <string name="pref_start_boot_title">Iniciar o Pol durante o Boot</string>
+    <string name="pref_start_boot_summary">Iniciar o Pol automaticamente e conectar o Tor durante a inicialização do seu aparelho Android</string>
     <!--New Wizard Strings-->
     <!--Title Screen-->
     <!--Warning screen-->
@@ -78,7 +78,7 @@
     <string name="restore_backup">Restaurar Backup</string>
     <string name="confirm_service_deletion">Confirmar a remoção do serviço</string>
     <string name="service_type">Tipo do Serviço</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">Por favor, reinicie o Orbot para habilitar as mudanças</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Por favor, reinicie o Pol para habilitar as mudanças</string>
     <string name="disable">Desabilitar</string>
     <string name="enable">Ativar</string>
     <string name="full_device_vpn">VPN PARA TODO O DISPOSITIVO</string>
@@ -141,8 +141,8 @@
     <string name="smart_connect">Conexão Inteligente</string>
     <string name="direct_connect_subtitle">A melhor maneira de se conectar ao Tor. Use caso o Tor não esteja bloqueado.</string>
     <string name="snowflake_subtitle">Conecta-se através de voluntários do Tor. Contorna alguns bloqueios do Tor.</string>
-    <string name="power_user_description">Para usuários familiarizados com o Tor. Permite que você inicie o Orbot sem a configuração VPN e mostra as portas SOCKS e HTTP que estejam abertas</string>
-    <string name="app_suggested_subtitle">O Orbot funciona melhor com aplicativos de mensagens e mídias sociais.</string>
+    <string name="power_user_description">Para usuários familiarizados com o Tor. Permite que você inicie o Pol sem a configuração VPN e mostra as portas SOCKS e HTTP que estejam abertas</string>
+    <string name="app_suggested_subtitle">O Pol funciona melhor com aplicativos de mensagens e mídias sociais.</string>
     <string name="apps_suggested_title">Sugestões de aplicativos</string>
     <string name="apps_other_apps">Outros aplicativos</string>
     <string name="power_user_mode">Modo de usuário avançado</string>
@@ -154,7 +154,7 @@
     <string name="ask_tor">Pergunte ao Tor</string>
     <string name="asking">PEDINDO…</string>
     <string name="no_internet_title">Conectar à internet</string>
-    <string name="no_internet_subtitle">Você precisa de uma conexão com a Internet para usar o Orbot.</string>
+    <string name="no_internet_subtitle">Você precisa de uma conexão com a Internet para usar o Pol.</string>
     <string name="pref_isolate_protocol">Isole os protocolos do cliente</string>
     <string name="pref_isolate_port_summary">Utilize um circuito diferente para cada porta de destino</string>
     <string name="pref_isolate_port">Isole as portas de destino</string>
@@ -166,12 +166,12 @@
     <string name="menu_kindness">Bondade</string>
     <string name="setting_padding">Preenchimento</string>
     <string name="menu_more">Mais</string>
-    <string name="root_warning">O Orbot detectou que o seu dispositivo tem root, isso pode causar sérios problemas de segurança.</string>
+    <string name="root_warning">O Pol detectou que o seu dispositivo tem root, isso pode causar sérios problemas de segurança.</string>
     <string name="pref_detect_root_summary">Avisar durante a inicialização se as permissões root estão ativadas neste dispositivo</string>
     <string name="pref_detect_root_title">Detecção root</string>
-    <string name="status_starting_up">O Orbot está iniciando…</string>
+    <string name="status_starting_up">O Pol está iniciando…</string>
     <string name="status_activated">Conectado à rede Tor</string>
-    <string name="status_disabled">O Orbot está desativado</string>
+    <string name="status_disabled">O Pol está desativado</string>
     <string name="couldn_t_start_tor_process_">Não foi possível iniciar o processo Tor: </string>
     <string name="unable_to_start_tor">Não é possível iniciar o Tor:</string>
     <string name="mebibyte_per_second">MiB/s</string>
@@ -205,15 +205,15 @@
     <string name="app_icon_chooser_label_birdie">Passarinho</string>
     <string name="app_icon_dialog_title" formatted="true">Mude para %1$s</string>
     <string name="app_icon_dialog_msg" formatted="true">A mudança para %1$s reiniciará o aplicativo</string>
-    <string name="camo_samsung_instructions">No seu dispositivo Samsung Galaxy, as notificações do Orbot só terão seus ícones alterados se você acessar Configurações -&gt; Notificações -&gt; Configurações avançadas e desativar a opção \"Mostrar ícone do aplicativo nas notificações\". Clique aqui para abrir as Configurações de Notificação.</string>
+    <string name="camo_samsung_instructions">No seu dispositivo Samsung Galaxy, as notificações do Pol só terão seus ícones alterados se você acessar Configurações -&gt; Notificações -&gt; Configurações avançadas e desativar a opção \"Mostrar ícone do aplicativo nas notificações\". Clique aqui para abrir as Configurações de Notificação.</string>
     <string name="power_user_mode_permission">Alarmes e lembretes: Permissão necessária para o Modo de usuário avançado</string>
-    <string name="power_user_mode_permission_msg">Por favor, permita que o Orbot defina alarmes e lembretes para usar o modo de usuário avançado. Isso não definirá nenhum alarme no seu dispositivo. Essa permissão é necessária para que o sistema mantenha o OrbotService em execução quando o Orbot não estiver sendo usado como VPN em todo o sistema.</string>
-    <string name="request_notification_permission">Por favor, ative as notificações para o Orbot</string>
-    <string name="request_notification_permission_msg">Sem ativar as notificações, o Orbot não pode funcionar como uma VPN Tor nem usar o Modo Bondade.\n\nQuando ativadas, exibimos apenas uma notificação quando o Orbot está em execução.</string>
+    <string name="power_user_mode_permission_msg">Por favor, permita que o Pol defina alarmes e lembretes para usar o modo de usuário avançado. Isso não definirá nenhum alarme no seu dispositivo. Essa permissão é necessária para que o sistema mantenha o OrbotService em execução quando o Pol não estiver sendo usado como VPN em todo o sistema.</string>
+    <string name="request_notification_permission">Por favor, ative as notificações para o Pol</string>
+    <string name="request_notification_permission_msg">Sem ativar as notificações, o Pol não pode funcionar como uma VPN Tor nem usar o Modo Bondade.\n\nQuando ativadas, exibimos apenas uma notificação quando o Pol está em execução.</string>
     <string name="open_settings">Abra as configurações</string>
     <string name="error_no_password_set">Você precisa definir uma senha para o seu dispositivo Android para usar o recurso de tela de bloqueio</string>
-    <string name="device_lock_unsupported">A autenticação Orbot não é compatível com o seu dispositivo</string>
-    <string name="device_lock_security_update_needed">Você precisa baixar as atualizações de segurança do Android para o seu dispositivo para usar a autenticação Orbot</string>
+    <string name="device_lock_unsupported">A autenticação Pol não é compatível com o seu dispositivo</string>
+    <string name="device_lock_security_update_needed">Você precisa baixar as atualizações de segurança do Android para o seu dispositivo para usar a autenticação Pol</string>
     <string name="invalid_bridge_format">Formato de ponte inválido</string>
     <string name="error_asking_tor_for_bridges">Erro ao perguntar ao Tor como conectar</string>
     <string name="enter_bridge_address">Insira o endereço da ponte</string>
@@ -222,11 +222,11 @@
     <string name="unlock_app_msg" formatted="true">Por favor, desbloqueie seu dispositivo para usar %s</string>
     <string name="run_smart_connect_">Execute o Smart Connect para encontrar a melhor maneira</string>
     <string name="scan_qr_code">Escanear código QR</string>
-    <string name="orbot_vpn">Orbot VPN</string>
-    <string name="open_orbot_to_connect_to_tor">Abra o Orbot para se conectar ao Tor</string>
-    <string name="status_shutting_down">Orbot está desligando</string>
+    <string name="orbot_vpn">Pol VPN</string>
+    <string name="open_orbot_to_connect_to_tor">Abra o Pol para se conectar ao Tor</string>
+    <string name="status_shutting_down">Pol está desligando</string>
     <string name="connect_to_tor">Conectar ao Tor</string>
-    <string name="orbot_config_invalid">Configuração do Orbot inválida</string>
+    <string name="orbot_config_invalid">Configuração do Pol inválida</string>
     <string name="snowflake_proxy_client_connected_msg">%1$s O Modo Bondade ajudou alguém a contornar a censura %2$s</string>
     <string name="log_notice_unable_to_update_onions">Não foi possível enviar os nomes dos arquivos onion</string>
     <string name="log_notice_updating_torrc">Atualizando a configuração personalizada do torrc…</string>
@@ -235,13 +235,13 @@
     <string name="apps_updated_msg">Apps atualizados</string>
     <string name="title_safety">Seguro</string>
     <string name="setting_app_icon_title">Ícone do app</string>
-    <string name="setting_app_icon_description">Escolha como o Orbot aparecerá no seu dispositivo</string>
+    <string name="setting_app_icon_description">Escolha como o Pol aparecerá no seu dispositivo</string>
     <string name="setting_block_screenshot_title">Bloquear capturas de tela</string>
     <string name="setting_block_screenshot_description">Impede que qualquer pessoa tire capturas de tela deste aplicativo</string>
     <string name="setting_unlock_pass_title">Bloquear tela</string>
-    <string name="setting_unlock_pass_description">Para abrir o Orbot, você precisa do PIN, da senha ou do padrão de desbloqueio do seu dispositivo</string>
+    <string name="setting_unlock_pass_description">Para abrir o Pol, você precisa do PIN, da senha ou do padrão de desbloqueio do seu dispositivo</string>
     <string name="setting_unlock_with_biometrics_title">Utilizar biometria (opcional)</string>
-    <string name="setting_unlock_with_biometrics_description">Desbloqueie o Orbot com sua impressão digital ou reconhecimento facial, se configurado em seu dispositivo.</string>
+    <string name="setting_unlock_with_biometrics_description">Desbloqueie o Pol com sua impressão digital ou reconhecimento facial, se configurado em seu dispositivo.</string>
     <string name="status_connected_control_port">O serviço Tor foi iniciado</string>
     <string name="status_handshake">Conectando-se à entrada da rede Tor</string>
     <string name="status_handshake_done">Entrando na rede Tor</string>
@@ -268,20 +268,20 @@
     <string name="invalid_bridge_qr_code">Código QR da ponte inválido</string>
     <string name="you_already_have_these_bridges">Você já adicionou as pontes neste código QR</string>
     <string name="country_clear">Remover país</string>
-    <string name="unable_to_start_orbot_vpn_title">Não foi possível iniciar o Orbot VPN</string>
-    <string name="unable_to_start_legacy_vpn_error_msg">Existe um perfil VPN personalizado configurado para permanecer \"sempre ativo\". Desative-o antes de iniciar o Orbot.</string>
-    <string name="unable_to_start_other_vpn_app_error_msg">O aplicativo %1$s está configurado para ser uma VPN \"sempre ativa\". Desative-o antes de iniciar o Orbot.</string>
-    <string name="unable_to_start_unknown_reason_error_msg">A permissão de VPN foi negada ou outro aplicativo de VPN tem o recurso \"VPN sempre ativa\" habilitado. Você pode ignorar esta mensagem e reconectar-se caso tenha fechado a caixa de diálogo de solicitação de VPN anterior por engano. Usuários com conhecimento técnico podem usar outro aplicativo de VPN e o Tor como proxy SOCKS ativando o Modo de Usuário Avançado do Orbot.</string>
+    <string name="unable_to_start_orbot_vpn_title">Não foi possível iniciar o Pol VPN</string>
+    <string name="unable_to_start_legacy_vpn_error_msg">Existe um perfil VPN personalizado configurado para permanecer \"sempre ativo\". Desative-o antes de iniciar o Pol.</string>
+    <string name="unable_to_start_other_vpn_app_error_msg">O aplicativo %1$s está configurado para ser uma VPN \"sempre ativa\". Desative-o antes de iniciar o Pol.</string>
+    <string name="unable_to_start_unknown_reason_error_msg">A permissão de VPN foi negada ou outro aplicativo de VPN tem o recurso \"VPN sempre ativa\" habilitado. Você pode ignorar esta mensagem e reconectar-se caso tenha fechado a caixa de diálogo de solicitação de VPN anterior por engano. Usuários com conhecimento técnico podem usar outro aplicativo de VPN e o Tor como proxy SOCKS ativando o Modo de Usuário Avançado do Pol.</string>
     <string name="open_vpn_settings">Abra as configurações de VPN do Android</string>
     <string name="battery_optimization_title">Desativar otimizações de bateria</string>
-    <string name="battery_optimization_pref_msg">Configuração para alguns usuários que suspeitam que seus dispositivos estejam encerrando o Orbot prematuramente enquanto ele é executado em segundo plano.</string>
-    <string name="battery_optimization_dialog_msg">Alguns dispositivos Android podem encerrar o Orbot enquanto ele estiver sendo executado em segundo plano. Para a maioria dos usuários que desejam garantir que o Orbot permaneça conectado e funcionando, basta configurá-lo para funcionar como uma VPN \"Sempre Ativa\" nas configurações do sistema. No entanto, você ainda pode impedir que seu dispositivo execute otimizações de bateria no Orbot, se achar necessário.</string>
-    <string name="battery_optimization_dialog_msg_instructions">Na tela seguinte, selecione Orbot → Permitir uso em segundo plano → Sem restrições.</string>
+    <string name="battery_optimization_pref_msg">Configuração para alguns usuários que suspeitam que seus dispositivos estejam encerrando o Pol prematuramente enquanto ele é executado em segundo plano.</string>
+    <string name="battery_optimization_dialog_msg">Alguns dispositivos Android podem encerrar o Pol enquanto ele estiver sendo executado em segundo plano. Para a maioria dos usuários que desejam garantir que o Pol permaneça conectado e funcionando, basta configurá-lo para funcionar como uma VPN \"Sempre Ativa\" nas configurações do sistema. No entanto, você ainda pode impedir que seu dispositivo execute otimizações de bateria no Pol, se achar necessário.</string>
+    <string name="battery_optimization_dialog_msg_instructions">Na tela seguinte, selecione Pol → Permitir uso em segundo plano → Sem restrições.</string>
     <string name="battery_optimization_dialog_msg_disclaimer">Observe que, na maioria dos dispositivos, desativar as otimizações de bateria fará com que a bateria do seu dispositivo descarregue mais rapidamente do que o normal…</string>
     <string name="battery_optimizations_dialog_btn_disable">Abrir configurações de otimização de bateria</string>
-    <string name="battery_optimizations_dialog_msg_power_user">Alguns dispositivos Android podem encerrar o Orbot quando ele é executado em segundo plano no Modo de Usuário Avançado. Você sempre pode desativar/reativar as otimizações de bateria posteriormente nas configurações do Orbot…</string>
-    <string name="battery_optimizations_are_disabled">As otimizações de bateria estão atualmente desativadas para o Orbot…</string>
-    <string name="battery_optimizations_are_enabled">As otimizações de bateria estão ativas no Orbot. Essa é a configuração padrão e é adequada para a maioria dos usuários…</string>
+    <string name="battery_optimizations_dialog_msg_power_user">Alguns dispositivos Android podem encerrar o Pol quando ele é executado em segundo plano no Modo de Usuário Avançado. Você sempre pode desativar/reativar as otimizações de bateria posteriormente nas configurações do Pol…</string>
+    <string name="battery_optimizations_are_disabled">As otimizações de bateria estão atualmente desativadas para o Pol…</string>
+    <string name="battery_optimizations_are_enabled">As otimizações de bateria estão ativas no Pol. Essa é a configuração padrão e é adequada para a maioria dos usuários…</string>
     <string name="btn_connect_anyway">Conecte-se mesmo assim</string>
     <string name="btn_connect_anyway_stop_showing">Conecte e desative este aviso</string>
     <string name="pref_proxy_no_proxy">Sem proxy</string>

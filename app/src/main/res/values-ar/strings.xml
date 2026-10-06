@@ -4,7 +4,7 @@
     <string name="app_description">اوربوت هو تطبيق وسيط حر الذي يمكّن تطبيقات أخرى لاستخدام الإنترنت بأمان أكثر. يُستخدم اوربوت تور لتعمية تحركات مرورك على الإنترنت، ثم يخفيك ويجعلك وهمي من خلال سلسلة من أجهزة الكمبيوتر في جميع أنحاء العالم. تور هو تطبيق حر وشبكة مفتوحة والتي تساعدك على حماية نفسك من مراقبة الشبكات التي تهدد الحرية الشخصية والخصوصية، والأنشطة التجارية السرية والعلاقات، وأمن الدولة والحكومات القمعيّة والتي تستخدم مايعرف باسم تحليل حركة مرور البيانات.</string>
     <string name="menu_settings">إعدادات اوربوت</string>
     <string name="menu_log">السجل</string>
-    <string name="menu_about">حول Orbot</string>
+    <string name="menu_about">حول Pol</string>
     <string name="menu_exit">خروج</string>
     <!--Welcome Wizard strings (DJH)-->
     <!--END Welcome Wizard strings (DJH)-->
@@ -96,7 +96,7 @@
     <string name="version">الإصدار:</string>
     <string name="connected_title">متصل</string>
     <string name="license">الرخصة:</string>
-    <string name="wizard_details_msg">Orbot هو تطبيق مفتوح المصدر يحتوي على تور و IPtProxy (Lyrebird و Meek و Snowflake) و hev-socks5-tunnel و LibEvent. يوفر نفق VPN ووسيط HTTP محلي (HTTPS فقط على المنفذ 8118) ووسيط SOCKS (9050) في شبكة تور.</string>
+    <string name="wizard_details_msg">Pol هو تطبيق مفتوح المصدر يحتوي على تور و IPtProxy (Lyrebird و Meek و Snowflake) و hev-socks5-tunnel و LibEvent. يوفر نفق VPN ووسيط HTTP محلي (HTTPS فقط على المنفذ 8118) ووسيط SOCKS (9050) في شبكة تور.</string>
     <string name="strict_nodes_description">تعامل مع إعدادات استبعاد العُقد كشرط لبناء جميع المسار. قد يؤدي هذا إلى تعطيل الوظيفة إذا لم يكن بالإمكان إنشاء مسار باستخدام إعدادات استبعاد العُقد.</string>
     <string name="app_services">خدمات التطبيق</string>
     <string name="volunteer_mode">وضع اللطف</string>
@@ -105,7 +105,7 @@
     <string name="btn_choose_apps">اختر التطبيقات</string>
     <string name="btn_change_exit">غيّر الخروج</string>
     <string name="no_internet_title">اتصل بالإنترنت</string>
-    <string name="no_internet_subtitle">تحتاج إلى اتصال بالإنترنت لاستخدام Orbot.</string>
+    <string name="no_internet_subtitle">تحتاج إلى اتصال بالإنترنت لاستخدام Pol.</string>
     <string name="pref_http_dialog">ضبط منفذ HTTP</string>
     <string name="apps_suggested_title">تطبيقات المقترحة</string>
     <string name="apps_other_apps">تطبيقات أخرى</string>
@@ -130,7 +130,7 @@
     <string name="pref_prefer_ipv6">تفضيل اتصالات IPv6</string>
     <string name="pref_prefer_ipv6_summary">يخبر المخارج أن عناوين IPv6 مفضلة</string>
     <string name="secure_your_connection_subtitle">إخفاء التطبيقات من مراقبة الشبكة والوصول إليها عندما يتم حظرها.</string>
-    <string name="app_suggested_subtitle">يعمل Orbot بشكل أفضل مع تطبيقات المراسلة والتواصل الاجتماعي.</string>
+    <string name="app_suggested_subtitle">يعمل Pol بشكل أفضل مع تطبيقات المراسلة والتواصل الاجتماعي.</string>
     <string name="log_copied">نُسِخ السجل</string>
     <string name="option_only_when_charging">فقط عند الشحن</string>
     <string name="btn_copy_log">انسخ السجل</string>
@@ -150,7 +150,7 @@
     <string name="snowflake_subtitle">يربط من خلال متطوعي تور. يلتف حول بعض حظر تور.</string>
     <string name="kindness_config_detail">اضبط كيف ومتى يمكن لجهازك العمل كوسيط Snowflake لمستخدمي تور الآخرين.</string>
     <string name="power_user_mode">وضع المستخدم المتقدم</string>
-    <string name="power_user_description">للمستخدمين المطلعين على تور. يسمح لك ببدء تشغيل Orbot بدون إعداد VPN ويعرض منافذ SOCKS و HTTP المفتوحة</string>
+    <string name="power_user_description">للمستخدمين المطلعين على تور. يسمح لك ببدء تشغيل Pol بدون إعداد VPN ويعرض منافذ SOCKS و HTTP المفتوحة</string>
     <string name="option_only_on_wifi">فقط على شبكة Wifi</string>
     <string name="not_sure">غير متأكد؟</string>
     <string name="ask_tor">اسأل تور</string>
@@ -166,7 +166,7 @@
     <string name="v3_backup_name_hint">نسخ احتياطي لاسم ملف…</string>
     <string name="v3_import_auth_private">استيراد .auth_private</string>
     <string name="setting_padding">الحشوة</string>
-    <string name="root_warning">اكتشف Orbot أن جهازك مزوّد بحق الوصول إلى الجذر (rooted)، مما قد يتسبب في حدوث مشكلات أمنية.</string>
+    <string name="root_warning">اكتشف Pol أن جهازك مزوّد بحق الوصول إلى الجذر (rooted)، مما قد يتسبب في حدوث مشكلات أمنية.</string>
     <string name="pref_detect_root_summary">تحذير عند بدء التشغيل إذا فعّلت أذونات الجذر على هذا الجهاز</string>
     <string name="pref_detect_root_title">كشف الجذر</string>
     <string name="pref_isolate_keep_alive">أبقِ المسارات المعزولة حية</string>
@@ -182,13 +182,13 @@
     <string name="app_icon_chooser_label_birdie">Birdie</string>
     <string name="snowflake_sqs">Snowflake SQS</string>
     <string name="power_user_mode_permission">مطلوب إذن التنبيهات والتذكيرات لوضع المستخدم المتقدم</string>
-    <string name="power_user_mode_permission_msg">الرجاء السماح لـ Orbot بضبط التنبيهات والتذكيرات لاستخدام وضع المستخدم المتقدم. لن يؤدي هذا فعليًا إلى ضبط أي تنبيهات على جهازك. هذه الصلاحية مطلوبة لجعل النظام يحافظ على تشغيل OrbotService عندما لا يتم استخدام Orbot كشبكة VPN على مستوى النظام.</string>
+    <string name="power_user_mode_permission_msg">الرجاء السماح لـ Pol بضبط التنبيهات والتذكيرات لاستخدام وضع المستخدم المتقدم. لن يؤدي هذا فعليًا إلى ضبط أي تنبيهات على جهازك. هذه الصلاحية مطلوبة لجعل النظام يحافظ على تشغيل OrbotService عندما لا يتم استخدام Pol كشبكة VPN على مستوى النظام.</string>
     <string name="error_no_password_set">يجب عليك تعيين كلمة سر لجهاز الأندرويد الخاص بك لتتمكن من استخدام ميزة قفل الشاشة</string>
     <string name="unlock_app_msg" formatted="true">الرجاء فتح جهازك لاستخدام %s</string>
     <string name="invalid_bridge_format">تنسيق الجسر غير صالح</string>
     <string name="error_asking_tor_for_bridges">خطأ في طلب كيفية الاتصال بتور</string>
-    <string name="device_lock_unsupported">استيثاق Orbot غير مدعوم على جهازك</string>
-    <string name="device_lock_security_update_needed">يجب عليك تنزيل تحديثات أمان أندرويد لجهازك لتتمكن من استخدام استيثاق Orbot</string>
+    <string name="device_lock_unsupported">استيثاق Pol غير مدعوم على جهازك</string>
+    <string name="device_lock_security_update_needed">يجب عليك تنزيل تحديثات أمان أندرويد لجهازك لتتمكن من استخدام استيثاق Pol</string>
     <string name="bridges_via_telegram">جسور تور (obfs4) عبر تيليجرام</string>
     <string name="bridges_via_telegram_subtitle">من المحتمل أن يبقيك متصلاً إذا كان تور محظورًا بشدة. سيؤدي استخدام هذه الطريقة إلى تشغيل قناة Tor Bot على تيليجرام. اضغط على \"ابدأ\" أو اكتب \"%1$s\" في الدردشة للحصول على عناوين الجسور.</string>
     <string name="bridges_via_email">جسور تور (obfs4) عبر البريد الإلكتروني</string>
@@ -201,7 +201,7 @@
     <string name="run_smart_connect_">شغل الاتصال الذكي لإيجاد أفضل طريقة</string>
     <string name="enter_bridge_address">أدخل عنوان الجسر</string>
     <string name="scan_qr_code">امسح رمز QR</string>
-    <string name="camo_samsung_instructions">على جهاز Samsung Galaxy الخاص بك، لن تتغير أيقونات إشعارات Orbot إلا من خلال الانتقال إلى الضبط -&gt; الإشعارات -&gt; ضبط متقدم، ثم قم بتعطيل خيار \"إظهار أيقونة التطبيق في الإشعارات\". اضغط هنا لفتح ضبط الإشعارات.</string>
+    <string name="camo_samsung_instructions">على جهاز Samsung Galaxy الخاص بك، لن تتغير أيقونات إشعارات Pol إلا من خلال الانتقال إلى الضبط -&gt; الإشعارات -&gt; ضبط متقدم، ثم قم بتعطيل خيار \"إظهار أيقونة التطبيق في الإشعارات\". اضغط هنا لفتح ضبط الإشعارات.</string>
     <string name="status_starting_up">جاري تشغيل اوربوت…</string>
     <string name="status_activated">متصل بشبكة تور</string>
     <string name="status_disabled">تم إيقاف اوربوت</string>
@@ -211,8 +211,8 @@
     <string name="kindness_mode_is_running">وضع اللطف قيد التشغيل</string>
     <string name="kindness_mode_active_message" formatted="true">لقد ساعدت %1$d شخصًا في تجاوز الرقابة</string>
     <string name="kindness_mode_disabled_power">صلّ جهازك بالطاقة لمساعدة الناس على تجاوز الرقابة</string>
-    <string name="request_notification_permission">الرجاء تفعيل الإشعارات لتطبيق Orbot</string>
-    <string name="request_notification_permission_msg">بدون تشغيل الإشعارات، لا يمكن لـ Orbot العمل كشبكة Tor VPN أو استخدام وضع اللطف.\n\nعند التفعيل، نعرض إشعارًا واحدًا فقط عندما يكون Orbot قيد التشغيل.</string>
+    <string name="request_notification_permission">الرجاء تفعيل الإشعارات لتطبيق Pol</string>
+    <string name="request_notification_permission_msg">بدون تشغيل الإشعارات، لا يمكن لـ Pol العمل كشبكة Tor VPN أو استخدام وضع اللطف.\n\nعند التفعيل، نعرض إشعارًا واحدًا فقط عندما يكون Pol قيد التشغيل.</string>
     <string name="open_settings">افتح الإعدادات</string>
     <string name="kindness_mode_disabled">وضع اللطف معطّل</string>
     <string name="kindness_mode_starting">يبدأ…</string>
@@ -224,10 +224,10 @@
     <string name="added_bridges_from_qr">إضافة %1$d من الجسور عبر رمز QR</string>
     <string name="invalid_bridge_qr_code">رمز QR للجسر غير صالح</string>
     <string name="you_already_have_these_bridges">لقد أضفت بالفعل الجسور في رمز QR هذا</string>
-    <string name="orbot_vpn">Orbot VPN</string>
-    <string name="open_orbot_to_connect_to_tor">افتح Orbot للاتصال بِتور</string>
+    <string name="orbot_vpn">Pol VPN</string>
+    <string name="open_orbot_to_connect_to_tor">افتح Pol للاتصال بِتور</string>
     <string name="connect_to_tor">اتصل بِتور</string>
-    <string name="orbot_config_invalid">تضبيط Orbot غير صالح</string>
+    <string name="orbot_config_invalid">تضبيط Pol غير صالح</string>
     <string name="kibibyte_per_second">ك.بايت/ث</string>
     <string name="mebibyte_per_second">م.بايت/ث</string>
     <string name="snowflake_proxy_client_connected_msg">ساعد وضع اللطف (Kindness Mode) الخاص بـ %1$s شخصًا ما على تجاوز الرقابة %2$s</string>
@@ -246,19 +246,19 @@
     <string name="my_country_optional">بلدي (اختياري)</string>
     <string name="limit_dns_tunnel_use">الحد من استخدام نفق DNS</string>
     <string name="dns_tunnel_usage_description">تعطي أنفاق DNS الأولوية للوصول على حساب السرعة وقد تبدو بطيئة. نوصي بتفعيلها فقط للتطبيقات الضرورية. لا يُنصح باستخدامها لبث الفيديو.</string>
-    <string name="unable_to_start_orbot_vpn_title">تعذر بدء تشغيل Orbot VPN</string>
+    <string name="unable_to_start_orbot_vpn_title">تعذر بدء تشغيل Pol VPN</string>
     <string name="open_vpn_settings">افتح إعدادات VPN على أندرويد</string>
     <string name="search_for_apps">ابحث عن تطبيقات</string>
     <string name="apps_updated_msg">حُدثت التطبيقات</string>
     <string name="title_safety">السلامة</string>
     <string name="setting_app_icon_title">أيقونة التطبيق</string>
-    <string name="setting_app_icon_description">اختر كيف يظهر Orbot على جهازك</string>
+    <string name="setting_app_icon_description">اختر كيف يظهر Pol على جهازك</string>
     <string name="setting_block_screenshot_title">امنع لقطات الشاشة</string>
     <string name="setting_block_screenshot_description">يمنع أي شخص من التقاط لقطات شاشة لهذا التطبيق</string>
     <string name="setting_unlock_pass_title">قفل الشاشة</string>
-    <string name="setting_unlock_pass_description">يتطلب فتح Orbot إدخال رمز PIN الخاص بجهازك أو كلمة السر أو نمط القفل</string>
+    <string name="setting_unlock_pass_description">يتطلب فتح Pol إدخال رمز PIN الخاص بجهازك أو كلمة السر أو نمط القفل</string>
     <string name="setting_unlock_with_biometrics_title">استخدم القياسات الحيوية (اختياري)</string>
-    <string name="setting_unlock_with_biometrics_description">ألغِ قفل Orbot باستخدام بصمة إصبعك أو Face ID إذا كانت هذه الميزة مفعلة على جهازك.</string>
+    <string name="setting_unlock_with_biometrics_description">ألغِ قفل Pol باستخدام بصمة إصبعك أو Face ID إذا كانت هذه الميزة مفعلة على جهازك.</string>
     <string name="status_connected_control_port">بدأت خدمة تور</string>
     <string name="status_handshake">يتصل بمدخل شبكة تور</string>
     <string name="status_handshake_done">يدخل شبكة تور</string>
@@ -270,18 +270,18 @@
     <string name="status_onehop_create">يوصل إلى دليل شبكة تور</string>
     <string name="status_enough_dirinfo">حمّل دليل شبكة تور</string>
     <string name="country_clear">أزِل البلد</string>
-    <string name="unable_to_start_legacy_vpn_error_msg">هناك ملف تعريف VPN مخصص تم إعداده ليكون \"دائم التفعيل\". يُرجى تعطيله قبل تشغيل Orbot.</string>
-    <string name="unable_to_start_other_vpn_app_error_msg">ضُبط تطبيق %1$s ليكون VPN \"دائم التفعيل\". يُرجى تعطيله قبل تشغيل Orbot.</string>
-    <string name="unable_to_start_unknown_reason_error_msg">رُفض إذن الـ VPN أو أن هناك تطبيق VPN آخر لديه ميزة \"VPN دائم التفعيل\" مفعلة. يمكنك تجاهل هذا التنبيه وإعادة الاتصال إذا كنت قد خرجت من نافذة طلب الـ VPN السابقة عن طريق الخطأ. بالنسبة للمستخدمين التقنيين، يمكنكم استخدام تطبيق VPN آخر واستخدام Tor كوسيط SOCKS عن طريق تفعيل \"وضع المستخدم المتقدم\" في Orbot.</string>
+    <string name="unable_to_start_legacy_vpn_error_msg">هناك ملف تعريف VPN مخصص تم إعداده ليكون \"دائم التفعيل\". يُرجى تعطيله قبل تشغيل Pol.</string>
+    <string name="unable_to_start_other_vpn_app_error_msg">ضُبط تطبيق %1$s ليكون VPN \"دائم التفعيل\". يُرجى تعطيله قبل تشغيل Pol.</string>
+    <string name="unable_to_start_unknown_reason_error_msg">رُفض إذن الـ VPN أو أن هناك تطبيق VPN آخر لديه ميزة \"VPN دائم التفعيل\" مفعلة. يمكنك تجاهل هذا التنبيه وإعادة الاتصال إذا كنت قد خرجت من نافذة طلب الـ VPN السابقة عن طريق الخطأ. بالنسبة للمستخدمين التقنيين، يمكنكم استخدام تطبيق VPN آخر واستخدام Tor كوسيط SOCKS عن طريق تفعيل \"وضع المستخدم المتقدم\" في Pol.</string>
     <string name="battery_optimization_title">عطّل تحسينات البطارية</string>
-    <string name="battery_optimization_pref_msg">إعداد لبعض المستخدمين الذين يشكون في أن أجهزتهم تنهي عمل تطبيق Orbot قبل الأوان أثناء تشغيله في الخلفية.</string>
-    <string name="battery_optimization_dialog_msg">قد تقوم بعض أجهزة أندرويد بإغلاق تطبيق Orbot أثناء تشغيله في الخلفية. بالنسبة لمعظم المستخدمين الذين يرغبون في التأكد من بقاء Orbot متصلاً وقيد التشغيل، يكفي ضبط Orbot ليعمل كـ \"VPN دائم التفعيل\" في إعدادات النظام. ومع ذلك، لا يزال بإمكانك المضي قدمًا لمنع جهازك من إجراء أي تحسينات للبطارية على Orbot إذا شعرت أن ذلك ضروريًا.</string>
-    <string name="battery_optimization_dialog_msg_instructions">في الشاشة التالية، اختر Orbot ← السماح بالاستخدام في الخلفية ← غير مقيد.</string>
+    <string name="battery_optimization_pref_msg">إعداد لبعض المستخدمين الذين يشكون في أن أجهزتهم تنهي عمل تطبيق Pol قبل الأوان أثناء تشغيله في الخلفية.</string>
+    <string name="battery_optimization_dialog_msg">قد تقوم بعض أجهزة أندرويد بإغلاق تطبيق Pol أثناء تشغيله في الخلفية. بالنسبة لمعظم المستخدمين الذين يرغبون في التأكد من بقاء Pol متصلاً وقيد التشغيل، يكفي ضبط Pol ليعمل كـ \"VPN دائم التفعيل\" في إعدادات النظام. ومع ذلك، لا يزال بإمكانك المضي قدمًا لمنع جهازك من إجراء أي تحسينات للبطارية على Pol إذا شعرت أن ذلك ضروريًا.</string>
+    <string name="battery_optimization_dialog_msg_instructions">في الشاشة التالية، اختر Pol ← السماح بالاستخدام في الخلفية ← غير مقيد.</string>
     <string name="battery_optimization_dialog_msg_disclaimer">لاحظ أن تعطيل تحسينات البطارية في معظم الأجهزة سيؤدي إلى استنزاف بطارية جهازك بشكل أسرع من المعتاد…</string>
     <string name="battery_optimizations_dialog_btn_disable">افتح إعدادات تحسين البطارية</string>
-    <string name="battery_optimizations_dialog_msg_power_user">قد تقوم بعض أجهزة أندرويد بإنهاء تطبيق Orbot عندما يعمل كخدمة في الخلفية في \"وضع المستخدم المتقدم\". يمكنك دائمًا اختيار تعطيل أو إعادة تفعيل تحسينات البطارية في وقت لاحق من خلال إعدادات Orbot…</string>
-    <string name="battery_optimizations_are_disabled">تحسينات البطارية معطلة حاليًا لتطبيق Orbot…</string>
-    <string name="battery_optimizations_are_enabled">تحسينات البطارية مفعلة حاليًا لتطبيق Orbot. هذا هو الوضع الافتراضي وهو أمر معقول بالنسبة لمعظم المستخدمين…</string>
+    <string name="battery_optimizations_dialog_msg_power_user">قد تقوم بعض أجهزة أندرويد بإنهاء تطبيق Pol عندما يعمل كخدمة في الخلفية في \"وضع المستخدم المتقدم\". يمكنك دائمًا اختيار تعطيل أو إعادة تفعيل تحسينات البطارية في وقت لاحق من خلال إعدادات Pol…</string>
+    <string name="battery_optimizations_are_disabled">تحسينات البطارية معطلة حاليًا لتطبيق Pol…</string>
+    <string name="battery_optimizations_are_enabled">تحسينات البطارية مفعلة حاليًا لتطبيق Pol. هذا هو الوضع الافتراضي وهو أمر معقول بالنسبة لمعظم المستخدمين…</string>
     <string name="btn_connect_anyway">اتصل على أي حال</string>
     <string name="btn_connect_anyway_stop_showing">اتصل وأوقف تشغيل هذا التحذير</string>
     <string name="pref_proxy_no_proxy">لا وسيط</string>
@@ -297,14 +297,14 @@
     <string name="kindness_proxy_quality">جودة الوسيط</string>
     <string name="kindness_proxy_quality_unknown">مجهول</string>
     <string name="testing_continue">استمر</string>
-    <string name="testing_explanation_other_vpn">لا يمكن تفعيل «وضع اللطف» عند استخدام شبكة VPN. والاستثناء الوحيد هو ميزة VPN الخاصة بـ Orbot. لكي تصبح «وسيط Snowflake»، يجب عليك إما إيقاف تشغيل شبكة VPN أو التبديل إلى استخدام Orbot.</string>
+    <string name="testing_explanation_other_vpn">لا يمكن تفعيل «وضع اللطف» عند استخدام شبكة VPN. والاستثناء الوحيد هو ميزة VPN الخاصة بـ Pol. لكي تصبح «وسيط Snowflake»، يجب عليك إما إيقاف تشغيل شبكة VPN أو التبديل إلى استخدام Pol.</string>
     <string name="testing_explanation_other_vpn_bubble">افتح إعدادات VPN للنظام…</string>
     <string name="testing_explanation_no_net">اتصل بالإنترنت لترى ما إذا كنت مؤهلاً لاستخدام «وضع اللطف»</string>
     <string name="kindness_mode_unsupported_country">لقد حدّدت %s كبلدك، ولكن للأسف لا يمكن لـ «وضع اللطف» مساعدة المستخدمين في هذه المنطقة على الاتصال بشبكة تور. إذا كنت تعتقد أن هذه الرسالة ظهرت لك عن طريق الخطأ، فيمكنك مسح اختيار البلد وإجراء اختبار لمعرفة ما إذا كنت مؤهلاً لتكون وكيل «وسيط Snowflake»</string>
     <string name="kindness_usage_limits_status_off">معطّلة</string>
     <string name="private_dns">DNS خاص</string>
     <string name="private_dns_strict">نظام DNS الخاص الصارم مُفعّل…</string>
-    <string name="private_dns_explanation">سيؤدي استخدام نظام DNS خاص صارم مع مُحلّل عناوين محدّد إلى تسرب حركة مروك والخدمات بصلية خارج شبكة VPN الخاصة بـ Orbot. يُرجى ضبط نظام DNS الخاص بك على «تلقائي».</string>
+    <string name="private_dns_explanation">سيؤدي استخدام نظام DNS خاص صارم مع مُحلّل عناوين محدّد إلى تسرب حركة مروك والخدمات بصلية خارج شبكة VPN الخاصة بـ Pol. يُرجى ضبط نظام DNS الخاص بك على «تلقائي».</string>
     <string name="test_connection">اختبر الاتصال</string>
     <string name="testing_connection">يختبر الاتصال</string>
     <string name="stop_test">أوقِف الاختبار</string>

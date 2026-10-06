@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Orbot</string>
-    <string name="app_description">Orbot ist eine kostenlose Proxy-App, die andere Apps in die Lage versetzt, das Internet sicherer zu nutzen. Orbot verwendet Tor, um deinen Datenverkehr im Internet zu verschlüsseln, und verbirgt ihn dann, indem er ihn durch eine Reihe von Computern auf der ganzen Welt hüpfen lässt. Tor ist freie Software und ein offenes Netzwerk, das dabei hilft, sich vor Formen der Netzüberwachung zu schützen, die persönliche Freiheiten und Privatsphäre, vertrauliche Geschäftsaktivitäten und -beziehungen bedrohen, sowie vor Maßnahmen der Staatssicherheit, die als Datenverkehrsanalyse bekannt sind.</string>
-    <string name="menu_settings">Orbot-Einstellungen</string>
+    <string name="app_name">Pol</string>
+    <string name="app_description">Pol ist eine kostenlose Proxy-App, die andere Apps in die Lage versetzt, das Internet sicherer zu nutzen. Pol verwendet Tor, um deinen Datenverkehr im Internet zu verschlüsseln, und verbirgt ihn dann, indem er ihn durch eine Reihe von Computern auf der ganzen Welt hüpfen lässt. Tor ist freie Software und ein offenes Netzwerk, das dabei hilft, sich vor Formen der Netzüberwachung zu schützen, die persönliche Freiheiten und Privatsphäre, vertrauliche Geschäftsaktivitäten und -beziehungen bedrohen, sowie vor Maßnahmen der Staatssicherheit, die als Datenverkehrsanalyse bekannt sind.</string>
+    <string name="menu_settings">Pol-Einstellungen</string>
     <string name="menu_log">Protokoll</string>
     <string name="menu_about">Über</string>
     <string name="menu_exit">Beenden</string>
     <!--Welcome Wizard strings (DJH)-->
-    <string name="wizard_details_msg">Orbot ist eine quelloffene Anwendung, die Tor, IPtProxy (Lyrebird, Meek, Snowflake), hev-socks5-tunnel, und LibEvent enthält. Es stellt einen lokalen HTTP-Proxy (Port: 8118) und einen SOCKS-Proxy (Port: 9050) in das Tor-Netzwerk bereit.</string>
+    <string name="wizard_details_msg">Pol ist eine quelloffene Anwendung, die Tor, IPtProxy (Lyrebird, Meek, Snowflake), hev-socks5-tunnel, und LibEvent enthält. Es stellt einen lokalen HTTP-Proxy (Port: 8118) und einen SOCKS-Proxy (Port: 9050) in das Tor-Netzwerk bereit.</string>
     <!--END Welcome Wizard strings (DJH)-->
     <string name="pref_general_group">Allgemein</string>
-    <string name="pref_start_boot_title">Orbot beim Systemstart ausführen</string>
-    <string name="pref_start_boot_summary">Automatisches Starten von Orbot und Verbinden mit Tor beim Start des Android-Gerätes</string>
+    <string name="pref_start_boot_title">Pol beim Systemstart ausführen</string>
+    <string name="pref_start_boot_summary">Automatisches Starten von Pol und Verbinden mit Tor beim Start des Android-Gerätes</string>
     <!--New Wizard Strings-->
     <!--Title Screen-->
     <!--Warning screen-->
@@ -78,7 +78,7 @@
     <string name="restore_backup">Sicherung wiederherstellen</string>
     <string name="confirm_service_deletion">Löschen des Dienstes bestätigen</string>
     <string name="service_type">Dienst-Typ</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">Bitte Orbot zum Aktivieren der Änderungen neu starten</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Bitte Pol zum Aktivieren der Änderungen neu starten</string>
     <string name="disable">Deaktivieren</string>
     <string name="enable">Aktivieren</string>
     <string name="consider_disable_battery_optimizations">Laufende Host-Dienste, erwäge die Deaktivierung der Akku-Optimierung</string>
@@ -128,8 +128,8 @@
     <string name="secure_your_connection_title">Bereit zum Verbinden</string>
     <string name="power_user_mode">Power-User-Modus</string>
     <string name="apps_suggested_title">Vorgeschlagene Apps</string>
-    <string name="power_user_description">Für Benutzer, die mit Tor vertraut sind. Ermöglicht den Start von Orbot ohne die VPN-Einstellung und zeigt offene SOCKS- und HTTP-Ports an</string>
-    <string name="app_suggested_subtitle">Orbot funktioniert am besten mit Messaging- und Social-Media-Apps.</string>
+    <string name="power_user_description">Für Benutzer, die mit Tor vertraut sind. Ermöglicht den Start von Pol ohne die VPN-Einstellung und zeigt offene SOCKS- und HTTP-Ports an</string>
+    <string name="app_suggested_subtitle">Pol funktioniert am besten mit Messaging- und Social-Media-Apps.</string>
     <string name="apps_other_apps">Andere Apps</string>
     <string name="smart_connect">Smart Connect</string>
     <string name="direct_connect">Direkte Verbindung</string>
@@ -153,7 +153,7 @@
     <string name="setting_debug">Debug</string>
     <string name="menu_kindness">Freundlichkeit</string>
     <string name="menu_more">Mehr</string>
-    <string name="no_internet_subtitle">Du brauchst eine Internetverbindung, um Orbot zu verwenden.</string>
+    <string name="no_internet_subtitle">Du brauchst eine Internetverbindung, um Pol zu verwenden.</string>
     <string name="not_sure">Nicht sicher\?</string>
     <string name="ask_tor">Tor fragen</string>
     <string name="option_only_when_charging">Nur beim Laden</string>
@@ -163,16 +163,16 @@
     <string name="option_only_on_wifi">Nur über WLAN</string>
     <string name="asking">FRAGEN…</string>
     <string name="snowflake_amp">Snowflake AMP</string>
-    <string name="root_warning">Orbot hat herausgefunden, dass dein Gerät gerootet ist, was Sicherheitsprobleme auslösen kann.</string>
+    <string name="root_warning">Pol hat herausgefunden, dass dein Gerät gerootet ist, was Sicherheitsprobleme auslösen kann.</string>
     <string name="kindness_config_detail">Einstellen, wie und wann dein Gerät für andere Tor-Nutzer als Snowflake-Proxy auftreten kann.</string>
     <string name="pref_isolate_protocol_summary">Für jedes Verbindungsprotokoll eine andere Leitung verwenden</string>
     <string name="many_ways">Es gibt viele Wege, Tor zu erreichen. Manche funktionieren vielleicht besser als andere für dich.</string>
     <string name="pref_detect_root_summary">Beim Start warnen, wenn Root-Berechtigungen auf diesem Gerät aktiviert sind</string>
     <string name="pref_detect_root_title">Root-Erkennung</string>
     <string name="system_vpn_settings">Android-VPN-Einstellungen</string>
-    <string name="status_starting_up">Orbot startet …</string>
+    <string name="status_starting_up">Pol startet …</string>
     <string name="status_activated">Verbunden mit dem Tor-Netzwerk</string>
-    <string name="status_disabled">Orbot ist deaktiviert</string>
+    <string name="status_disabled">Pol ist deaktiviert</string>
     <string name="status_shutting_down">TorService wird heruntergefahren</string>
     <string name="couldn_t_start_tor_process_">Tor-Prozess konnte nicht gestartet werden:</string>
     <string name="unable_to_start_tor">Tor kann nicht gestartet werden:</string>
@@ -182,8 +182,8 @@
     <string name="status_loading_descriptors">Netzwerkserverinformationen werden geladen</string>
     <string name="kindness_mode_starting">Wird gestartet…</string>
     <string name="snowflake_sqs">Snowflake SQS</string>
-    <string name="orbot_vpn">Orbot VPN</string>
-    <string name="orbot_config_invalid">Orbot-Konfiguration ungültig</string>
+    <string name="orbot_vpn">Pol VPN</string>
+    <string name="orbot_config_invalid">Pol-Konfiguration ungültig</string>
     <string name="apps_updated_msg">Apps aktualisiert</string>
     <string name="setting_unlock_with_biometrics_title">Biometrie verwenden (optional)</string>
     <string name="status_connected_control_port">Tor-Dienst wurde gestartet</string>

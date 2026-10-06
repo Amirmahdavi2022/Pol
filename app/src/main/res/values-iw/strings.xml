@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Orbot</string>
-    <string name="app_description">Orbot היא אפליקציית פרוקסי חינמית המאפשרת לאפליקציות אחרות להשתמש באינטרנט בבטחה. Orbot נעזרת ב-Tor כדי להצפין את תעבורת האינטרנט שלך ולהסוותה באמצעותה ניתובה דרך מספר מחשבים ברחבי העולם. Tor היא תוכנה חופשית ורשת פתוחה המסייעת לך להתגונן מפני סוג ניטור רשת הידוע כניתוח תעבורה שמאיים על פרטיות, חירות אישית, פעילויות עסקיות, מערכות יחסים חשאיות ואבטחת מדינה.</string>
-    <string name="menu_settings">הגדרות Orbot</string>
+    <string name="app_name">Pol</string>
+    <string name="app_description">Pol היא אפליקציית פרוקסי חינמית המאפשרת לאפליקציות אחרות להשתמש באינטרנט בבטחה. Pol נעזרת ב-Tor כדי להצפין את תעבורת האינטרנט שלך ולהסוותה באמצעותה ניתובה דרך מספר מחשבים ברחבי העולם. Tor היא תוכנה חופשית ורשת פתוחה המסייעת לך להתגונן מפני סוג ניטור רשת הידוע כניתוח תעבורה שמאיים על פרטיות, חירות אישית, פעילויות עסקיות, מערכות יחסים חשאיות ואבטחת מדינה.</string>
+    <string name="menu_settings">הגדרות Pol</string>
     <string name="menu_log">רישום</string>
     <string name="menu_about">אודות</string>
     <string name="menu_exit">יציאה</string>
     <!--Welcome Wizard strings (DJH)-->
-    <string name="wizard_details_msg">Orbot היא אפליקציית קוד פתוח שמכילה Tor,‏ IPtProxy‏ (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks ו־LibEvent. היא מספקת מנהרת VPN, מתווך HTTP Connect מקומי (HTTPS רק ביציאה 8118) ומתווך SOCKS‏ (9050) לרשת Tor.</string>
+    <string name="wizard_details_msg">Pol היא אפליקציית קוד פתוח שמכילה Tor,‏ IPtProxy‏ (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks ו־LibEvent. היא מספקת מנהרת VPN, מתווך HTTP Connect מקומי (HTTPS רק ביציאה 8118) ומתווך SOCKS‏ (9050) לרשת Tor.</string>
     <!--END Welcome Wizard strings (DJH)-->
     <string name="pref_general_group">כללי</string>
-    <string name="pref_start_boot_title">התחלת Orbot עם הדלקת המכשיר</string>
-    <string name="pref_start_boot_summary">התחלת Orbot וחיבור לרשת Tor כאשר המכשיר נדלק</string>
+    <string name="pref_start_boot_title">התחלת Pol עם הדלקת המכשיר</string>
+    <string name="pref_start_boot_summary">התחלת Pol וחיבור לרשת Tor כאשר המכשיר נדלק</string>
     <!--New Wizard Strings-->
     <!--Title Screen-->
     <!--Warning screen-->
@@ -74,7 +74,7 @@
     <string name="restore_backup">שחזור גיבוי</string>
     <string name="confirm_service_deletion">אישור מחיקת שירות</string>
     <string name="service_type">סוג שירות</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">נא להפעיל את Orbot מחדש כדי להפעיל את השינויים</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">נא להפעיל את Pol מחדש כדי להפעיל את השינויים</string>
     <string name="enable">הפעלה</string>
     <string name="pref_isolate_dest">בידוד כתובות יעד</string>
     <string name="pref_isolate_dest_summary">להשתמש במעגל שונה לכל כתובת יעד</string>
@@ -124,7 +124,7 @@
     <string name="pref_reduced_circuit_padding_summary">להשתמש באלגוריתמים עם תקורת ריפוד נמוכה כדי לחסוך בתעבורת נתונים ובניצולת סוללה</string>
     <string name="pref_circuit_padding_summary">אפשר להפעיל ריפוד מעגל כדי להגן מפני מגוון צורות של ניתוח תעבורה</string>
     <string name="pref_reduced_circuit_padding">ריפוד מעגל מופחת</string>
-    <string name="no_internet_subtitle">צריך חיבור לאינטרנט כדי להשתמש ב־Orbot.</string>
+    <string name="no_internet_subtitle">צריך חיבור לאינטרנט כדי להשתמש ב־Pol.</string>
     <string name="not_sure">בספק\?</string>
     <string name="snowflake_subtitle">חיבור דרך מתנדבי Tor. מעקף חלק מחסימות Tor.</string>
     <string name="custom_bridges">גשרים מותאמים אישית</string>
@@ -147,11 +147,11 @@
     <string name="direct_connect">חיבור ישיר ל־Tor</string>
     <string name="v3_backup_name_hint">שם קובץ גיבוי…</string>
     <string name="asking">מתבצע תשאול…</string>
-    <string name="power_user_description">למשתמשים שמכירים את Tor. מאפשר לך להפעיל את Orbot ללא הגדרת ה־VPN ומציג פתחות SOCKS ו־HTTP פתוחות</string>
+    <string name="power_user_description">למשתמשים שמכירים את Tor. מאפשר לך להפעיל את Pol ללא הגדרת ה־VPN ומציג פתחות SOCKS ו־HTTP פתוחות</string>
     <string name="snowflake_amp">Snowflake (AMP)</string>
     <string name="menu_kindness">חסד</string>
     <string name="v3_import_auth_private">ייבוא ‎.auth_private</string>
-    <string name="root_warning">Orbot זיהה שהמכשיר שלך נפרץ לגישת root, מה שעלול לגרום לבעיות אבטחה.</string>
+    <string name="root_warning">Pol זיהה שהמכשיר שלך נפרץ לגישת root, מה שעלול לגרום לבעיות אבטחה.</string>
     <string name="btn_change_exit">החלפת פתחה</string>
     <string name="snowflake">Snowflake (מקורי)</string>
     <string name="backup_port_exist">שגיאה: שירות Onion כבר משתמש בפתחה %s</string>
@@ -162,7 +162,7 @@
     <string name="bridge_snowflake_amp">התחברות דרך משתמשי Tor אחרים באמצעות Snowflake (שיטה 2 - AMP)</string>
     <string name="volunteer_mode">מצב חסד</string>
     <string name="strict_nodes_description">התייחסות להגדרות החרגה של צמתים כדרישה לבניית כל המעגלים. זה עלול לשבור את הפעילות אם לא ניתן ליצור מעגלים עם הגדרות החרגת הצמתים שנקבעו.</string>
-    <string name="app_suggested_subtitle">Orbot עובד הכי טוב עם יישומוני הודעות ומדיה חברתית.</string>
+    <string name="app_suggested_subtitle">Pol עובד הכי טוב עם יישומוני הודעות ומדיה חברתית.</string>
     <string name="secure_your_connection_title">מוכן להתחבר</string>
     <string name="v3_delete_client_authorization_confirm">מחיקת הרשאת הלקוח</string>
     <string name="direct_connect_subtitle">הדרך הטובה ביותר להתחבר ל־Tor. אפשר להשתמש אם Tor לא חסום.</string>
@@ -172,7 +172,7 @@
     <string name="system_vpn_settings">הגדרות ה־VPN של Android</string>
     <string name="set_transport">הגדר תעבורה</string>
     <string name="setting_app_icon_title">סמל יישומון</string>
-    <string name="setting_app_icon_description">לבחור איך Orbot מופיע במכשיר שלך</string>
+    <string name="setting_app_icon_description">לבחור איך Pol מופיע במכשיר שלך</string>
     <string name="setting_block_screenshot_title">חסימת צילומי מסך</string>
     <string name="setting_block_screenshot_description">מניעת צילום המסך כשהיישומון הזה מופיע על המסך</string>
     <string name="setting_unlock_pass_title">נעילת המסך</string>

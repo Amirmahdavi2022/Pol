@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Orbot</string>
-    <string name="app_description">Orbot er et friprog-mellomtjeningsprogram som gjør det mulig for andre programmer å bruke Internett sikrere. Orbot bruker Tor for å kryptere din Internettrafikk, og skjuler da din trafikk ved å sende trafikken gjennom en lang rekke datamaskiner over hele verden. Tor er fri programvare, og et åpent nettverk som hjelper deg å forsvare deg mot en form for nettverksovervåking som truer din personlige frihet og privatliv, konfidensiell bedriftsvirksomhet og relasjoner, og statlig snoking kjent som trafikkanalyse.</string>
+    <string name="app_name">Pol</string>
+    <string name="app_description">Pol er et friprog-mellomtjeningsprogram som gjør det mulig for andre programmer å bruke Internett sikrere. Pol bruker Tor for å kryptere din Internettrafikk, og skjuler da din trafikk ved å sende trafikken gjennom en lang rekke datamaskiner over hele verden. Tor er fri programvare, og et åpent nettverk som hjelper deg å forsvare deg mot en form for nettverksovervåking som truer din personlige frihet og privatliv, konfidensiell bedriftsvirksomhet og relasjoner, og statlig snoking kjent som trafikkanalyse.</string>
     <string name="menu_settings">Innstillinger</string>
     <string name="menu_log">Logg</string>
     <string name="menu_about">Om</string>
     <string name="menu_exit">Avslutt</string>
     <string name="pref_general_group">Generelt</string>
-    <string name="pref_start_boot_title">Start Orbot ved oppstart</string>
-    <string name="pref_start_boot_summary">Start Orbot automatisk, og koble til Tor når din Android-enhet starter opp</string>
+    <string name="pref_start_boot_title">Start Pol ved oppstart</string>
+    <string name="pref_start_boot_summary">Start Pol automatisk, og koble til Tor når din Android-enhet starter opp</string>
     <string name="pref_node_configuration">Node-oppsett</string>
     <string name="pref_node_configuration_summary">Dette er avanserte innstillinger som kan redusere din anonymitet</string>
     <string name="pref_entrance_node">Inngangsnoder</string>
@@ -67,11 +67,11 @@
     <string name="restore_backup">Gjenopprett sikkerhetskopi</string>
     <string name="confirm_service_deletion">Bekreft sletting av tjeneste</string>
     <string name="service_type">Tjenestetype</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">Gjør omstart av Orbot før endringer trer i kraft</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Gjør omstart av Pol før endringer trer i kraft</string>
     <string name="disable">Skru av</string>
     <string name="enable">Slå på</string>
     <string name="full_device_vpn">VPN for hele enheten</string>
-    <string name="wizard_details_msg">Orbot er et fritt program som inneholder Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks, og LibEvent. Den gir en lokal HTTP-proxy (8118) og en SOCKS-mellomtjener (9050) inn i Tor-nettverket. Orbot har også muligheten til å sende all Internett-trafikk gjennom Tor på enheter med superbrukertilgang.</string>
+    <string name="wizard_details_msg">Pol er et fritt program som inneholder Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks, og LibEvent. Den gir en lokal HTTP-proxy (8118) og en SOCKS-mellomtjener (9050) inn i Tor-nettverket. Pol har også muligheten til å sende all Internett-trafikk gjennom Tor på enheter med superbrukertilgang.</string>
     <string name="pref_open_proxy_on_all_interfaces_title">Åpne proxy på alle grensesnitt</string>
     <string name="pref_http_title">Tor HTTP</string>
     <string name="menu_new_identity">Ny identitet</string>
@@ -122,7 +122,7 @@
     <string name="setting_debug">Feilsøking</string>
     <string name="menu_more">Mer</string>
     <string name="trying_to_connect_title">Kobler til…</string>
-    <string name="no_internet_subtitle">Du trenger en internettforbindelse for å bruke Orbot.</string>
+    <string name="no_internet_subtitle">Du trenger en internettforbindelse for å bruke Pol.</string>
     <string name="not_sure">Er du usikker\?</string>
     <string name="snowflake_subtitle">Kobler seg til via frivillige Tor-brukere. Omgår enkelte Tor-blokkeringer.</string>
     <string name="ask_tor">Spør Tor</string>
@@ -142,10 +142,10 @@
     <string name="direct_connect">Direkte tilkobling til Tor</string>
     <string name="pref_isolate_port">Isolere destinasjonsporter</string>
     <string name="asking">SPØKER…</string>
-    <string name="power_user_description">For brukere som er kjent med Tor. Lar deg starte Orbot uten VPN-innstillingen og viser åpne SOCKS- og HTTP-porter</string>
+    <string name="power_user_description">For brukere som er kjent med Tor. Lar deg starte Pol uten VPN-innstillingen og viser åpne SOCKS- og HTTP-porter</string>
     <string name="snowflake_amp">Snowflake (AMP)</string>
     <string name="menu_kindness">Vennlighet</string>
-    <string name="root_warning">Orbot har oppdaget at enheten din er rotfestet, noe som kan føre til sikkerhetsproblemer.</string>
+    <string name="root_warning">Pol har oppdaget at enheten din er rotfestet, noe som kan føre til sikkerhetsproblemer.</string>
     <string name="btn_change_exit">Endre utgang</string>
     <string name="snowflake">Snowflake</string>
     <string name="backup_port_exist">Feil: En Onion-tjeneste bruker allerede porten %s</string>
@@ -154,14 +154,14 @@
     <string name="pref_isolate_protocol_summary">Bruk en annen krets for hver tilkoblingsprotokoll</string>
     <string name="volunteer_mode">Modus for vennlighet</string>
     <string name="strict_nodes_description">Behandle Exclude Nodes-innstillingene som et krav for å bygge alle kretser. Dette kan ødelegge funksjonaliteten hvis ingen kretser kan genereres med innstillingene for ekskluderte noder.</string>
-    <string name="app_suggested_subtitle">Orbot fungerer best med apper for meldinger og sosiale medier.</string>
+    <string name="app_suggested_subtitle">Pol fungerer best med apper for meldinger og sosiale medier.</string>
     <string name="secure_your_connection_title">Klar til å koble til</string>
     <string name="direct_connect_subtitle">Den beste måten å koble til Tor på. Brukes hvis Tor ikke er blokkert.</string>
     <string name="many_ways">Det finnes mange måter å nå Tor på. Noen fungerer kanskje bedre enn andre for deg.</string>
     <string name="v3_key_hash">x25519 Privat nøkkel i Base32</string>
-    <string name="status_starting_up">Orbot starter…</string>
+    <string name="status_starting_up">Pol starter…</string>
     <string name="status_activated">Koblet til Tor-nettverket</string>
-    <string name="status_disabled">Orbot er deaktivert</string>
+    <string name="status_disabled">Pol er deaktivert</string>
     <string name="couldn_t_start_tor_process_">Kunne ikke starte Tor prosessen:</string>
     <string name="unable_to_start_tor">Klarte ikke å starte Tor:</string>
     <string name="mebibyte_per_second">MiB/s</string>

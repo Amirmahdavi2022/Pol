@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pol_webtunnel">WebTunnel</string>
+    <string name="pol_get_bridges">گرفتن پل از ربات تلگرام</string>
+    <string name="pol_get_bridges_hint">توی ربات Start رو بزن، پل بگیر، بعد Copy رو بزن و برگرد به پُل.</string>
+    <string name="pol_channel">کانال تلگرام ما</string>
+    <string name="pol_clip_title">پل پیدا شد</string>
+    <string name="pol_clip_message">%1$d تا پل کپی کردی. باهاشون وصل بشم؟</string>
+    <string name="pol_clip_use">آره، وصل شو</string>
+    <string name="pol_clip_saved_reconnect">پل‌ها ذخیره شد. یه بار قطع و وصل کن تا ازشون استفاده بشه.</string>
+</resources>

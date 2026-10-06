@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Orbot</string>
-    <string name="app_description">Orbot là một ứng dụng proxy miễn phí làm cho các ứng dụng khác sử dụng internet một cách bảo mật hơn. Orbot sử dụng Tor để mã hóa lưu lượng Internet rồi ẩn nó bằng cách đưa qua một loạt máy tính trên khắp thế giới. Tor là phần mềm tự do và là một mạng lưới mở giúp bạn chống lại một dạng của sự giám sát trên mạng đe dọa quyền riêng tư và tự do cá nhân, những hoạt động và mối quan hệ bí mật trong kinh doanh, và an ninh tiểu bang được biết đến là phân tích lưu lượng mạng.</string>
-    <string name="menu_settings">Cài đặt Orbot</string>
+    <string name="app_name">Pol</string>
+    <string name="app_description">Pol là một ứng dụng proxy miễn phí làm cho các ứng dụng khác sử dụng internet một cách bảo mật hơn. Pol sử dụng Tor để mã hóa lưu lượng Internet rồi ẩn nó bằng cách đưa qua một loạt máy tính trên khắp thế giới. Tor là phần mềm tự do và là một mạng lưới mở giúp bạn chống lại một dạng của sự giám sát trên mạng đe dọa quyền riêng tư và tự do cá nhân, những hoạt động và mối quan hệ bí mật trong kinh doanh, và an ninh tiểu bang được biết đến là phân tích lưu lượng mạng.</string>
+    <string name="menu_settings">Cài đặt Pol</string>
     <string name="menu_log">Nhật ký Log</string>
     <string name="menu_about">Giới thiệu</string>
     <string name="menu_exit">Thoát</string>
     <!--Welcome Wizard strings (DJH)-->
     <!--END Welcome Wizard strings (DJH)-->
     <string name="pref_general_group">Tổng quan</string>
-    <string name="pref_start_boot_title">Khởi chạy Orbot khi khởi động hệ thống</string>
-    <string name="pref_start_boot_summary">Tự khởi động Orbot và kết nối vào mạng Tor sau khi thiết bị Android của bạn khởi động</string>
+    <string name="pref_start_boot_title">Khởi chạy Pol khi khởi động hệ thống</string>
+    <string name="pref_start_boot_summary">Tự khởi động Pol và kết nối vào mạng Tor sau khi thiết bị Android của bạn khởi động</string>
     <string name="pref_node_configuration">Cấu hình nút giao mạng</string>
     <string name="pref_node_configuration_summary">Những cài đặt nâng cao này có thể giảm tính ẩn danh của bạn</string>
     <string name="pref_entrance_node">Các nút giao mạng đầu vào</string>
@@ -59,14 +59,14 @@
     <string name="pref_torrc_dialog">Torrc tùy chỉnh</string>
     <string name="save">Lưu</string>
     <string name="name">Tên</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">Vui lòng khởi động lại Orbot để áp dụng thay đổi</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Vui lòng khởi động lại Pol để áp dụng thay đổi</string>
     <string name="disable">Tắt</string>
     <string name="enable">Cho phép</string>
     <string name="pref_http_dialog">Thiết lập cổng HTTP</string>
     <string name="pref_http_summary">Cổng mà Tor cho proxy HTTP của nó (mặc định: 8118 hoặc 0 để tắt)</string>
     <string name="pref_http_title">HTTP Tor</string>
     <string name="pref_open_proxy_on_all_interfaces_title">Mở Proxy trên tất cả các giao diện</string>
-    <string name="wizard_details_msg">Orbot là một ứng dụng mã nguồn mở chứa Tor, IPtProxy (Lyrebird, Meek, Snowflake), hev-socks5-tunnel, LibEvent. Nó cung cấp một proxy HTTP cục bộ (8118) và một proxy SOCKS (9050) vào mạng Tor.</string>
+    <string name="wizard_details_msg">Pol là một ứng dụng mã nguồn mở chứa Tor, IPtProxy (Lyrebird, Meek, Snowflake), hev-socks5-tunnel, LibEvent. Nó cung cấp một proxy HTTP cục bộ (8118) và một proxy SOCKS (9050) vào mạng Tor.</string>
     <string name="custom_bridges">Cầu nối tuỳ chỉnh</string>
     <string name="pref_reduced_connection_padding_summary">Đóng các kết nối chuyển tiếp sớm hơn và gửi ít gói đặt khoảng cách hơn để giảm sử dụng dữ liệu và pin</string>
     <string name="pref_reduced_connection_padding">Giảm khoảng cách kết nối</string>
@@ -134,7 +134,7 @@
     <string name="many_ways">Có nhiều cách để truy cập được Tor. Một số có thể sẽ hoạt động cho bạn tốt hơn những cái khác.</string>
     <string name="bridge_snowflake_amp">Kết nối thông qua những người dùng Tor khác sử dụng Snowflake (Phương pháp 2 - AMP)</string>
     <string name="strict_nodes_description">Hãy đối xử với các cài đặt \"Loại bỏ Nút giao mạng\" (Exclude Nodes) như một điều kiện để xây dựng tất cả các mạch nối. Điều này có thể sẽ làm phá vỡ chức năng nếu như không có mạch nối nào được phát sinh ra (generated) với các cài đặt Loại bỏ Nút giao mạng.</string>
-    <string name="power_user_description">Đối với những người dùng đã quen thuộc với Tor. Cho phép bạn khởi động Orbot mà không cần cài đặt VPN và hiển thị các cổng SOCKS và HTTP mở khả dụng</string>
+    <string name="power_user_description">Đối với những người dùng đã quen thuộc với Tor. Cho phép bạn khởi động Pol mà không cần cài đặt VPN và hiển thị các cổng SOCKS và HTTP mở khả dụng</string>
     <string name="direct_connect_subtitle">Cách tốt nhất để kết nối tới Tor. Sử dụng nếu như Tor không bị chặn.</string>
     <string name="snowflake">Snowflake</string>
     <string name="snowflake_subtitle">Kết nối thông qua các tình nguyện viên Tor. Vượt qua một số những rào cản đối với Tor.</string>
@@ -144,14 +144,14 @@
     <string name="snowflake_proxy_msg_description">Hiển thị một tin nhắn khi bạn giúp đỡ ai đó vượt qua kiểm duyệt</string>
     <string name="btn_copy_log">Sao chép nhật ký Log</string>
     <string name="log_copied">Nhật ký Log đã được sao chép</string>
-    <string name="root_warning">Orbot đã phát hiện được rằng thiết bị của bạn đã được root, điều này có thể gây ra các vấn đề an ninh bảo mật.</string>
+    <string name="root_warning">Pol đã phát hiện được rằng thiết bị của bạn đã được root, điều này có thể gây ra các vấn đề an ninh bảo mật.</string>
     <string name="pref_isolate_port">Cô lập các cổng đích đến (destination ports)</string>
     <string name="pref_isolate_port_summary">Sử dụng một mạch nối khác cho mỗi một cổng đích đến (destination port)</string>
     <string name="pref_isolate_protocol_summary">Sử dụng một mạch nối khác biệt cho mỗi một giao thức protocol kết nối</string>
     <string name="btn_change_exit">Thay đổi đầu ra exit</string>
     <string name="snowflake_amp">Snowflake AMP</string>
     <string name="power_user_mode">Chế độ người dùng nâng cao Power User</string>
-    <string name="app_suggested_subtitle">Orbot hoạt động tốt nhất với các app ứng dụng nhắn tin và mạng xã hội.</string>
+    <string name="app_suggested_subtitle">Pol hoạt động tốt nhất với các app ứng dụng nhắn tin và mạng xã hội.</string>
     <string name="secure_your_connection_title">Sẵn sàng kết nối</string>
     <string name="apps_suggested_title">Các app ứng dụng được gợi ý</string>
     <string name="apps_other_apps">Các app ứng dụng khác</string>
@@ -159,13 +159,13 @@
     <string name="smart_connect">Kết nối Thông minh</string>
     <string name="asking">ĐANG HỎI…</string>
     <string name="no_internet_title">Kết nối tới Internet</string>
-    <string name="no_internet_subtitle">Bạn cần một kết nối internet để sử dụng Orbot.</string>
+    <string name="no_internet_subtitle">Bạn cần một kết nối internet để sử dụng Pol.</string>
     <string name="setting_padding">Định khoảng cách Padding</string>
     <string name="pref_detect_root_summary">Cảnh báo khi khởi chạy rằng, liệu quyền hạn root đã được bật kích hoạt trên thiết bị này chưa</string>
     <string name="pref_detect_root_title">Phát hiện Root</string>
     <string name="status_starting_up">Ortbot đang khởi động…</string>
     <string name="status_activated">Đã kết nối với mạng Tor</string>
-    <string name="status_disabled">Orbot đã được vô hiệu hóa</string>
+    <string name="status_disabled">Pol đã được vô hiệu hóa</string>
     <string name="status_shutting_down">Đang tắt dịch vụ Tor</string>
     <string name="couldn_t_start_tor_process_">Không thể khởi động tiến trình Tor:</string>
     <string name="unable_to_start_tor">Không thể khởi động Tor được: </string>
@@ -214,13 +214,13 @@
     <string name="app_icon_chooser_label_fit_grit">FitGrit</string>
     <string name="app_icon_chooser_label_birdie">Birdie</string>
     <string name="app_icon_dialog_title" formatted="true">Chuyển đến %1$s</string>
-    <string name="camo_samsung_instructions">Trên thiết bị Samsung Galaxy của bạn, biểu tượng thông báo của Orbot sẽ chỉ thay đổi khi bạn vào Cài đặt -&gt; Thông báo -&gt; Cài đặt nâng cao và tắt tùy chọn “Hiển thị biểu tượng ứng dụng trong thông báo”. Nhấp vào đây để mở Cài đặt thông báo.</string>
+    <string name="camo_samsung_instructions">Trên thiết bị Samsung Galaxy của bạn, biểu tượng thông báo của Pol sẽ chỉ thay đổi khi bạn vào Cài đặt -&gt; Thông báo -&gt; Cài đặt nâng cao và tắt tùy chọn “Hiển thị biểu tượng ứng dụng trong thông báo”. Nhấp vào đây để mở Cài đặt thông báo.</string>
     <string name="power_user_mode_permission">Cần có quyền truy cập vào các tính năng Báo thức &amp; Nhắc nhở để sử dụng Chế độ người dùng nâng cao</string>
-    <string name="power_user_mode_permission_msg">Vui lòng cho phép Orbot thiết lập báo thức và lời nhắc để sử dụng chế độ người dùng nâng cao. Việc này thực tế sẽ không thiết lập bất kỳ báo thức nào trên thiết bị của bạn. Quyền này là cần thiết để hệ thống duy trì OrbotService hoạt động khi Orbot không được sử dụng như một VPN trên toàn hệ thống.</string>
+    <string name="power_user_mode_permission_msg">Vui lòng cho phép Pol thiết lập báo thức và lời nhắc để sử dụng chế độ người dùng nâng cao. Việc này thực tế sẽ không thiết lập bất kỳ báo thức nào trên thiết bị của bạn. Quyền này là cần thiết để hệ thống duy trì OrbotService hoạt động khi Pol không được sử dụng như một VPN trên toàn hệ thống.</string>
     <string name="pref_isolate_keep_alive_summary">Giữ cho các mạch kết nối bị cô lập vẫn hoạt động nếu chúng có ít nhất một luồng dữ liệu đang sử dụng xác thực SOCKS</string>
     <string name="bridges_via_telegram_subtitle">Phương pháp này có thể giúp bạn duy trì kết nối ngay cả khi Tor bị chặn nghiêm trọng. Khi sử dụng phương pháp này, kênh Telegram của Tor Bot sẽ được mở. Hãy nhấn vào \'Bắt đầu\' hoặc nhập \'%1$s\' vào khung trò chuyện để lấy địa chỉ cầu nối.</string>
     <string name="bridges_via_email_subtitle">Che giấu lưu lượng truy cập của bạn. Vượt qua một số biện pháp chặn Tor. Cần một email được gửi từ tài khoản Gmail hoặc Riseup.</string>
-    <string name="testing_explanation_other_vpn">Chế độ Thân thiện không thể được kích hoạt khi sử dụng VPN. Ngoại lệ duy nhất là tính năng VPN của Orbot. Để trở thành Snowflake Proxy, bạn phải tắt VPN hoặc chuyển sang sử dụng Orbot.</string>
+    <string name="testing_explanation_other_vpn">Chế độ Thân thiện không thể được kích hoạt khi sử dụng VPN. Ngoại lệ duy nhất là tính năng VPN của Pol. Để trở thành Snowflake Proxy, bạn phải tắt VPN hoặc chuyển sang sử dụng Pol.</string>
     <string name="testing_explanation_other_vpn_bubble">Mở Cài đặt VPN Hệ thống…</string>
     <string name="testing_explanation_no_net">Hãy kết nối Internet để xem liệu bạn có phù hợp với Chế độ Thân thiện hay không</string>
     <string name="app_icon_chooser_label_night_watch">Nhìn đêm</string>
@@ -229,12 +229,12 @@
     <string name="app_icon_chooser_label_tetras">Tetras</string>
     <string name="app_icon_chooser_label_todo">Việc cần làm</string>
     <string name="app_icon_dialog_msg" formatted="true">Việc chuyển sang %1$s sẽ khởi động lại ứng dụng</string>
-    <string name="request_notification_permission">Vui lòng bật thông báo cho Orbot</string>
-    <string name="request_notification_permission_msg">Nếu không bật thông báo, Orbot sẽ không thể hoạt động như một VPN Tor hoặc sử dụng Chế độ Kindness.\n\nKhi tính năng này được bật, chúng tôi chỉ hiển thị một thông báo duy nhất khi Orbot đang chạy.</string>
+    <string name="request_notification_permission">Vui lòng bật thông báo cho Pol</string>
+    <string name="request_notification_permission_msg">Nếu không bật thông báo, Pol sẽ không thể hoạt động như một VPN Tor hoặc sử dụng Chế độ Kindness.\n\nKhi tính năng này được bật, chúng tôi chỉ hiển thị một thông báo duy nhất khi Pol đang chạy.</string>
     <string name="open_settings">Mở Cài đặt</string>
     <string name="error_no_password_set">Bạn cần đặt mật khẩu cho thiết bị Android của mình để có thể sử dụng tính năng Màn hình khóa</string>
-    <string name="device_lock_unsupported">Tính năng xác thực Orbot không được hỗ trợ trên thiết bị của bạn</string>
-    <string name="device_lock_security_update_needed">Bạn phải tải xuống các bản cập nhật bảo mật Android cho thiết bị của mình để có thể sử dụng tính năng Xác thực Orbot</string>
+    <string name="device_lock_unsupported">Tính năng xác thực Pol không được hỗ trợ trên thiết bị của bạn</string>
+    <string name="device_lock_security_update_needed">Bạn phải tải xuống các bản cập nhật bảo mật Android cho thiết bị của mình để có thể sử dụng tính năng Xác thực Pol</string>
     <string name="invalid_bridge_format">Định dạng cầu nối không hợp lệ</string>
     <string name="error_asking_tor_for_bridges">Lỗi khi hỏi Tor cách thức để kết nối</string>
     <string name="enter_bridge_address">Nhập địa chỉ cầu nối</string>
@@ -245,10 +245,10 @@
     <string name="added_bridges_from_qr">Thêm %1$d cầu nối từ mã QR</string>
     <string name="invalid_bridge_qr_code">Mã QR của cầu không hợp lệ</string>
     <string name="you_already_have_these_bridges">Bạn đã thêm các cầu nối vào mã QR này rồi</string>
-    <string name="orbot_vpn">Orbot VPN</string>
-    <string name="open_orbot_to_connect_to_tor">Mở ứng dụng Orbot để kết nối với Tor</string>
+    <string name="orbot_vpn">Pol VPN</string>
+    <string name="open_orbot_to_connect_to_tor">Mở ứng dụng Pol để kết nối với Tor</string>
     <string name="connect_to_tor">Kết nối với Tor</string>
-    <string name="orbot_config_invalid">Cấu hình Orbot không hợp lệ</string>
+    <string name="orbot_config_invalid">Cấu hình Pol không hợp lệ</string>
     <string name="snowflake_proxy_client_connected_msg">Chế độ Thân thiện %1$s đã giúp ai đó vượt qua sự kiểm duyệt %2$s</string>
     <string name="log_notice_unable_to_update_onions">Không thể tải lên các tên onion</string>
     <string name="log_notice_updating_torrc">Đang cập nhật cấu hình tùy chỉnh của torrc…</string>
@@ -256,12 +256,12 @@
     <string name="search_for_apps">Tìm kiếm ứng dụng</string>
     <string name="apps_updated_msg">Ứng dụng đã được cập nhật</string>
     <string name="title_safety">Tính an toàn</string>
-    <string name="setting_app_icon_description">Lựa chọn cách thức Orbot hiển thị trên thiết bị của bạn</string>
+    <string name="setting_app_icon_description">Lựa chọn cách thức Pol hiển thị trên thiết bị của bạn</string>
     <string name="setting_block_screenshot_title">Chặn chụp màn hình</string>
     <string name="setting_block_screenshot_description">Ngăn ai đó chụp màn hình ứng dụng này</string>
-    <string name="setting_unlock_pass_description">Yêu cầu nhập mã PIN, mật khẩu hoặc mẫu hình của thiết bị để mở Orbot</string>
+    <string name="setting_unlock_pass_description">Yêu cầu nhập mã PIN, mật khẩu hoặc mẫu hình của thiết bị để mở Pol</string>
     <string name="setting_unlock_with_biometrics_title">Sử dụng sinh trắc học (tùy chọn)</string>
-    <string name="setting_unlock_with_biometrics_description">Mở khóa Orbot bằng vân tay hoặc Face ID nếu tính năng này đã được thiết lập trên thiết bị của bạn.</string>
+    <string name="setting_unlock_with_biometrics_description">Mở khóa Pol bằng vân tay hoặc Face ID nếu tính năng này đã được thiết lập trên thiết bị của bạn.</string>
     <string name="status_connected_control_port">Dịch vụ Tor đã khởi động</string>
     <string name="status_handshake">Đang kết nối tới cổng mạng của Tor</string>
     <string name="status_handshake_done">Đang vào mạng Tor</string>
@@ -288,21 +288,21 @@
     <string name="country_clear">Xóa Quốc gia</string>
     <string name="limit_dns_tunnel_use">Giới hạn Sử dụng Đường hầm DNS</string>
     <string name="dns_tunnel_usage_description">Đường hầm DNS ưu tiên khả năng truy cập hơn tốc độ và có thể cảm thấy chậm hơn. Chúng tôi khuyên bạn chỉ bật nó cho những ứng dụng cần thiết. Không nên dùng cho phát sóng video.</string>
-    <string name="unable_to_start_orbot_vpn_title">Không thể khởi động Orbot VPN</string>
-    <string name="unable_to_start_legacy_vpn_error_msg">Có một Hồ sơ VPN tùy chỉnh được cấu hình là một VPN \"Luôn kết nối\". Tắt nó trước khi khởi động Orbot.</string>
-    <string name="unable_to_start_other_vpn_app_error_msg">"Ứng dụng  %1$s được cấu hình làm một VPN \"Luôn kết nối\". Vui lòng tắt nó trước khi khởi động Orbot."</string>
-    <string name="unable_to_start_unknown_reason_error_msg">Quyền truy cập VPN đã bị từ chối hoặc một ứng dụng VPN khác đã bật tính năng “VPN luôn hoạt động”. Bạn có thể bỏ qua thông báo này và kết nối lại nếu vô tình đóng hộp thoại Yêu cầu VPN trước đó. Người dùng có kiến thức kỹ thuật có thể sử dụng một ứng dụng VPN khác và dùng Tor làm proxy SOCKS bằng cách bật Chế độ người dùng nâng cao của Orbot.</string>
+    <string name="unable_to_start_orbot_vpn_title">Không thể khởi động Pol VPN</string>
+    <string name="unable_to_start_legacy_vpn_error_msg">Có một Hồ sơ VPN tùy chỉnh được cấu hình là một VPN \"Luôn kết nối\". Tắt nó trước khi khởi động Pol.</string>
+    <string name="unable_to_start_other_vpn_app_error_msg">"Ứng dụng  %1$s được cấu hình làm một VPN \"Luôn kết nối\". Vui lòng tắt nó trước khi khởi động Pol."</string>
+    <string name="unable_to_start_unknown_reason_error_msg">Quyền truy cập VPN đã bị từ chối hoặc một ứng dụng VPN khác đã bật tính năng “VPN luôn hoạt động”. Bạn có thể bỏ qua thông báo này và kết nối lại nếu vô tình đóng hộp thoại Yêu cầu VPN trước đó. Người dùng có kiến thức kỹ thuật có thể sử dụng một ứng dụng VPN khác và dùng Tor làm proxy SOCKS bằng cách bật Chế độ người dùng nâng cao của Pol.</string>
     <string name="open_vpn_settings">Mở Cài đặt VPN Android</string>
     <string name="kindness_mode_unsupported_country">Bạn đã chọn %s làm quốc gia của mình, nhưng rất tiếc, Chế độ Thân thiện không thể hỗ trợ người dùng kết nối với Tor tại khu vực này. Nếu bạn cho rằng mình đang thấy thông báo này do nhầm lẫn, bạn có thể xóa lựa chọn quốc gia và thử xem liệu mình có đủ điều kiện để trở thành Snowflake Proxy hay không</string>
     <string name="battery_optimization_title">Tắt tối ưu hóa pin</string>
-    <string name="battery_optimization_pref_msg">Cài đặt cho vài người dùng nghi ngờ ứng dụng giết sớm tiến trình Orbot trong lúc nó chạy dưới nền.</string>
-    <string name="battery_optimization_dialog_msg">Một số thiết bị Android có thể tự động ngắt Orbot khi ứng dụng này chạy ngầm. Đối với hầu hết người dùng muốn đảm bảo Orbot luôn kết nối và hoạt động, chỉ cần thiết lập Orbot hoạt động dưới dạng VPN “Luôn bật” trong cài đặt hệ thống là đủ. Tuy nhiên, nếu cảm thấy cần thiết, bạn vẫn có thể thực hiện thêm các bước để ngăn thiết bị thực hiện bất kỳ tối ưu hóa pin nào đối với Orbot.</string>
-    <string name="battery_optimization_dialog_msg_instructions">Trên màn hình kế tiếp chọn Orbot -&gt; Cho phép sử dụng dưới nền -&gt; Không giới hạn.</string>
+    <string name="battery_optimization_pref_msg">Cài đặt cho vài người dùng nghi ngờ ứng dụng giết sớm tiến trình Pol trong lúc nó chạy dưới nền.</string>
+    <string name="battery_optimization_dialog_msg">Một số thiết bị Android có thể tự động ngắt Pol khi ứng dụng này chạy ngầm. Đối với hầu hết người dùng muốn đảm bảo Pol luôn kết nối và hoạt động, chỉ cần thiết lập Pol hoạt động dưới dạng VPN “Luôn bật” trong cài đặt hệ thống là đủ. Tuy nhiên, nếu cảm thấy cần thiết, bạn vẫn có thể thực hiện thêm các bước để ngăn thiết bị thực hiện bất kỳ tối ưu hóa pin nào đối với Pol.</string>
+    <string name="battery_optimization_dialog_msg_instructions">Trên màn hình kế tiếp chọn Pol -&gt; Cho phép sử dụng dưới nền -&gt; Không giới hạn.</string>
     <string name="battery_optimization_dialog_msg_disclaimer">Lưu hs rằng với hầu hết thiết bị, tắt tối ưu hóa pin sẽ làm hao pin hơn bình thường…</string>
     <string name="battery_optimizations_dialog_btn_disable">Mở Cài đặt Tối ưu hóa Pin</string>
-    <string name="battery_optimizations_dialog_msg_power_user">Một số thiết bị Android có thể tự động ngắt Orbot khi ứng dụng này chạy dưới dạng dịch vụ nền trong Chế độ Người dùng Nâng cao. Bạn luôn có thể chọn tắt hoặc bật lại các tính năng tối ưu hóa pin sau này ngay trong phần cài đặt của Orbot…</string>
-    <string name="battery_optimizations_are_disabled">Tối ưu hóa Pin trên Orbot hiện tại đã bị tắt…</string>
-    <string name="battery_optimizations_are_enabled">Tối ưu hóa Pin đang hoạt động trên Orbot. Điều này được đặt mặc định và phù hợp cho hầu hết người dùng…</string>
+    <string name="battery_optimizations_dialog_msg_power_user">Một số thiết bị Android có thể tự động ngắt Pol khi ứng dụng này chạy dưới dạng dịch vụ nền trong Chế độ Người dùng Nâng cao. Bạn luôn có thể chọn tắt hoặc bật lại các tính năng tối ưu hóa pin sau này ngay trong phần cài đặt của Pol…</string>
+    <string name="battery_optimizations_are_disabled">Tối ưu hóa Pin trên Pol hiện tại đã bị tắt…</string>
+    <string name="battery_optimizations_are_enabled">Tối ưu hóa Pin đang hoạt động trên Pol. Điều này được đặt mặc định và phù hợp cho hầu hết người dùng…</string>
     <string name="btn_connect_anyway">Vẫn Kết nối</string>
     <string name="btn_connect_anyway_stop_showing">Kết nối và Tắt Cảnh báo này</string>
 </resources>

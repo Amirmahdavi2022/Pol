@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Pol launcher mark: an arch bridge. 108dp adaptive canvas, art kept in the 66dp safe zone. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- hangers -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M40,48 L40,66 M54,38 L54,66 M68,48 L68,66"
+        android:strokeWidth="2.6"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round" />
+    <!-- arch -->
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M30,66 Q54,10 78,66"
+        android:strokeWidth="5"
+        android:strokeColor="#5EEAD4"
+        android:strokeLineCap="round" />
+    <!-- deck -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M28.5,65 L79.5,65 A2.5,2.5 0 0 1 79.5,70 L28.5,70 A2.5,2.5 0 0 1 28.5,65 Z" />
+</vector>

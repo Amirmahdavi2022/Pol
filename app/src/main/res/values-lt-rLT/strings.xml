@@ -9,7 +9,7 @@
     <!--TipsAndTricks screen-->
     <!--Transparent Proxy screen-->
     <string name="menu_settings">Nustatymai</string>
-    <string name="app_name">Orbot</string>
+    <string name="app_name">Pol</string>
     <string name="enter_exclude_nodes">Įveskite neįtrauktinus mazgus</string>
     <string name="pref_disable_ipv4_summary">Nurodo išėjimams nesijungti prie IPv4 adresų</string>
     <string name="pref_prefer_ipv6_summary">Nurodo, kad pirmenybė teikiama IPv6 adresams</string>
@@ -35,7 +35,7 @@
     <string name="consider_disable_battery_optimizations">Veikia prieglobos paslaugos, apsvarstykite galimybę išjungti akumuliatoriaus optimizavimą</string>
     <string name="copy_address_to_clipboard">Kopijuoti adresą į iškarpinę</string>
     <string name="pref_proxy_title">Išeinančio tinklo įgaliotasis serveris (pasirinktinai)</string>
-    <string name="pref_start_boot_title">Paleisti „Orbot“ paleidimo metu</string>
+    <string name="pref_start_boot_title">Paleisti „Pol“ paleidimo metu</string>
     <string name="v3_delete_client_authorization_confirm">Naikinti kliento autorizavimą</string>
     <string name="v3_client_auth_activity_title">Kliento autorizacija</string>
     <string name="v3_onion">.onion domenas</string>
@@ -91,13 +91,13 @@
     <string name="pref_entrance_node">Įėjimo mazgai</string>
     <string name="pref_node_configuration">Mazgo konfigūracija</string>
     <string name="confirm">Patvirtinti</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">Paleiskite „Orbot“ iš naujo, kad įgalintumėte pakeitimus</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Paleiskite „Pol“ iš naujo, kad įgalintumėte pakeitimus</string>
     <string name="pref_torrc_summary">TIK EKSPERTAMS: įveskite tiesiogines torrc konfigūracijos eilutes</string>
     <string name="newnym">Jūs perėjote prie naujos „Tor“ tapatybės!</string>
     <string name="v3_backup_key_warning">Įspėjimas: Tai gali atskleisti jūsų raktą kitoms programėlėms</string>
     <string name="pref_node_configuration_summary">Tai yra išplėstiniai nustatymai, kurie gali sumažinti jūsų anonimiškumą</string>
     <string name="pref_proxy_type_summary">Protokolas, kurį reikia naudoti įgaliotajam serveriui</string>
-    <string name="pref_start_boot_summary">Automatiškai paleisti „Orbot“ ir prijunkti „Tor“, kai įsijungs „Android“ įrenginys</string>
+    <string name="pref_start_boot_summary">Automatiškai paleisti „Pol“ ir prijunkti „Tor“, kai įsijungs „Android“ įrenginys</string>
     <string name="backup_service">Atsarginio kopijavimo paslauga <i>(Įspėjimas: tai gali atskleisti jūsų paslaugos konfigūraciją kitoms programoms)</i></string>
     <string name="enable_debug_log_to_output_must_use_adb_or_alogcat_to_view_">Įgalinti derinimo žurnalo išvestį (norėdami peržiūrėti turite naudoti adb arba aLogcat)</string>
     <string name="pref_dnsport_summary">Prievadas, kuriuo „Tor“ siūlo savo DNS (numatytoji reikšmė: 9053 arba 0, jei norite išjungti)</string>
@@ -107,7 +107,7 @@
     <string name="pref_socks_summary">Prievadas, kuriuo „Tor“ siūlo SOCKS įgaliotąjį serverį (numatytoji reikšmė: 9050 arba 0, jei norite išjungti)</string>
     <string name="pref_reduced_connection_padding_summary">Greičiau uždaromos relių jungtys ir siunčiama mažiau užpildymo paketų, kad būtų sumažintas duomenų ir akumuliatoriaus naudojimas</string>
     <string name="pref_open_proxy_on_all_interfaces_summary">Leisti „Wi-Fi“ poroms, pririštiems įrenginiams ir visiems kitiems, kurie gali prisijungti prie jūsų IP, pasiekti „Tor“</string>
-    <string name="wizard_details_msg">„Orbot“ yra atvirojo kodo programa, kurią sudaro „Tor“, „Obfs4Proxy“, „Go-Tun2Socks“ ir „LibEvent“. Ji suteikia vietinį HTTP įgaliotąjį (proxy) serverį (8118) ir SOCKS įgaliotąjį serverį (9050) į „Tor“ tinklą.</string>
+    <string name="wizard_details_msg">„Pol“ yra atvirojo kodo programa, kurią sudaro „Tor“, „Obfs4Proxy“, „Go-Tun2Socks“ ir „LibEvent“. Ji suteikia vietinį HTTP įgaliotąjį (proxy) serverį (8118) ir SOCKS įgaliotąjį serverį (9050) į „Tor“ tinklą.</string>
     <string name="pref_general_group">Bendrieji</string>
     <string name="menu_log">Žurnalas</string>
     <string name="enable">Įjungti</string>
@@ -118,7 +118,7 @@
     <string name="error">Klaida</string>
     <string name="menu_exit">Išeiti</string>
     <string name="menu_about">Apie</string>
-    <string name="app_description">„Orbot“ yra nemokama įgaliotojo serverio programa, kuri leidžia kitoms programoms saugiau naudotis internetu. „Orbot“ naudoja „Tor“, kad užšifruotų jūsų interneto srautą ir paslėptų jį per kelis kompiuterius visame pasaulyje. „Tor“ yra nemokama programinė įranga ir atviras tinklas, padedantis apsisaugoti nuo tinklo stebėjimo, keliančio grėsmę asmens laisvei ir privatumui, konfidencialiai verslo veiklai ir santykiams bei valstybės saugumui, vadinamo srauto analize.</string>
+    <string name="app_description">„Pol“ yra nemokama įgaliotojo serverio programa, kuri leidžia kitoms programoms saugiau naudotis internetu. „Pol“ naudoja „Tor“, kad užšifruotų jūsų interneto srautą ir paslėptų jį per kelis kompiuterius visame pasaulyje. „Tor“ yra nemokama programinė įranga ir atviras tinklas, padedantis apsisaugoti nuo tinklo stebėjimo, keliančio grėsmę asmens laisvei ir privatumui, konfidencialiai verslo veiklai ir santykiams bei valstybės saugumui, vadinamo srauto analize.</string>
     <string name="version">Versija:</string>
     <string name="license">Licencija:</string>
     <string name="secure_your_connection_title">Paruošta prisijungti</string>
@@ -136,20 +136,20 @@
     <string name="snowflake_proxy_msg_description">Rodyti pranešimą, kai padedate kam nors apeiti cenzūrą</string>
     <string name="power_user_mode">Patyrusio vartotojo režimas</string>
     <string name="apps_other_apps">Kitos programėlės</string>
-    <string name="power_user_description">Vartotojams, susipažinusiems su . Leidžia paleisti „Orbot“ be VPN nustatymo ir rodo atvirus SOCKS ir HTTP prievadus</string>
+    <string name="power_user_description">Vartotojams, susipažinusiems su . Leidžia paleisti „Pol“ be VPN nustatymo ir rodo atvirus SOCKS ir HTTP prievadus</string>
     <string name="smart_connect">Gudrusis ryšys (numatytasis)</string>
     <string name="snowflake">Snowflake (originalus)</string>
     <string name="snowflake_subtitle">Prisijungia per „Tor“ savanorius. Apeina tam tikrą „Tor“ blokavimą.</string>
     <string name="connect">Prisijungti</string>
     <string name="next">Toliau</string>
-    <string name="app_suggested_subtitle">„Orbot“ geriausiai veikia su pranešimų ir socialinių tinklų programėlėmis.</string>
+    <string name="app_suggested_subtitle">„Pol“ geriausiai veikia su pranešimų ir socialinių tinklų programėlėmis.</string>
     <string name="apps_suggested_title">Siūlomos programėlės</string>
     <string name="direct_connect_subtitle">Geriausias būdas prisijungti prie „Tor“. Naudokite, jei „Tor“ neužblokuotas.</string>
     <string name="direct_connect">Tiesioginis ryšys su „Tor“</string>
     <string name="menu_more">Daugiau</string>
     <string name="setting_debug">Derinimas</string>
     <string name="no_internet_title">Prisijunkite prie interneto</string>
-    <string name="no_internet_subtitle">Norint naudotis \"Orbot\", reikia interneto ryšio.</string>
+    <string name="no_internet_subtitle">Norint naudotis \"Pol\", reikia interneto ryšio.</string>
     <string name="not_sure">Nesate tikri\?</string>
     <string name="ask_tor">Paklauskite Tor</string>
     <string name="option_only_when_charging">Tik įkraunant</string>
@@ -163,7 +163,7 @@
     <string name="asking">KLAUSIAMA…</string>
     <string name="snowflake_amp">Snowflake (AMP)</string>
     <string name="menu_kindness">Gerumas</string>
-    <string name="root_warning">\"Orbot\" nustatė, kad jūsų įrenginys yra įsišaknijęs, o tai gali sukelti saugumo problemų.</string>
+    <string name="root_warning">\"Pol\" nustatė, kad jūsų įrenginys yra įsišaknijęs, o tai gali sukelti saugumo problemų.</string>
     <string name="kindness_config_detail">Konfigūruokite, kaip ir kada jūsų įrenginys gali veikti kaip \"Snowflake\" tarpinis serveris kitiems \"Tor\" naudotojams.</string>
     <string name="pref_isolate_protocol_summary">Kiekvienam jungiamajam protokolui naudokite skirtingą grandinę</string>
     <string name="many_ways">Yra daugybė būdų pasiekti Tor. Vieni iš jų jums gali tikti labiau nei kiti.</string>

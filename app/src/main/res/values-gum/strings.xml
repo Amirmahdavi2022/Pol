@@ -1,16 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-  <string name="app_name">Orbot
+  <string name="app_name">Pol
 </string>
-    <string name="app_description">Orbotpe chi anwei kɵmɵn ikpape internetyu mentra kenamarmɵ chine maramtik kɵn. Orbotpe, internet yu wammeran mentra lasrpitsɵsrkɵmɵntrappe Tor teik tɵka wetɵ ashmɵntrai isua marik kɵn, trek chippe chi wam merane esekawa ampumai imai purep ipik kɵn pɵrashmerayu ik pirau mupa kuin pɵrap. Torpe kan software kɵn mayaelai chi anwei kɵmɵ, incha chu puisrɵ, kape chu pasriksrɵpe, wam kerilan mu kɵpen wampikelɵ wetɵ ashmɵntrai purukupik kɵn, trek tɵwai chutɵ kucha maya misakwan aship pasrapik Estado teik wan purukupik kɵn, kan \"analisis de tráfico\" teik tɵka.</string>
+    <string name="app_description">Polpe chi anwei kɵmɵn ikpape internetyu mentra kenamarmɵ chine maramtik kɵn. Polpe, internet yu wammeran mentra lasrpitsɵsrkɵmɵntrappe Tor teik tɵka wetɵ ashmɵntrai isua marik kɵn, trek chippe chi wam merane esekawa ampumai imai purep ipik kɵn pɵrashmerayu ik pirau mupa kuin pɵrap. Torpe kan software kɵn mayaelai chi anwei kɵmɵ, incha chu puisrɵ, kape chu pasriksrɵpe, wam kerilan mu kɵpen wampikelɵ wetɵ ashmɵntrai purukupik kɵn, trek tɵwai chutɵ kucha maya misakwan aship pasrapik Estado teik wan purukupik kɵn, kan \"analisis de tráfico\" teik tɵka.</string>
     <string name="menu_settings">Tamaramtelɵ</string>
     <string name="menu_log">Munchi keeramik</string>
     <string name="menu_about">Ikwan wamɵrɵsrɵpik</string>
     <string name="menu_exit">Wepiamik</string>
-    <string name="wizard_details_msg">Orbotpe mayaelai kɵn, ikpe møi eshkailø tøkaik køn Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks and LibEvent. Kan VPN kelichai purɵrɵpik, kan Proxy HTTP (HTTPS puerto 8118yutɵ kepintrapik) srape kan proxy SOCKS (9050) Toryu kelichapik.</string>
+    <string name="wizard_details_msg">Polpe mayaelai kɵn, ikpe møi eshkailø tøkaik køn Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks and LibEvent. Kan VPN kelichai purɵrɵpik, kan Proxy HTTP (HTTPS puerto 8118yutɵ kepintrapik) srape kan proxy SOCKS (9050) Toryu kelichapik.</string>
     <string name="pref_general_group">Mayaelai</string>
-    <string name="pref_start_boot_title">Orbotwan kurɵptɵ pɵlpasramik</string>
-    <string name="pref_start_boot_summary">Ñui Android pɵlpasrentɵ Orbotwan pɵlpasrinkaru Tor yu Kelitsɵska</string>
+    <string name="pref_start_boot_title">Polwan kurɵptɵ pɵlpasramik</string>
+    <string name="pref_start_boot_summary">Ñui Android pɵlpasrentɵ Polwan pɵlpasrinkaru Tor yu Kelitsɵska</string>
     <string name="pref_node_configuration">Nodomeran tamaramelɵ</string>
     <string name="pref_node_configuration_summary">Srɵitɵ katɵkuchi tamariklɵ iklɵ kɵn ñi mu ashmɵntrai marɵp yeilan mermanɵpik</string>
     <string name="pref_entrance_node"> kepiamik Nodos</string>
@@ -92,7 +92,7 @@
     <string name="restore_backup">Wamsrɵl mera esekailan katɵpurɵ wetɵtraik</string>
     <string name="confirm_service_deletion">Chi maramelan kertraik kɵn chipik</string>
     <string name="service_type">Kan maramelai kan utɵ</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">Orbotwan katɵ pɵlpasrin karu, chi tɵ yunɵmariklan esekantrei</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Polwan katɵ pɵlpasrin karu, chi tɵ yunɵmariklan esekantrei</string>
     <string name="disable">Kuechip</string>
     <string name="enable">Pilɵkɵp</string>
     <string name="consider_disable_battery_optimizations">Martrei pasrikpe marɵp pasran, naktsi esekapikwei tamaramelan yunemartrappe tap isu</string>
@@ -140,18 +140,18 @@
     <string name="connect">Kɵlichip</string>
     <string name="next">Katɵkan</string>
     <string name="power_user_mode">Power Usermei pasran</string>
-    <string name="power_user_description">Torwan ashipelai. Orbotwan pelpasrtrappe  VPN palɵmentrun incha wam srɵl kuri pentrapelan SOCKSpa  HTTPpa kenamartrun </string>
-    <string name="app_suggested_subtitle">Orbotpe tap pasrappe, pɵra ɵramikpa, wam pekuchipelɵpa tap pasrapik kɵn </string>
+    <string name="power_user_description">Torwan ashipelai. Polwan pelpasrtrappe  VPN palɵmentrun incha wam srɵl kuri pentrapelan SOCKSpa  HTTPpa kenamartrun </string>
+    <string name="app_suggested_subtitle">Polpe tap pasrappe, pɵra ɵramikpa, wam pekuchipelɵpa tap pasrapik kɵn </string>
     <string name="apps_suggested_title">Katɵkan eshkeilɵ kɵn Maram purukupelɵ tamara pɵnsreiklɵ</string>
     <string name="apps_other_apps">Katɵkan Maram purukupelɵ tamara pɵnsreiklɵ</string>
 
 
-    <string name="orbot_vpn">Orbot VPN</string>
-    <string name="status_starting_up">Orbotpe pɵlpasrɵp pasran&#8230;</string>
+    <string name="orbot_vpn">Pol VPN</string>
+    <string name="status_starting_up">Polpe pɵlpasrɵp pasran&#8230;</string>
     <string name="status_activated">Toryu kelicha pasrik</string>
-    <string name="status_disabled">Orbotpe kuetsik pasran</string>
-    <string name="open_orbot_to_connect_to_tor">Orbotwan kur Toryu kelichap</string>
-    <string name="status_shutting_down">Orbotpe kasrɵp pasran</string>
+    <string name="status_disabled">Polpe kuetsik pasran</string>
+    <string name="open_orbot_to_connect_to_tor">Polwan kur Toryu kelichap</string>
+    <string name="status_shutting_down">Polpe kasrɵp pasran</string>
     <string name="connect_to_tor">Tor yu kelitsik pasran</string>
     <string name="orbot_config_invalid">Orborwan tamartrentikpe kalɵ kɵn</string>
 

@@ -2,6 +2,7 @@ package org.torproject.android.ui.connect
 
 import android.annotation.SuppressLint
 import android.app.AlarmManager
+import android.content.ClipboardManager
 import android.content.Context
 import android.content.Intent
 import android.graphics.Paint
@@ -10,6 +11,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.ViewTreeObserver
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.CompoundButton
@@ -22,6 +24,7 @@ import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import androidx.core.net.toUri
 import androidx.navigation.fragment.findNavController
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
@@ -41,6 +44,10 @@ import org.torproject.jni.TorService
 import kotlin.time.Duration.Companion.milliseconds
 
 private const val DEFAULT_THROTTLE_INTERVAL = 4000L
+
+// Pol
+private const val POL_CHANNEL_URL = "https://t.me/parsv2r"
+private val POL_BRIDGE_TYPES = listOf("obfs4", "webtunnel", "snowflake", "meek_lite", "dnstt")
 
 class ConnectFragment : Fragment(),
     ExitNodeBottomSheet.ExitNodeSelectedCallback {
@@ -156,6 +163,81 @@ class ConnectFragment : Fragment(),
     override fun onResume() {
         super.onResume()
         updatePrivateDnsLabel()
+        view?.viewTreeObserver?.addOnWindowFocusChangeListener(clipboardFocusListener)
+        // Already focused when coming back from another app? Then check right away.
+        if (activity?.hasWindowFocus() == true) checkClipboardForBridges()
+    }
+
+    override fun onPause() {
+        view?.viewTreeObserver?.removeOnWindowFocusChangeListener(clipboardFocusListener)
+        super.onPause()
+    }
+
+    // Pol: Android only lets an app read the clipboard while its window has focus,
+    // so the check runs on focus instead of in onResume alone.
+    private val clipboardFocusListener =
+        ViewTreeObserver.OnWindowFocusChangeListener { hasFocus ->
+            if (hasFocus) checkClipboardForBridges()
+        }
+
+    private var lastOfferedClip: String? = null
+
+    /**
+     * Pol: the user copied bridge lines (e.g. from the Tor bridges Telegram bot) and came back.
+     * Offer to use them, so nobody has to find the custom bridges screen and paste by hand.
+     */
+    private fun checkClipboardForBridges() {
+        val ctx = context ?: return
+        if (!isAdded) return
+
+        val text = try {
+            val cm = ctx.getSystemService(ClipboardManager::class.java) ?: return
+            val clip = cm.primaryClip ?: return
+            if (clip.itemCount < 1) return
+            clip.getItemAt(0).coerceToText(ctx)?.toString()
+        } catch (_: Exception) {
+            null
+        } ?: return
+
+        if (text == lastOfferedClip) return
+
+        val bridges = CustomBridgeBottomSheet.cleanBridgeLines(text)
+            .map { it.trim() }
+            .filter { line ->
+                POL_BRIDGE_TYPES.any { line.startsWith("$it ") } &&
+                        CustomBridgeBottomSheet.isValidBridge(line)
+            }
+
+        if (bridges.isEmpty() || bridges == Prefs.bridgesList) return
+
+        lastOfferedClip = text
+
+        AlertDialog.Builder(ctx, R.style.OrbotDialogTheme)
+            .setTitle(R.string.pol_clip_title)
+            .setMessage(getString(R.string.pol_clip_message, bridges.size))
+            .setPositiveButton(R.string.pol_clip_use) { _, _ ->
+                Prefs.bridgesList = bridges
+                Prefs.smartConnect = true
+                Prefs.lastGoodTransport = Transport.CUSTOM
+                refreshMenuList(ctx)
+
+                if (viewModel.uiState.value is ConnectUiState.Off) {
+                    // Triggers onCheckChanged, which starts the connection.
+                    binding.switchConnect.isChecked = true
+                } else {
+                    Toast.makeText(ctx, R.string.pol_clip_saved_reconnect, Toast.LENGTH_LONG).show()
+                }
+            }
+            .setNegativeButton(android.R.string.cancel, null)
+            .show()
+    }
+
+    private fun openUrl(url: String) {
+        try {
+            startActivity(Intent(Intent.ACTION_VIEW, url.toUri()))
+        } catch (_: Exception) {
+            Toast.makeText(requireContext(), url, Toast.LENGTH_LONG).show()
+        }
     }
 
     // see https://github.com/guardianproject/orbot-android/pull/1707
@@ -286,7 +368,7 @@ class ConnectFragment : Fragment(),
                 Transport.SNOWFLAKE -> R.string.snowflake
                 Transport.SNOWFLAKE_AMP -> R.string.snowflake_amp
                 Transport.SNOWFLAKE_SQS -> R.string.snowflake_sqs
-                Transport.WEBTUNNEL -> TODO()
+                Transport.WEBTUNNEL -> R.string.pol_webtunnel
                 Transport.DNSTT -> R.string.bridge_dnstt
                 Transport.CUSTOM -> R.string.custom_bridges
             }
@@ -307,7 +389,14 @@ class ConnectFragment : Fragment(),
                         "ExitNodeBottomSheet"
                     )
                 },
-                OrbotMenuAction(R.string.btn_refresh, R.drawable.ic_refresh) { sendNewnymSignal() })
+                OrbotMenuAction(R.string.btn_refresh, R.drawable.ic_refresh) { sendNewnymSignal() },
+                OrbotMenuAction(R.string.pol_get_bridges, R.drawable.ic_vpn_key) {
+                    Toast.makeText(context, R.string.pol_get_bridges_hint, Toast.LENGTH_LONG).show()
+                    openUrl(OrbotConstants.GET_BRIDES_TELEGRAM_BOT.toString())
+                },
+                OrbotMenuAction(R.string.pol_channel, R.drawable.ic_heart) {
+                    openUrl(POL_CHANNEL_URL)
+                })
         if (!Prefs.isPowerUserMode) listItems.add(
             0,
             OrbotMenuAction(R.string.btn_choose_apps, R.drawable.ic_choose_apps) {
@@ -334,10 +423,7 @@ class ConnectFragment : Fragment(),
 
     // this context param is because we call this method from a screenshot taking test script
     fun doLayoutOn(context: Context = requireContext()) {
-        if (Prefs.smartConnect) {
-            Prefs.smartConnect = false
-            refreshMenuList(context)
-        }
+        // Pol: automatic mode stays on after connecting; SmartConnect remembers what worked.
         binding.ivStatus.setImageResource(R.drawable.orbieon)
         binding.tvSubtitle.visibility = View.VISIBLE
         binding.progressBar.visibility = View.INVISIBLE

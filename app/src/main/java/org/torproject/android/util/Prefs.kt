@@ -140,7 +140,8 @@ object Prefs {
 
     @JvmStatic
     var defaultLocale: String
-        get() = cr?.getPrefString(PREF_DEFAULT_LOCALE) ?: Locale.getDefault().language
+        // Pol: Persian is the default UI language unless the user picks another one.
+        get() = cr?.getPrefString(PREF_DEFAULT_LOCALE) ?: "fa"
         set(value) = cr?.putPref(PREF_DEFAULT_LOCALE, value) ?: Unit
 
     fun detectRoot(): Boolean {
@@ -280,9 +281,21 @@ object Prefs {
          */
         set(value) = cr?.putPref(PREF_CONNECTION_PATHWAY, value.id) ?: Unit
 
+    // Pol: automatic mode is the default, so a first-time user just taps connect.
     var smartConnect: Boolean
-        get() = cr?.getPrefBoolean(PREF_USE_SMART_CONNECT) ?: false
+        get() = cr?.getPrefBoolean(PREF_USE_SMART_CONNECT, true) ?: true
         set(value) = cr?.putPref(PREF_USE_SMART_CONNECT, value) ?: Unit
+
+    private const val PREF_POL_LAST_GOOD = "pref_pol_last_good_transport"
+
+    /**
+     * Pol: the transport that last reached 100% in automatic mode. Automatic mode tries it
+     * first next time (skipping the slower MOAT lookup), and falls back to the full chain.
+     * null when unknown or when the whole chain failed last time.
+     */
+    var lastGoodTransport: Transport?
+        get() = cr?.getPrefString(PREF_POL_LAST_GOOD)?.let { Transport.fromId(it) }
+        set(value) = cr?.putPref(PREF_POL_LAST_GOOD, value?.id) ?: Unit
 
 
     var smartConnectTimeout: Int

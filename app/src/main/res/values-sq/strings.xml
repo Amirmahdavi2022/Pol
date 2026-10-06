@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Orbot</string>
-    <string name="app_description">Orbot është një aplikacion i lirë ndërmjetësish që i bën aplikacionet e tjera ta përdorin internetin në mënyrë më të siguruar. Orbot-i përdor Tor-in për të fshehtëzuar trafikun tuaj Internet dhe mandej e fsheh duke e kaluar përmes një vargu kompjuterash nëpër botë. Tor-i është <em>software</em> i lirë dhe një rrjet i hapët që ju ndihmon të mbroheni nga një formë survejimi rrjetesh e cila kërcënon lirinë dhe privatësinë personale, veprimtarinë dhe marrëdhëniet rezervat në biznesi dhe sigurinë shtetërore, e njohur si analizim trafiku.</string>
-    <string name="menu_settings">Rregullime Orbot-i</string>
+    <string name="app_name">Pol</string>
+    <string name="app_description">Pol është një aplikacion i lirë ndërmjetësish që i bën aplikacionet e tjera ta përdorin internetin në mënyrë më të siguruar. Pol-i përdor Tor-in për të fshehtëzuar trafikun tuaj Internet dhe mandej e fsheh duke e kaluar përmes një vargu kompjuterash nëpër botë. Tor-i është <em>software</em> i lirë dhe një rrjet i hapët që ju ndihmon të mbroheni nga një formë survejimi rrjetesh e cila kërcënon lirinë dhe privatësinë personale, veprimtarinë dhe marrëdhëniet rezervat në biznesi dhe sigurinë shtetërore, e njohur si analizim trafiku.</string>
+    <string name="menu_settings">Rregullime Pol-i</string>
     <string name="menu_about">Mbi</string>
     <string name="menu_exit">Dalje</string>
     <!--Welcome Wizard strings (DJH)-->
@@ -28,10 +28,10 @@
     <string name="snowflake_proxy_msg_title">Shfaq Njoftim Lidhjeje</string>
     <string name="connected_title">I lidhur</string>
     <string name="power_user_mode">Mënyra “Përdorues i Regjur”</string>
-    <string name="power_user_description">Për përdorues të familjarizuar me Tor-in. Ju lejon ta nisni Orbot-in pa rregullimin VPN dhe shfaqë porta SOCKS dhe HTTP të hapura</string>
+    <string name="power_user_description">Për përdorues të familjarizuar me Tor-in. Ju lejon ta nisni Pol-in pa rregullimin VPN dhe shfaqë porta SOCKS dhe HTTP të hapura</string>
     <string name="apps_suggested_title">Aplikacione të Këshilluar</string>
     <string name="apps_other_apps">Aplikacione të Tjera</string>
-    <string name="pref_start_boot_title">Nise Orbot-in që gjatë Nisjes së Kompjuterit</string>
+    <string name="pref_start_boot_title">Nise Pol-in që gjatë Nisjes së Kompjuterit</string>
     <string name="exit_nodes">Nyja Daljesh</string>
     <string name="confirm">Ripohojeni</string>
     <string name="onion_port">Portë Onion</string>
@@ -49,7 +49,7 @@
     <string name="btn_change_exit">Ndryshoni dalje</string>
     <string name="btn_refresh">Rifreskoje Lidhjen</string>
     <string name="menu_log">Regjistër</string>
-    <string name="wizard_details_msg">Orbot-i është një aplikacion me burim të hapët, që përmban Tor, IPtProxy (Lyrebird, Meek, Snowflake), hev-socks5-tunnel dhe LibEvent. Ai furnizon një tunel VPN, një ndërmjetës vendor HTTP Connect (HTTPS vetëm në portën 8118) dhe një ndërmjetës SOCKS (9050) te rrjeti Tor.</string>
+    <string name="wizard_details_msg">Pol-i është një aplikacion me burim të hapët, që përmban Tor, IPtProxy (Lyrebird, Meek, Snowflake), hev-socks5-tunnel dhe LibEvent. Ai furnizon një tunel VPN, një ndërmjetës vendor HTTP Connect (HTTPS vetëm në portën 8118) dhe një ndërmjetës SOCKS (9050) te rrjeti Tor.</string>
     <string name="pref_node_configuration">Formësim Nyjesh</string>
     <string name="pref_node_configuration_summary">Këto janë rregullime të thelluara që mund të reduktojnë anonimitetin tuaj</string>
     <string name="pref_entrance_node">Nyja Hyrjesh</string>
@@ -71,7 +71,7 @@
     <string name="version">Version:</string>
     <string name="license">Licencë:</string>
     <string name="pref_dnsport_dialog">Formësim Porte DNS</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">Që të hyjnë në fuqi ndryshimet, ju lutemi, rinisni Orbot-in</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Që të hyjnë në fuqi ndryshimet, ju lutemi, rinisni Pol-in</string>
     <string name="pref_prefer_ipv6">Parapëlqe lidhje IPv6</string>
     <string name="custom_bridges">Ura Vetjake</string>
     <string name="newnym">Kaluat te një identitet i ri Tor!</string>
@@ -106,7 +106,7 @@
     <string name="pref_isolate_dest_summary">Përdorni një qark të ndryshëm për çdo adresë vendmbërritje</string>
     <string name="pref_disable_ipv4">Çaktivizo lidhje IPv4</string>
     <string name="menu_new_identity">Identitet i Ri</string>
-    <string name="pref_start_boot_summary">Nise automatikisht Orbot-in dhe lidhu me Tor-in, kur niset pajisja Android</string>
+    <string name="pref_start_boot_summary">Nise automatikisht Pol-in dhe lidhu me Tor-in, kur niset pajisja Android</string>
     <string name="pref_entrance_node_summary">Shenja gishtash, nofka, vende dhe adresa për hopin e parë</string>
     <string name="strict_nodes_description">Trajtojini rregullimet për Nyje Dalëse si një domosdoshmëri për ngritjen e krejt qarqeve. Kjo mund të dëmtojë funksione, nëse s’është e mundur të prodhohen qarqe me rregullimet tuaja për Nyje Dalëse.</string>
     <string name="pref_open_proxy_on_all_interfaces_summary">Lejoni të pranishëm në Wi-Fi-n tuaj, pajisje të lidhura dhe këdo tjetër që mund të lidhet te IP-ja juaj, të hyjnë në</string>
@@ -114,7 +114,7 @@
     <string name="pref_http_title">Tor HTTP</string>
     <string name="consider_enable_battery_optimizations">Pa shërbime të strehuara në funksionim, shihni mundësinë e aktivizimit të optimizimeve të baterisë</string>
     <string name="direct_connect_subtitle">Rruga më e mirë për t’u lidhur me Tor-in. Përdoreni nëse Tor-i s’është i bllokuar.</string>
-    <string name="app_suggested_subtitle">Më mirë se me gjithçka tjetër, Orbot-i funksionon me aplikacione shkëmbimi mesazhesh dhe mediash shoqërore.</string>
+    <string name="app_suggested_subtitle">Më mirë se me gjithçka tjetër, Pol-i funksionon me aplikacione shkëmbimi mesazhesh dhe mediash shoqërore.</string>
     <string name="volunteer_mode">Mënyra Dashamirësi</string>
     <string name="snowflake_subtitle">Lidhuni përmes vullnetarësh Tor. Anashkalohen disa bllokime Tor-i.</string>
     <string name="fingerprints_nicks_countries_and_addresses_for_the_last_hop">Shenja gishtash, nofka, vende dhe adresa për hopin e fundit</string>
@@ -139,7 +139,7 @@
     <string name="setting_debug">Diagnostiojeni</string>
     <string name="menu_more">Më tepër</string>
     <string name="secure_your_connection_subtitle">Fshihini aplikacione mbikëqyrjes së rrjetit dhe përfitoni hyrje kur janë të bllokuar.</string>
-    <string name="no_internet_subtitle">Që të përdorni Orbot-in, ju duhet një lidhje internet.</string>
+    <string name="no_internet_subtitle">Që të përdorni Pol-in, ju duhet një lidhje internet.</string>
     <string name="not_sure">Jo i sigurt\?</string>
     <string name="ask_tor">Pyetni Tor-in</string>
     <string name="option_only_when_charging">Vetëm kur ngarkohet bateria</string>
@@ -153,7 +153,7 @@
     <string name="pref_isolate_port">Izolo porta vendmbërritje</string>
     <string name="asking">PO PYETET…</string>
     <string name="snowflake_amp">Snowflake AMP</string>
-    <string name="root_warning">Orbot-i ka pikasur se është shtënë në dorë kontrolli i pajisjes tuaj, çka mund të shkaktojë probleme sigurie.</string>
+    <string name="root_warning">Pol-i ka pikasur se është shtënë në dorë kontrolli i pajisjes tuaj, çka mund të shkaktojë probleme sigurie.</string>
     <string name="kindness_config_detail">Formësoni si dhe kur pajisja juaj mund të veprojë si një ndërmjetës Snowflake për përdorues të tjerë të Tor-it.</string>
     <string name="pref_isolate_protocol_summary">Përdorni një qark të ndryshëm për çdo protokoll lidhjeje</string>
     <string name="pref_reduced_connection_padding_summary">I mbyll më herët lidhjet me relenë dhe dërgon më pak pakete “padding”, për të zvogëluar përdorim të dhënash dhe baterie</string>
@@ -188,15 +188,15 @@
     <string name="bridge_meek_azure_subtitle">Fsheh trafikun tuaj. Anashkalon ca bllokim të Tor-it. Mund të jetë shumë e ngadaltë.</string>
     <string name="custom_bridges_subtitle">Pyetni brenda rrjeteve dhe enteve tuaj të besuar, për të parë se mos dikush është duke strehuar një urë. Nëse jo, ura mund të marrë një shok për ju.</string>
     <string name="custom_bridges_description">Ngjitni më poshtë adresat e urave që merrni. Ose skanoni kodin QR që të shtohen. Shokët mund të marrin ura për ju te %1$s.</string>
-    <string name="camo_samsung_instructions">Në pajisjen tuaj Samsung Galaxy, njoftimet e Orbot-it do të ndërrojnë ikona vetëm nëse hapni Rregullime -&gt; Njoftime -&gt; Rregullime të Mëtejshme dhe duke çaktivizuar “Shfaq ikonë aplikacioni në njoftime”. Klikoni këtu që të hapni Rregullime Njoftimesh.</string>
+    <string name="camo_samsung_instructions">Në pajisjen tuaj Samsung Galaxy, njoftimet e Pol-it do të ndërrojnë ikona vetëm nëse hapni Rregullime -&gt; Njoftime -&gt; Rregullime të Mëtejshme dhe duke çaktivizuar “Shfaq ikonë aplikacioni në njoftime”. Klikoni këtu që të hapni Rregullime Njoftimesh.</string>
     <string name="power_user_mode_permission">Për Mënyrën “Përdorues i Thelluar” Lypsen Leje Alarmesh &amp; Kujtuesish</string>
-    <string name="power_user_mode_permission_msg">Ju lutemi, lejojeni Orbot-in të caktojë alarme dhe kujtues, që të mund të përdorë mënyrën “përdorues i thelluar”. Kjo s’do të caktojë faktikisht ndonjë alarm në pajisjen tuaj. Kjo leje duhet që të bëhet sistemi të mbajë në punë OrbotService, kur Orbot-i nuk është duke u përdorur si një VPN për krejt sistemin.</string>
-    <string name="request_notification_permission">Ju lutemi, aktivizoni njoftime për Orbot</string>
-    <string name="request_notification_permission_msg">Pa lejuar njoftimet, Orbot-i s’mund të veprojë si një VPN Tor, apo të përdorë Mënyrën “Kindness”.\n\nKur lejohen, shfaqim vetëm një njoftim, kur Orbot-i xhiron.</string>
+    <string name="power_user_mode_permission_msg">Ju lutemi, lejojeni Pol-in të caktojë alarme dhe kujtues, që të mund të përdorë mënyrën “përdorues i thelluar”. Kjo s’do të caktojë faktikisht ndonjë alarm në pajisjen tuaj. Kjo leje duhet që të bëhet sistemi të mbajë në punë OrbotService, kur Pol-i nuk është duke u përdorur si një VPN për krejt sistemin.</string>
+    <string name="request_notification_permission">Ju lutemi, aktivizoni njoftime për Pol</string>
+    <string name="request_notification_permission_msg">Pa lejuar njoftimet, Pol-i s’mund të veprojë si një VPN Tor, apo të përdorë Mënyrën “Kindness”.\n\nKur lejohen, shfaqim vetëm një njoftim, kur Pol-i xhiron.</string>
     <string name="open_settings">Hapni Rregullimet</string>
     <string name="error_no_password_set">Që të mund të përdorni veçorinë “Kyçe Ekranin”, lypset të caktoni një fjalëkalim për pajisjen tuaj Android</string>
-    <string name="device_lock_unsupported">Mirëfilltësimi Orbot s’mbulohet në pajisjen tuaj</string>
-    <string name="device_lock_security_update_needed">Duhet të shkarkoni përditësime sigurie për Android-in për pajisjen tuaj, që të mund të përdorni Mirëfilltësim Orbot</string>
+    <string name="device_lock_unsupported">Mirëfilltësimi Pol s’mbulohet në pajisjen tuaj</string>
+    <string name="device_lock_security_update_needed">Duhet të shkarkoni përditësime sigurie për Android-in për pajisjen tuaj, që të mund të përdorni Mirëfilltësim Pol</string>
     <string name="invalid_bridge_format">Format i pavlefshëm ure</string>
     <string name="error_asking_tor_for_bridges">Gabim në pyetjen e Tor-it se si të lidhet</string>
     <string name="enter_bridge_address">Jepni adresë ure</string>
@@ -205,14 +205,14 @@
     <string name="unlock_app_msg" formatted="true">Që të mund të përdorni %s, ju lutemi, shkyçni pajisjen tuaj</string>
     <string name="run_smart_connect_">Që të gjeni rrugën më të mirë, xhironi Smart Connect</string>
     <string name="scan_qr_code">Skanoni Kodin QR</string>
-    <string name="orbot_vpn">VPN Orbot</string>
-    <string name="status_starting_up">Orbot-i po Niset…</string>
+    <string name="orbot_vpn">VPN Pol</string>
+    <string name="status_starting_up">Pol-i po Niset…</string>
     <string name="status_activated">I lidhur te Rrjeti Tor</string>
-    <string name="status_disabled">Orbot-i është i Çaktivizuar</string>
-    <string name="open_orbot_to_connect_to_tor">Që të lidheni te Tor-i, hapni Orbot-in</string>
-    <string name="status_shutting_down">Orbot-i Po Fiket</string>
+    <string name="status_disabled">Pol-i është i Çaktivizuar</string>
+    <string name="open_orbot_to_connect_to_tor">Që të lidheni te Tor-i, hapni Pol-in</string>
+    <string name="status_shutting_down">Pol-i Po Fiket</string>
     <string name="connect_to_tor">Lidhu me Tor-in</string>
-    <string name="orbot_config_invalid">Formësim i Pavlefshëm Orbot-i</string>
+    <string name="orbot_config_invalid">Formësim i Pavlefshëm Pol-i</string>
     <string name="couldn_t_start_tor_process_">S’u nis dot procesi Tor:</string>
     <string name="unable_to_start_tor">S’arrihet të niset Tor-i:</string>
     <string name="kibibyte_per_second">KiB/s</string>
@@ -224,7 +224,7 @@
     <string name="search_for_apps">Kërkoni për aplikacione</string>
     <string name="apps_updated_msg">Aplikacionet u Përditësuan</string>
     <string name="setting_unlock_pass_title">Kyçe Ekranin</string>
-    <string name="setting_unlock_pass_description">Kërko doemos PIN-in, fjalëkalimin, ose rregullsi fërkimi të pajisjes tuaj që të hapet Orbot-i</string>
+    <string name="setting_unlock_pass_description">Kërko doemos PIN-in, fjalëkalimin, ose rregullsi fërkimi të pajisjes tuaj që të hapet Pol-i</string>
     <string name="setting_unlock_with_biometrics_title">Përdor Parametra Biometrikë (opsionale)</string>
     <string name="setting_unlock_with_biometrics_description">Shkyçeni Orbo-in me shenja gishtat tuajat, ose me Face ID, nëse janë ujdisur në pajisjen tuaj.</string>
     <string name="snowflake_sqs">Snowflake SQS</string>
@@ -232,7 +232,7 @@
     <string name="app_icon_dialog_msg" formatted="true">Kalimi në %1$s do të sjellë rinisjen e aplikacionit</string>
     <string name="title_safety">Parrezikshmëri</string>
     <string name="setting_app_icon_title">Ikonë Aplikacioni</string>
-    <string name="setting_app_icon_description">Zgjidhni si duket Orbot-i në pajisjen tuaj</string>
+    <string name="setting_app_icon_description">Zgjidhni si duket Pol-i në pajisjen tuaj</string>
     <string name="setting_block_screenshot_title">Blloko Foto Ekrani</string>
     <string name="setting_block_screenshot_description">Pengon këdo të bëjë foto ekrani të këtij aplikacioni</string>
     <string name="status_connected_control_port">Është nisur shërbimi Tor</string>
@@ -263,20 +263,20 @@
     <string name="limit_dns_tunnel_use">Kufizo Përdorim Tuneli DNS</string>
     <string name="menu_kindness">I sjellshëm</string>
     <string name="dns_tunnel_usage_description">Tunelet DNS i japin përparësi aftësisë së shpejtësisë, në vend se shpejtësisë dhe mund të duken të ngadaltë. Rekomandojmë aktivizimin e tyre vetëm për aplikacione thelbësorë. Transmetimi i videove nuk rekomandohet.</string>
-    <string name="unable_to_start_orbot_vpn_title">S’arrihet të vihet në punë VPN-ja Orbot</string>
-    <string name="unable_to_start_legacy_vpn_error_msg">Ka një Profil VPN Vetjake të formësuar të jetë një VPN “Përherë aktive”. Ju lutemi, çaktivizojeni, para se të nisni Orbot-in.</string>
-    <string name="unable_to_start_other_vpn_app_error_msg">Aplikacioni %1$s është formësuar të jetë një VPN “Përherë aktiv”. Ju lutemi, çaktivizojeni, para se të nisni Orbot-in.</string>
-    <string name="unable_to_start_unknown_reason_error_msg">S’u dha leje për VPN, ose një tjetër aplikacion VPN ka të aktivizuar veçorinë “VPN përherë aktive”. Mund ta hidhni tej këtë sinjalizim dhe të rilidheni, nëse mbyllët gabimisht dialogun e mëparshëm Kërkesë për VPN. Përdoruesit e thelluar mund të përdorin një tjetër aplikacion VPN dhe të përdorin Tor-in si një Ndërmjetës SOCKS, duke aktivizuar Mënyrën “Përdorues i Thelluar” të Orbot-it.</string>
+    <string name="unable_to_start_orbot_vpn_title">S’arrihet të vihet në punë VPN-ja Pol</string>
+    <string name="unable_to_start_legacy_vpn_error_msg">Ka një Profil VPN Vetjake të formësuar të jetë një VPN “Përherë aktive”. Ju lutemi, çaktivizojeni, para se të nisni Pol-in.</string>
+    <string name="unable_to_start_other_vpn_app_error_msg">Aplikacioni %1$s është formësuar të jetë një VPN “Përherë aktiv”. Ju lutemi, çaktivizojeni, para se të nisni Pol-in.</string>
+    <string name="unable_to_start_unknown_reason_error_msg">S’u dha leje për VPN, ose një tjetër aplikacion VPN ka të aktivizuar veçorinë “VPN përherë aktive”. Mund ta hidhni tej këtë sinjalizim dhe të rilidheni, nëse mbyllët gabimisht dialogun e mëparshëm Kërkesë për VPN. Përdoruesit e thelluar mund të përdorin një tjetër aplikacion VPN dhe të përdorin Tor-in si një Ndërmjetës SOCKS, duke aktivizuar Mënyrën “Përdorues i Thelluar” të Pol-it.</string>
     <string name="open_vpn_settings">Hap Rregullime VPN-je Android</string>
     <string name="battery_optimization_title">Çaktivizo Optimizime Baterie</string>
-    <string name="battery_optimization_pref_msg">Rregullim për disa përdorues që dyshojnë se pajisja e tyre po asgjëson para kohe Orbot-in teksa xhiron në prapaskenë.</string>
-    <string name="battery_optimization_dialog_msg">Disa pajisje Android mund ta asgjësojnë Orbot-in teksa ky funksionon në prapaskenë. Për shumicën e përdoruesve që duan të sigurohen se Orbot-i mbetet i lidhur dhe funksional, mjafton të zgjidhet për Orbot-in të funksionojë si një VPN “Përherë hapur”, që nga rregullimet e sistemit. Por, mundet prapëseprapë ta pengoni pajisjen tuaj të kryejë çfarëdo optimizimi baterie në Orbot, nëse mendoni se është e nevojshme.</string>
-    <string name="battery_optimization_dialog_msg_instructions">Në skenën pasuese përzgjidhni Orbot → Lejo përdorim në prapaskenë → E pakufizuar.</string>
+    <string name="battery_optimization_pref_msg">Rregullim për disa përdorues që dyshojnë se pajisja e tyre po asgjëson para kohe Pol-in teksa xhiron në prapaskenë.</string>
+    <string name="battery_optimization_dialog_msg">Disa pajisje Android mund ta asgjësojnë Pol-in teksa ky funksionon në prapaskenë. Për shumicën e përdoruesve që duan të sigurohen se Pol-i mbetet i lidhur dhe funksional, mjafton të zgjidhet për Pol-in të funksionojë si një VPN “Përherë hapur”, që nga rregullimet e sistemit. Por, mundet prapëseprapë ta pengoni pajisjen tuaj të kryejë çfarëdo optimizimi baterie në Pol, nëse mendoni se është e nevojshme.</string>
+    <string name="battery_optimization_dialog_msg_instructions">Në skenën pasuese përzgjidhni Pol → Lejo përdorim në prapaskenë → E pakufizuar.</string>
     <string name="battery_optimization_dialog_msg_disclaimer">Kini parasysh se për shumicën e pajisjeve, çaktivizimi i optimizimeve të baterisë do të harxhojë energjinë e baterisë së pajisjes tuaj më shpejt se zakonisht…</string>
     <string name="battery_optimizations_dialog_btn_disable">Hap Rregullime Optimizimesh Baterie</string>
-    <string name="battery_optimizations_dialog_msg_power_user">Disa pajisje Android mund të reshtin funksionimin e Orbot-it, kur ky xhiron si një pajisje në prapaskenë nën Mënyrën “Përdorues i Thelluar”. Mundeni përherë të çaktivizoni/riaktivizoni optimizime baterie, kurdo më vonë, që nga rregullimet e Orbot-it…</string>
-    <string name="battery_optimizations_are_disabled">Optimizimet e Baterisë janë aktualisht të çaktivizuara për Orbot-in…</string>
-    <string name="battery_optimizations_are_enabled">Optimizimet e Baterisë janë aktualisht të aktivizuara për Orbot-in. Kjo është parazgjedhja dhe është e arsyeshme për shumicën e përdoruesve…</string>
+    <string name="battery_optimizations_dialog_msg_power_user">Disa pajisje Android mund të reshtin funksionimin e Pol-it, kur ky xhiron si një pajisje në prapaskenë nën Mënyrën “Përdorues i Thelluar”. Mundeni përherë të çaktivizoni/riaktivizoni optimizime baterie, kurdo më vonë, që nga rregullimet e Pol-it…</string>
+    <string name="battery_optimizations_are_disabled">Optimizimet e Baterisë janë aktualisht të çaktivizuara për Pol-in…</string>
+    <string name="battery_optimizations_are_enabled">Optimizimet e Baterisë janë aktualisht të aktivizuara për Pol-in. Kjo është parazgjedhja dhe është e arsyeshme për shumicën e përdoruesve…</string>
     <string name="btn_connect_anyway">Lidhu, Sido Qoftë</string>
     <string name="btn_connect_anyway_stop_showing">Lidhu dhe Çaktivizoje Këtë Sinjalizim</string>
     <string name="pref_proxy_no_proxy">Pa Ndërmjetës</string>

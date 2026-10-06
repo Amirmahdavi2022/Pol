@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pol_webtunnel">WebTunnel</string>
+    <string name="pol_get_bridges">Get bridges from the Telegram bot</string>
+    <string name="pol_get_bridges_hint">In the bot, tap Start, ask for bridges, then tap Copy and come back to Pol.</string>
+    <string name="pol_channel">Our Telegram channel</string>
+    <string name="pol_clip_title">Bridges found</string>
+    <string name="pol_clip_message">You copied %1$d bridge lines. Connect with them?</string>
+    <string name="pol_clip_use">Use them</string>
+    <string name="pol_clip_saved_reconnect">Bridges saved. Disconnect and connect again to use them.</string>
+</resources>

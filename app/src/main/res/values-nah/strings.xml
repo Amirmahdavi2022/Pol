@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Orbot</string>
-    <string name="app_description">Tepoztlatlatquitl proxy ahmotlazotli  Orbot, mitzmaca netlacaneconiliztli. Orbot tlamanitiliz Tor pampa nahuati ichtaca amatlacuiloli  nochi tepoztlapohualoni in tlalticpac. Tor ca tlanemacuatextli ihuan metlatl tlapouhqui inin quipalehui huicpa pihpiyaliztli, ihuan quicuitlauh tlacaxoxouhcayotl ihuan tlacaconemiliztli ica hueyi altepetl. </string>
+    <string name="app_name">Pol</string>
+    <string name="app_description">Tepoztlatlatquitl proxy ahmotlazotli  Pol, mitzmaca netlacaneconiliztli. Pol tlamanitiliz Tor pampa nahuati ichtaca amatlacuiloli  nochi tepoztlapohualoni in tlalticpac. Tor ca tlanemacuatextli ihuan metlatl tlapouhqui inin quipalehui huicpa pihpiyaliztli, ihuan quicuitlauh tlacaxoxouhcayotl ihuan tlacaconemiliztli ica hueyi altepetl. </string>
     <string name="menu_settings">Yectlalia tlamantli</string>
     <string name="menu_log">Log</string>
     <string name="menu_about">Itechpa</string>
     <string name="menu_exit">Exit</string>
-    <string name="wizard_details_msg">Aquinzazo cualli tequitl pan inin tepoztlatlatquitl Orbot quipia Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks y LibEvent. Nanmechmaca ce VPN, ce proxy HTTP Connect local (HTTPS zan tzalantli 8118) ihuan ce proxy SOCKS (9050) ipan matlatl Tor.</string>
+    <string name="wizard_details_msg">Aquinzazo cualli tequitl pan inin tepoztlatlatquitl Pol quipia Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks y LibEvent. Nanmechmaca ce VPN, ce proxy HTTP Connect local (HTTPS zan tzalantli 8118) ihuan ce proxy SOCKS (9050) ipan matlatl Tor.</string>
     <string name="pref_general_group">Ipanokayotl</string>
-    <string name="pref_start_boot_title">Xipehua Orbot ipan Boot</string>
-    <string name="pref_start_boot_summary">Xipehua Orbot ihuan xictencui Tor ihcuac motepoznonotza Android ye moachtohuiztica</string>
+    <string name="pref_start_boot_title">Xipehua Pol ipan Boot</string>
+    <string name="pref_start_boot_summary">Xipehua Pol ihuan xictencui Tor ihcuac motepoznonotza Android ye moachtohuiztica</string>
     <string name="pref_node_configuration">Mocentilia tencuitliltetl</string>
     <string name="pref_node_configuration_summary">Inin mocentilis ca acoquitzaliztli ihuan ihnintin huel chihuazqueh  tiquipoloz moichtatoca</string>
     <string name="pref_entrance_node">Calacoayan tencuitliltetl</string>
@@ -93,7 +93,7 @@ atl oquitlapatic</string>
 atl oquitlapatic</string>
     <string name="confirm_service_deletion">Quineltia itlamiliz in tequitl</string>
     <string name="service_type">Itlayehyecol in tequitl</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">Nimitztlatlauhtia, occepa quipehuaz Orbot inic quixiptlayotilia in patlaliztli</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Nimitztlatlauhtia, occepa quipehuaz Pol inic quixiptlayotilia in patlaliztli</string>
     <string name="disable">Ahmo quichihua</string>
     <string name="enable">Quema tlacaquini</string>
     <string name="consider_disable_battery_optimizations">Tequitl oquinpix ipan chihualiztli; tiquinyolnonotzaz tiquintlacuilia in cualtequitl in batería</string>
@@ -141,17 +141,17 @@ atl oquitlapatic</string>
     <string name="next">Occe</string>
     <string name="power_user_mode">Tlamatini yuhcayotl</string>
     <string name="power_user_description">Inic tlapouhqui tlein quimati Tor. Huel quilhui tlein pehuaz Orbort yehce ahmo mochihua in quipatlaz VPN ihuan quimachti in acaltecoyan SOCKS ihuan otlapouhqueh HTTP</string>
-    <string name="app_suggested_subtitle">Orbot  tequipano cenca cualli ica amatlacuilotepoztlatlatquitl ihuan tlacanamimatlatl</string>
+    <string name="app_suggested_subtitle">Pol  tequipano cenca cualli ica amatlacuilotepoztlatlatquitl ihuan tlacanamimatlatl</string>
     <string name="apps_suggested_title">Yolitectia tepoztlatlatquitl</string>
     <string name="apps_other_apps">Occe tepoztlatlatquitl</string>
-    <string name="orbot_vpn">Orbot VPN</string>
-    <string name="status_starting_up">Orbot pehualtica …</string>
+    <string name="orbot_vpn">Pol VPN</string>
+    <string name="status_starting_up">Pol pehualtica …</string>
     <string name="status_activated">Tencuitica matlatl Tor Network</string>
-    <string name="status_disabled">Orbot ahmo tequitica</string>
-    <string name="open_orbot_to_connect_to_tor">Xictlapoz Orbot pampa xictencuiz Tor</string>
-    <string name="status_shutting_down">Orbot tlaltzacuatica</string>
+    <string name="status_disabled">Pol ahmo tequitica</string>
+    <string name="open_orbot_to_connect_to_tor">Xictlapoz Pol pampa xictencuiz Tor</string>
+    <string name="status_shutting_down">Pol tlaltzacuatica</string>
     <string name="connect_to_tor">Xictencuiz Tor</string>
-    <string name="orbot_config_invalid">Ahmo melahuac mocentilis Orbot</string>
+    <string name="orbot_config_invalid">Ahmo melahuac mocentilis Pol</string>
     <string name="couldn_t_start_tor_process_">Ahmo huel opehua Tor</string>
     <string name="unable_to_start_tor">Ahmo opehua Tor</string>
     <string name="kibibyte_per_second">KiB/s</string>

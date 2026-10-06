@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Orbot</string>
+    <string name="app_name">Pol</string>
     <string name="menu_settings">Moslamalar</string>
     <string name="menu_about">Dastur haqida</string>
     <string name="menu_exit">Chiqish</string>
@@ -21,7 +21,7 @@
     <string name="next">Keyingi</string>
     <string name="confirm">Tasdiqlash</string>
     <string name="license">Litsenziya:</string>
-    <string name="status_starting_up">Orbot ishga tushirilmoqda…</string>
+    <string name="status_starting_up">Pol ishga tushirilmoqda…</string>
     <string name="status_activated">Tor tarmog\'iga ulangan</string>
     <string name="set_transport">Transportni sozlash</string>
 </resources>

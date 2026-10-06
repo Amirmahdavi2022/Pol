@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-    <string name="app_name">Orbot</string>
-    <string name="app_description">Orbot shia wane a\'yataaya maliasat, akaalinjia tü wane a\'yataayaakalüirua süpüla anainjainjatüin shia\'yataaya. Orbot a\'yataasü sulu\'u \"internet\" süka wane kanüliasü Tor je süchikijee sunujuluin sulu\'u wane kojuyasü \"computador\" sainküsü mmakat. Tor maliasat je taashisü süpüla sa\'inmajüin pia suulia eekai mojulaweein pümüin wanaa sümaa pi\'yataain sulu\'u \"internet\".</string>
+    <string name="app_name">Pol</string>
+    <string name="app_description">Pol shia wane a\'yataaya maliasat, akaalinjia tü wane a\'yataayaakalüirua süpüla anainjainjatüin shia\'yataaya. Pol a\'yataasü sulu\'u \"internet\" süka wane kanüliasü Tor je süchikijee sunujuluin sulu\'u wane kojuyasü \"computador\" sainküsü mmakat. Tor maliasat je taashisü süpüla sa\'inmajüin pia suulia eekai mojulaweein pümüin wanaa sümaa pi\'yataain sulu\'u \"internet\".</string>
     <string name="menu_settings">Anaata</string>
     <string name="menu_log">Sünüliamajatu</string>
     <string name="menu_about">Jautoupuna</string>
     <string name="menu_exit">Ajuitia</string>
-    <string name="wizard_details_msg">Orbot jia wane ayataya  kalúús Tor,PtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks y LibEvent. apus  wopúú VPN, un proxy HTTP Connect local (HTTPS jumuiwuaya\'a 8118) je wanee proxy SOCKS (9050) julúú atalaya Tor.</string>
+    <string name="wizard_details_msg">Pol jia wane ayataya  kalúús Tor,PtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks y LibEvent. apus  wopúú VPN, un proxy HTTP Connect local (HTTPS jumuiwuaya\'a 8118) je wanee proxy SOCKS (9050) julúú atalaya Tor.</string>
     <string name="pref_general_group">Jupushu\'aa.</string>
-    <string name="pref_start_boot_title">Achüwuaja Orbot juttianain.</string>
+    <string name="pref_start_boot_title">Achüwuaja Pol juttianain.</string>
     <string name="pref_start_boot_summary">Puchuaja ORBOT juma Tor juttianainje jupula Android.</string>
     <string name="pref_node_configuration">Anatiaa node </string>
     <string name="pref_node_configuration_summary">Shia anatia anaskal jupula erajunuin pia.</string>
@@ -90,7 +90,7 @@
     <string name="restore_backup">anoutünajatü süyakuakat tü seguridakat</string>
     <string name="confirm_service_deletion">apirüinjat sujütchajaya tü süpülajatükat</string>
     <string name="service_type">jetsü tü süpülajatka</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">pülejera süchukua Orbot süpüla sujutalüin tü shiratiakat.</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">pülejera süchukua Pol süpüla sujutalüin tü shiratiakat.</string>
     <string name="disable">pakatüin</string>
     <string name="enable">alaatiria</string>
     <string name="consider_disable_battery_optimizations">süpülajana anaterüshi sünain shiyatain; esü süpüla pakatüin süpüla katchinjatüin tü bateriakat</string>
@@ -140,17 +140,17 @@ punjulaa apps, jupula  anaijatuin  pu kachuerrase</string>
     <string name="next">Tu wuanee.</string>
     <string name="power_user_mode">Kawatirras.</string>
     <string name="power_user_description">Pirrajule Tor es jupula  painjüin  jumuywaya\'a, pirreer  SOCKS and HTTP  errulaín</string>
-    <string name="app_suggested_subtitle">Orbot anas jukaipa juma alwuatawüa je eerrajilawua  wapushua \'ya</string>
+    <string name="app_suggested_subtitle">Pol anas jukaipa juma alwuatawüa je eerrajilawua  wapushua \'ya</string>
     <string name="apps_suggested_title">Ain\'nes juka tu aplicación ka</string>
     <string name="apps_other_apps">Wanejet aplikación</string>
     <string name="orbot_vpn">0rbot VNP</string>
-    <string name="status_starting_up">Eepeja\'asu Orbot&#8230;</string>
+    <string name="status_starting_up">Eepeja\'asu Pol&#8230;</string>
     <string name="status_activated">Antirrawaas jumaa atalaya Tor</string>
-    <string name="status_disabled">Yokutusu\'u Orbot</string>
-    <string name="open_orbot_to_connect_to_tor">Pe\'erulaa  Orbot jupula  puyata ín juma Tor.</string>
+    <string name="status_disabled">Yokutusu\'u Pol</string>
+    <string name="open_orbot_to_connect_to_tor">Pe\'erulaa  Pol jupula  puyata ín juma Tor.</string>
     <string name="status_shutting_down">Yokuuter  Tor</string>
     <string name="connect_to_tor">Antirrawaa sunain Tor</string>
-    <string name="orbot_config_invalid">sükumajia Orbot maliaasat</string>
+    <string name="orbot_config_invalid">sükumajia Pol maliaasat</string>
 
     <string name="couldn_t_start_tor_process_">Nojotsü o\'ottuin sukuaipa shiatain Tor</string>
     <string name="unable_to_start_tor">no jot süpüla achuajaje\'in Tor</string>

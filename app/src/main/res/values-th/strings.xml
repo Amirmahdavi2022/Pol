@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">โออาร์บอท</string>
-    <string name="app_description">Orbot คือแอปพร็อกซีฟรีที่ช่วยเพิ่มประสิทธิภาพให้กับแอปอื่นๆ ให้สามารถใช้งานอินเตอร์เน็ตได้อย่างปลอดภัยมากขึ้น Orbot ใช้ Tor ในการเข้ารหัสการรับส่งข้อมูลทางอินเตอร์เน็ตของคุณและทำการซ่อนข้อมูลโดยการสะท้อนการเชื่อมต่อผ่านกลุ่มของเครื่องคอมพิวเตอร์ทั่วโลก Tor เป็นซอฟท์แวร์ฟรีและเป็นเครือข่ายแบบเปิดที่ช่วยปกป้องคุณจากการสอดส่องเครือข่ายที่คุกคามอิสรภาพและความเป็นส่วนตัวของผู้คน รักษาความลับทางธุรกิจและความสัมพันธ์ และการสร้างความปลอดภัยจากการวิเคราะห์การรับส่งข้อมูล</string>
+    <string name="app_description">Pol คือแอปพร็อกซีฟรีที่ช่วยเพิ่มประสิทธิภาพให้กับแอปอื่นๆ ให้สามารถใช้งานอินเตอร์เน็ตได้อย่างปลอดภัยมากขึ้น Pol ใช้ Tor ในการเข้ารหัสการรับส่งข้อมูลทางอินเตอร์เน็ตของคุณและทำการซ่อนข้อมูลโดยการสะท้อนการเชื่อมต่อผ่านกลุ่มของเครื่องคอมพิวเตอร์ทั่วโลก Tor เป็นซอฟท์แวร์ฟรีและเป็นเครือข่ายแบบเปิดที่ช่วยปกป้องคุณจากการสอดส่องเครือข่ายที่คุกคามอิสรภาพและความเป็นส่วนตัวของผู้คน รักษาความลับทางธุรกิจและความสัมพันธ์ และการสร้างความปลอดภัยจากการวิเคราะห์การรับส่งข้อมูล</string>
     <string name="menu_settings">การตั้งค่าโออาร์บอท</string>
     <string name="menu_log">บันทึก</string>
     <string name="menu_about">เกี่ยวกับ</string>
     <string name="menu_exit">ออก</string>
-    <string name="wizard_details_msg">Orbot เป็นแอปพลิเคชันโอเพ่นซอร์สที่ประกอบด้วย Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks, และ LibEvent โดย Orbot จะสร้างพร็อกซี (8118) และพร็อกซี SOCKS (9050) ในเครื่อง ภายในเครือข่าย Tor Orbot ยังสามารถทำการรับส่งข้อมูลทั้งหมดส่งผ่าน Tor ได้บนอุปกรณ์ที่ได้ทำการ root แล้ว</string>
+    <string name="wizard_details_msg">Pol เป็นแอปพลิเคชันโอเพ่นซอร์สที่ประกอบด้วย Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks, และ LibEvent โดย Pol จะสร้างพร็อกซี (8118) และพร็อกซี SOCKS (9050) ในเครื่อง ภายในเครือข่าย Tor Pol ยังสามารถทำการรับส่งข้อมูลทั้งหมดส่งผ่าน Tor ได้บนอุปกรณ์ที่ได้ทำการ root แล้ว</string>
     <string name="pref_general_group">ทั่วไป</string>
-    <string name="pref_start_boot_title">เริ่ม Orbot เมื่อเปิดระบบ</string>
-    <string name="pref_start_boot_summary">เริ่ม Orbot โดยอัตโนมัติและให้เชื่อมต่อกับ Tor เมื่ออุปกรณ์แอนดรอยด์ของคุณเริ่มทำงาน</string>
+    <string name="pref_start_boot_title">เริ่ม Pol เมื่อเปิดระบบ</string>
+    <string name="pref_start_boot_summary">เริ่ม Pol โดยอัตโนมัติและให้เชื่อมต่อกับ Tor เมื่ออุปกรณ์แอนดรอยด์ของคุณเริ่มทำงาน</string>
     <string name="pref_node_configuration">การตั้งค่าโหนด</string>
     <string name="pref_node_configuration_summary">การตั้งค่าขั้นสูงเหล่านี้ทำให้สถานะของการไม่ระบุตัวตนของคุณลดลงได้</string>
     <string name="pref_entrance_node">โหนดทางเข้า</string>
@@ -70,7 +70,7 @@
     <string name="restore_backup">คืนค่าข้อมูลสำรอง</string>
     <string name="confirm_service_deletion">ยืนยันการลบบริการ</string>
     <string name="service_type">ประเภทของบริการ</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">กรุณาเริ่ม Orbot ใหม่เพื่อให้การเปลี่ยนแปลงใช้งานได้</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">กรุณาเริ่ม Pol ใหม่เพื่อให้การเปลี่ยนแปลงใช้งานได้</string>
     <string name="disable">ปิดการใช้งาน</string>
     <string name="enable">เปิดใช้งาน</string>
     <string name="consider_disable_battery_optimizations">พิจารณาปิดการใช้งานการปรับแบตเตอรี่ให้เหมาะสมที่สุด</string>

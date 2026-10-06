@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Orbot</string>
-    <string name="app_description">Orbot은 다른 앱이 인터넷을 더 안전하게 이용할 수 있도록 도와주는 무료 프록시 앱입니다. Orbot은 Tor를 이용하여 여러분의 인터넷 트래픽을 암호화하고 전 세계에 연결된 컴퓨터를 거쳐서 숨깁니다. Tor는 무료 소프트웨어이면서 개방 네트워크로서 여러분을 개인의 자유, 사생활, 은밀한 사업 활동, 관계, 국가 안보를 위협하는 네트워크 감시인 트래픽 분석으로부터 보호합니다.</string>
-    <string name="menu_settings">Orbot 설정</string>
+    <string name="app_name">Pol</string>
+    <string name="app_description">Pol은 다른 앱이 인터넷을 더 안전하게 이용할 수 있도록 도와주는 무료 프록시 앱입니다. Pol은 Tor를 이용하여 여러분의 인터넷 트래픽을 암호화하고 전 세계에 연결된 컴퓨터를 거쳐서 숨깁니다. Tor는 무료 소프트웨어이면서 개방 네트워크로서 여러분을 개인의 자유, 사생활, 은밀한 사업 활동, 관계, 국가 안보를 위협하는 네트워크 감시인 트래픽 분석으로부터 보호합니다.</string>
+    <string name="menu_settings">Pol 설정</string>
     <string name="menu_log">로그</string>
     <string name="menu_about">정보</string>
     <string name="menu_exit">종료</string>
     <string name="pref_general_group">일반</string>
-    <string name="pref_start_boot_title">부팅 후 Orbot 시작</string>
-    <string name="pref_start_boot_summary">안드로이드 장치가 시작할 때 자동적으로 Orbot을 시작하고 Tor에 연결합니다</string>
+    <string name="pref_start_boot_title">부팅 후 Pol 시작</string>
+    <string name="pref_start_boot_summary">안드로이드 장치가 시작할 때 자동적으로 Pol을 시작하고 Tor에 연결합니다</string>
     <string name="pref_node_configuration">노드 설정</string>
     <string name="pref_node_configuration_summary">귀하의 익명성을 감소시킬 수 있는 고급 설정이 있습니다</string>
     <string name="pref_entrance_node">입구 노드</string>
@@ -57,7 +57,7 @@
     <string name="pref_torrc_dialog">나만의 Torrc</string>
     <string name="save">저장</string>
     <string name="name">Name</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">변경을 완료하려면 Orbot을 재시작하세요</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">변경을 완료하려면 Pol을 재시작하세요</string>
     <string name="disable">비활성화</string>
     <string name="enable">활성화</string>
     <string name="connected_title">연결됨</string>
@@ -77,7 +77,7 @@
     <string name="btn_refresh">연결 새로고침</string>
     <string name="system_vpn_settings">Android VPN 설정</string>
     <string name="secure_your_connection_title">접속 준비</string>
-    <string name="wizard_details_msg">Orbot은 Tor, IPtProxy(Lyrebird, Meek, Snowflake), hev-socks5-tunnel 및 LibEvent를 포함하는 오픈 소스 애플리케이션입니다. VPN 터널, 로컬 HTTP Connect 프록시(포트 8118에서만 HTTPS) 및 Tor 네트워크에 대한 SOCKS 프록시(9050)를 제공합니다.</string>
+    <string name="wizard_details_msg">Pol은 Tor, IPtProxy(Lyrebird, Meek, Snowflake), hev-socks5-tunnel 및 LibEvent를 포함하는 오픈 소스 애플리케이션입니다. VPN 터널, 로컬 HTTP Connect 프록시(포트 8118에서만 HTTPS) 및 Tor 네트워크에 대한 SOCKS 프록시(9050)를 제공합니다.</string>
     <string name="pref_open_proxy_on_all_interfaces_title">모든 인터페이스에서 오픈 프록시</string>
     <string name="pref_open_proxy_on_all_interfaces_summary">Tor에 접속할 수 있도록 Wi-Fi 피어, 테더링 기기 등 내 IP에 연결된 모든 기기를 허용합니다</string>
     <string name="pref_http_title">Tor HTTP</string>
@@ -86,9 +86,9 @@
     <string name="local_port">내부 포트</string>
     <string name="onion_port">Onion 포트</string>
     <string name="copy_address_to_clipboard">주소를 클립보드에 복사</string>
-    <string name="status_starting_up">Orbot 시작 중…</string>
+    <string name="status_starting_up">Pol 시작 중…</string>
     <string name="status_activated">Tor 네트워크에 연결됨</string>
-    <string name="status_disabled">Orbot이 비활성화되어 있습니다</string>
+    <string name="status_disabled">Pol이 비활성화되어 있습니다</string>
     <string name="couldn_t_start_tor_process_">Tor 프로세스 시작 불가능:  </string>
     <string name="unable_to_start_tor">Tor 시작 불가능:</string>
     <string name="set_transport">전송 설정</string>

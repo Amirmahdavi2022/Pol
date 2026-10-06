@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Orbot</string>
-    <string name="app_description">Orbot proxy aplikazio aske bat da beste aplikazioei Interneten erabilera seguruago bat egitea ahalbidetzen diena. Orbot-ek Tor erabiltzen du zure Internet trafikoa zifratzeko eta mundu osoan barrena hainbat konputagailuetatik pasatuz ezkutatzeko. Tor software askea eta sare irekia da, askatasun eta pribatutasun pertsonala, aktibitate eta erlazio komertzial konfidentzialak erasotzen dituen sare analisi moten kontra eginez babesten zaituena.</string>
+    <string name="app_name">Pol</string>
+    <string name="app_description">Pol proxy aplikazio aske bat da beste aplikazioei Interneten erabilera seguruago bat egitea ahalbidetzen diena. Pol-ek Tor erabiltzen du zure Internet trafikoa zifratzeko eta mundu osoan barrena hainbat konputagailuetatik pasatuz ezkutatzeko. Tor software askea eta sare irekia da, askatasun eta pribatutasun pertsonala, aktibitate eta erlazio komertzial konfidentzialak erasotzen dituen sare analisi moten kontra eginez babesten zaituena.</string>
     <string name="menu_settings">Ezarpenak</string>
     <string name="menu_log">Egunkaria</string>
     <string name="menu_about">Honi buruz</string>
     <string name="menu_exit">Irten</string>
-    <string name="wizard_details_msg">Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks, eta LibEvent dituen kode irekiko aplikazio bat da Orbot. Tor sarera sartzeko HTTP proxya (8118) eta SOCKS proxya (9050) eskaintzen ditu. Rooteatutako gailuetan Orbot-ek interneteko trafiko guztia Tor bidez bidali dezake baita ere.</string>
+    <string name="wizard_details_msg">Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks, eta LibEvent dituen kode irekiko aplikazio bat da Pol. Tor sarera sartzeko HTTP proxya (8118) eta SOCKS proxya (9050) eskaintzen ditu. Rooteatutako gailuetan Pol-ek interneteko trafiko guztia Tor bidez bidali dezake baita ere.</string>
     <string name="pref_general_group">Orokorra</string>
-    <string name="pref_start_boot_title">Hasi Orbot abioan</string>
-    <string name="pref_start_boot_summary">Hasi Orbot automatikoki  eta konektatu Tor zure Android gailua abiarazterakoan</string>
+    <string name="pref_start_boot_title">Hasi Pol abioan</string>
+    <string name="pref_start_boot_summary">Hasi Pol automatikoki  eta konektatu Tor zure Android gailua abiarazterakoan</string>
     <string name="pref_node_configuration">Nodo konfigurazioa</string>
     <string name="pref_node_configuration_summary">Hauek zure anonimotasuna murriztu dezaketen ezarpen aurreratuak dira</string>
     <string name="pref_entrance_node">Sarrera-nodoak</string>
@@ -70,7 +70,7 @@
     <string name="restore_backup">Berrezarri babeskopia</string>
     <string name="confirm_service_deletion">Berretsi zerbitzua ezabatzea</string>
     <string name="service_type">Zerbitzu mota</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">Mesedez berrabiarazi Orbot aldaketak aktibatzeko</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Mesedez berrabiarazi Pol aldaketak aktibatzeko</string>
     <string name="disable">Desgaitu</string>
     <string name="enable">Gaitu</string>
     <string name="consider_disable_battery_optimizations">Aztertu bateria optimizazioak desgaitzea</string>
@@ -94,9 +94,9 @@
     <string name="license">Lizentzia:</string>
     <string name="menu_new_identity">Nortasun berria</string>
     <string name="next">Hurrengoa</string>
-    <string name="status_starting_up">Orbot abiarazten ari da…</string>
+    <string name="status_starting_up">Pol abiarazten ari da…</string>
     <string name="status_activated">Tor sarera konektatuta</string>
-    <string name="status_disabled">\"Orbot desaktibatuta dago</string>
+    <string name="status_disabled">\"Pol desaktibatuta dago</string>
     <string name="couldn_t_start_tor_process_">Ezin izan da Tor prozesua hasi:</string>
     <string name="unable_to_start_tor">Ezin izan da Tor hasi:</string>
     <string name="set_transport">Ezarri garraioa</string>

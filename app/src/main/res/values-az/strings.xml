@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Orbot</string>
-    <string name="app_description">Pulsuz proksi tətbiqetməsi olan Orbot başqa tətbiqetmələrə internetdən daha təhlükəsiz istifadə etmək imkanı verir. Orbot sizin internet trafikinizi şifrələmək üçün Tordan istifadə edir və dünyanın hər yerində kompüterlərin birindən o birinə sıçramaqla bunu gizlədir. Tor pulsuz proqram təminatıdır, eyni zamanda sizin şəxsi azadlığınız və təhlükəsizliyinizə, gizli biznes fəaliyyəti və əlaqələrə, o cümlədən trafik analiz adlanan dövlət təhlükəsizliyinə xələl gətirə biləcək şəbəkə nəzarəti formalarından müdafiə olunmağa yardım edən açıq şəbəkədir.</string>
+    <string name="app_name">Pol</string>
+    <string name="app_description">Pulsuz proksi tətbiqetməsi olan Pol başqa tətbiqetmələrə internetdən daha təhlükəsiz istifadə etmək imkanı verir. Pol sizin internet trafikinizi şifrələmək üçün Tordan istifadə edir və dünyanın hər yerində kompüterlərin birindən o birinə sıçramaqla bunu gizlədir. Tor pulsuz proqram təminatıdır, eyni zamanda sizin şəxsi azadlığınız və təhlükəsizliyinizə, gizli biznes fəaliyyəti və əlaqələrə, o cümlədən trafik analiz adlanan dövlət təhlükəsizliyinə xələl gətirə biləcək şəbəkə nəzarəti formalarından müdafiə olunmağa yardım edən açıq şəbəkədir.</string>
     <string name="menu_settings">Quraşdırmalar</string>
     <string name="menu_log">Jurnal</string>
     <string name="menu_about">Haqqında</string>
     <string name="menu_exit">Çıx</string>
     <string name="pref_general_group">Əsas</string>
-    <string name="pref_start_boot_title">Android Açıldıqda Orbotu Başlat</string>
-    <string name="pref_start_boot_summary">Android cihazın işə başladıqda avtomatik olaraq Orbot başlansın və Tor-a qoşulsun</string>
+    <string name="pref_start_boot_title">Android Açıldıqda Polu Başlat</string>
+    <string name="pref_start_boot_summary">Android cihazın işə başladıqda avtomatik olaraq Pol başlansın və Tor-a qoşulsun</string>
     <string name="pref_node_configuration">Kəsişmə Konfiqurasiyası</string>
     <string name="pref_node_configuration_summary">Bunlar sənin anonimliyini azalda biləcək ətraflı seçimlərdir</string>
     <string name="pref_entrance_node">Giriş Kəsişmələri</string>
@@ -57,7 +57,7 @@
     <string name="pref_torrc_dialog">Xüsusi Torrc</string>
     <string name="save">Saxla</string>
     <string name="name">Ad</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">Dəyişiklikləri aktivləşdirmək üçün Orbot-u yenidən başladın</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Dəyişiklikləri aktivləşdirmək üçün Pol-u yenidən başladın</string>
     <string name="disable">Söndür</string>
     <string name="enable">İşə sal</string>
     <string name="version">Versiya:</string>
@@ -80,7 +80,7 @@
     <string name="onion_port">Soğan limanı</string>
     <string name="restore_backup">Ehtiyyatda olanı bərpa etmə</string>
     <string name="v3_backup_key">Yedək Müştəri Avtorizasiya Açarı</string>
-    <string name="wizard_details_msg">Orbot Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks və LibEvent ehtiva edən açıq mənbəli proqramdır. Tor şəbəkəsinə VPN tuneli, yerli HTTP Connect proksisi (yalnız 8118 portunda HTTPS) və SOCKS proksisi (9050) təmin edir.</string>
+    <string name="wizard_details_msg">Pol Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks və LibEvent ehtiva edən açıq mənbəli proqramdır. Tor şəbəkəsinə VPN tuneli, yerli HTTP Connect proksisi (yalnız 8118 portunda HTTPS) və SOCKS proksisi (9050) təmin edir.</string>
     <string name="pref_reduced_circuit_padding_summary">Data və batareyanın istifadəsini azaltmaq üçün aşağı yerüstü doldurma alqoritmlərindən istifadə edin</string>
     <string name="copy_address_to_clipboard">Ünvanı panoya kopyalayın</string>
     <string name="vpn_default_world">Qlobal (Avtomatik)</string>
@@ -143,12 +143,12 @@
     <string name="log_copied">Qeyd kopyalandı</string>
     <string name="btn_copy_log">Qeydi Kopyala</string>
     <string name="direct_connect">Tor ilə birbaşa əlaqə</string>
-    <string name="power_user_description">Tor ilə tanış olan istifadəçilər üçün. VPN ayarı olmadan Orbot-u işə salmağa imkan verir və açıq SOCKS və HTTP portlarını göstərir</string>
+    <string name="power_user_description">Tor ilə tanış olan istifadəçilər üçün. VPN ayarı olmadan Pol-u işə salmağa imkan verir və açıq SOCKS və HTTP portlarını göstərir</string>
     <string name="snowflake_amp">Qar dənəciyi (AMP)</string>
     <string name="snowflake">Snowflake (Orijinal)</string>
-    <string name="app_suggested_subtitle">Orbot mesajlaşma və sosial media proqramları ilə ən yaxşı şəkildə işləyir.</string>
+    <string name="app_suggested_subtitle">Pol mesajlaşma və sosial media proqramları ilə ən yaxşı şəkildə işləyir.</string>
     <string name="direct_connect_subtitle">Tor-a qoşulmağın ən yaxşı yolu. Tor bloklanmadıqda istifadə edin.</string>
-    <string name="no_internet_subtitle">Orbotdan istifadə etmək üçün internet bağlantısı lazımdır.</string>
+    <string name="no_internet_subtitle">Poldan istifadə etmək üçün internet bağlantısı lazımdır.</string>
     <string name="ask_tor">Tordan soruşun</string>
     <string name="option_only_when_charging">Yalnız şarj edərkən</string>
     <string name="no_internet_title">İnternetə qoşulun</string>
@@ -156,12 +156,12 @@
     <string name="option_only_on_wifi">Yalnız Wi-Fi-da</string>
     <string name="asking">SORUŞMAQ…</string>
     <string name="menu_kindness">Xeyirxahlıq</string>
-    <string name="root_warning">Orbot cihazınızın köklü olduğunu aşkar etdi və bu, təhlükəsizlik problemlərinə səbəb ola bilər.</string>
+    <string name="root_warning">Pol cihazınızın köklü olduğunu aşkar etdi və bu, təhlükəsizlik problemlərinə səbəb ola bilər.</string>
     <string name="kindness_config_detail">Cihazınızın digər Tor istifadəçiləri üçün Snowflake proksisi kimi necə və nə vaxt çıxış edə biləcəyini konfiqurasiya edin.</string>
     <string name="many_ways">Tor-a çatmağın bir çox yolu var. Bəziləri sizin üçün digərlərindən daha yaxşı işləyə bilər.</string>
-    <string name="status_starting_up">Orbot başlayır…</string>
+    <string name="status_starting_up">Pol başlayır…</string>
     <string name="status_activated">Tor şəbəkəsinə bağlandı</string>
-    <string name="status_disabled">Orbot deaktivasiya edildi</string>
+    <string name="status_disabled">Pol deaktivasiya edildi</string>
     <string name="status_shutting_down">Tor xidməti işini başa vurur</string>
     <string name="couldn_t_start_tor_process_">Tor prosesi başlana bilmədi:</string>
     <string name="unable_to_start_tor">Tor-un başlanmasını dayandır:</string>

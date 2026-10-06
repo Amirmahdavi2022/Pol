@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Orbot</string>
-    <string name="app_description">Orbot е слободна прокси апликација која им овозможува на другите апликации да го користат Интернетот побезбедно. Orbot користи Tor за енкриптирање на интернет сообраќајот, а потоа го сокрива и го потскокнува преку серија компјутери низ целиот свет. Tor е слободен софтвер и отворена мрежа кој ви помага да се одбарните од форми на надзор на мрежата кој им се заканува на вашата лична слобода и приватност, доверливите деловни активности и односи, и државната безбедност позната како анализа на сообраќајот.</string>
+    <string name="app_name">Pol</string>
+    <string name="app_description">Pol е слободна прокси апликација која им овозможува на другите апликации да го користат Интернетот побезбедно. Pol користи Tor за енкриптирање на интернет сообраќајот, а потоа го сокрива и го потскокнува преку серија компјутери низ целиот свет. Tor е слободен софтвер и отворена мрежа кој ви помага да се одбарните од форми на надзор на мрежата кој им се заканува на вашата лична слобода и приватност, доверливите деловни активности и односи, и државната безбедност позната како анализа на сообраќајот.</string>
     <string name="menu_settings">Поставки</string>
     <string name="menu_log">Дневник</string>
     <string name="menu_about">За</string>
     <string name="menu_exit">Излез</string>
-    <string name="wizard_details_msg">Orbot e апликација со отворен код која содржи Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks, и LibEvent. Овозможува локален HTTP прокси (8118) и SOCKS прокси (9050) во Tor мрежата. Orbot исто така има можност, на уред со root пристап, да го испраќа целиот интернет сообраќај преку Tor.</string>
+    <string name="wizard_details_msg">Pol e апликација со отворен код која содржи Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks, и LibEvent. Овозможува локален HTTP прокси (8118) и SOCKS прокси (9050) во Tor мрежата. Pol исто така има можност, на уред со root пристап, да го испраќа целиот интернет сообраќај преку Tor.</string>
     <string name="pref_general_group">Општо</string>
-    <string name="pref_start_boot_title">Стартувај го Orbot на бутирање</string>
-    <string name="pref_start_boot_summary">Автоматски стартувајте го Orbot и поврзете го Tor кога вашиот Android уред ќе се стартува</string>
+    <string name="pref_start_boot_title">Стартувај го Pol на бутирање</string>
+    <string name="pref_start_boot_summary">Автоматски стартувајте го Pol и поврзете го Tor кога вашиот Android уред ќе се стартува</string>
     <string name="pref_node_configuration">Прилагодување на јазол</string>
     <string name="pref_node_configuration_summary">Ова се напредни поставувања кои можат да ја намалат вашата анонимност</string>
     <string name="pref_entrance_node">Влезни јазли</string>
@@ -70,7 +70,7 @@
     <string name="restore_backup">Врати резервна копија</string>
     <string name="confirm_service_deletion">Потврди бришење на услугата</string>
     <string name="service_type">Тип на услуга</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">Ве молиме стартувајте го повторно Orbot за да се овозможат промените</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Ве молиме стартувајте го повторно Pol за да се овозможат промените</string>
     <string name="disable">Оневозможи</string>
     <string name="enable">Овозможи</string>
     <string name="consider_disable_battery_optimizations">Размислете за оневозможување на оптимизациите на батеријата</string>

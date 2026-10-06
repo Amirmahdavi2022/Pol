@@ -190,11 +190,11 @@
     <string name="app_icon_chooser_label_birdie">برڈی</string>
     <string name="app_icon_dialog_title" formatted="true">%1$s پر سوئچ کریں</string>
     <string name="app_icon_dialog_msg" formatted="true">%1$s پر سوئچ کرنے سے ایپ دوبارہ شروع ہو جائے گی</string>
-    <string name="camo_samsung_instructions">آپ کے Samsung Galaxy ڈیوائس پر، Orbot کی اطلاعات صرف سیٹنگز -&gt; نوٹیفیکیشنز -&gt; ایڈوانسڈ سیٹنگز کو کھول کر اور \"اطلاعات میں ایپ آئیکن دکھائیں\" کو غیر فعال کر کے آئیکنز کو تبدیل کریں گی۔ نوٹیفکیشن سیٹنگز کو کھولنے کے لیے یہاں کلک کریں۔</string>
+    <string name="camo_samsung_instructions">آپ کے Samsung Galaxy ڈیوائس پر، Pol کی اطلاعات صرف سیٹنگز -&gt; نوٹیفیکیشنز -&gt; ایڈوانسڈ سیٹنگز کو کھول کر اور \"اطلاعات میں ایپ آئیکن دکھائیں\" کو غیر فعال کر کے آئیکنز کو تبدیل کریں گی۔ نوٹیفکیشن سیٹنگز کو کھولنے کے لیے یہاں کلک کریں۔</string>
     <string name="power_user_mode_permission">پاور یوزر موڈ کے لیے الارم اور یاد دہانی کی اجازت درکار ہے</string>
-    <string name="power_user_mode_permission_msg">پاور یوزر موڈ استعمال کرنے کے لیے براہ کرم Orbot کو الارم اور یاد دہانیاں سیٹ کرنے کی اجازت دیں۔ یہ دراصل آپ کے آلے پر کوئی الارم سیٹ نہیں کرے گا۔ سسٹم کو OrbotService کو چلانے کے لیے اس اجازت کی ضرورت ہے جب Orbot کو سسٹم وائیڈ VPN کے طور پر استعمال نہ کیا جا رہا ہو۔</string>
+    <string name="power_user_mode_permission_msg">پاور یوزر موڈ استعمال کرنے کے لیے براہ کرم Pol کو الارم اور یاد دہانیاں سیٹ کرنے کی اجازت دیں۔ یہ دراصل آپ کے آلے پر کوئی الارم سیٹ نہیں کرے گا۔ سسٹم کو OrbotService کو چلانے کے لیے اس اجازت کی ضرورت ہے جب Pol کو سسٹم وائیڈ VPN کے طور پر استعمال نہ کیا جا رہا ہو۔</string>
     <string name="request_notification_permission">براہ کرم اوربوٹ کے لیے اطلاعات کو فعال کریں</string>
-    <string name="request_notification_permission_msg">اطلاعات کو آن کیے بغیر Orbot Tor VPN کے طور پر کام نہیں کر سکتا یا Kindness Mode استعمال نہیں کر سکتا\n\nفعال ہونے پر، ہم صرف ایک اطلاع دکھاتے ہیں جب Orbot چل رہا ہو۔</string>
+    <string name="request_notification_permission_msg">اطلاعات کو آن کیے بغیر Pol Tor VPN کے طور پر کام نہیں کر سکتا یا Kindness Mode استعمال نہیں کر سکتا\n\nفعال ہونے پر، ہم صرف ایک اطلاع دکھاتے ہیں جب Pol چل رہا ہو۔</string>
     <string name="open_settings">ترتیبات کھولیں</string>
     <string name="error_no_password_set">لاک اسکرین کی خصوصیت استعمال کرنے کے لیے آپ کو اپنے Android ڈیوائس کے لیے پاس ورڈ سیٹ کرنا ہوگا</string>
     <string name="device_lock_unsupported">اوربوٹ کی توثیق آپ کے آلے پر تعاون یافتہ نہیں ہے</string>
@@ -214,8 +214,8 @@
     <string name="status_starting_up">اوربوٹ شروع ہو رہا ہے…</string>
     <string name="status_activated">ٹور نیٹ ورک سے جڑا ہوا ہے</string>
     <string name="status_disabled">اوربوٹ غیر فعال ہے</string>
-    <string name="open_orbot_to_connect_to_tor">Tor سے جڑنے کے لیے Orbot کھولیں</string>
-    <string name="status_shutting_down">Orbot بند ہو رہا ہے</string>
+    <string name="open_orbot_to_connect_to_tor">Tor سے جڑنے کے لیے Pol کھولیں</string>
+    <string name="status_shutting_down">Pol بند ہو رہا ہے</string>
     <string name="connect_to_tor">ٹور کے ساتھ منسلک ہوں</string>
     <string name="orbot_config_invalid">اوربوٹ کنفیگریشن غلط ہے</string>
     <string name="couldn_t_start_tor_process_">ٹور عمل شروع نہیں ہو سکا:</string>
@@ -230,13 +230,13 @@
     <string name="apps_updated_msg">ایپس اپ ڈیٹ ہو گئیں</string>
     <string name="title_safety">حفاظت</string>
     <string name="setting_app_icon_title">ایپ آئیکن</string>
-    <string name="setting_app_icon_description">منتخب کریں کہ آپ کے آلے پر Orbot کیسے ظاہر ہو</string>
+    <string name="setting_app_icon_description">منتخب کریں کہ آپ کے آلے پر Pol کیسے ظاہر ہو</string>
     <string name="setting_block_screenshot_title">اسکرین شاٹس بلاک</string>
     <string name="setting_block_screenshot_description">کسی کو بھی اس ایپ کے اسکرین شاٹس لینے سے روکتا ہے</string>
     <string name="setting_unlock_pass_title">لاک اسکرین</string>
     <string name="setting_unlock_pass_description">اربوٹ کھولنے کے لیے آپ کے آلے کا PIN، پاس ورڈ، یا سوائپ پیٹرن درکار ہے</string>
     <string name="setting_unlock_with_biometrics_title">بایومیٹرکس استعمال کریں (اختیاری)</string>
-    <string name="setting_unlock_with_biometrics_description">اگر آپ کے آلے پر سیٹ اپ ہو تو اپنے فنگر پرنٹ یا فیس آئی ڈی سے Orbot کو غیر مقفل کریں۔</string>
+    <string name="setting_unlock_with_biometrics_description">اگر آپ کے آلے پر سیٹ اپ ہو تو اپنے فنگر پرنٹ یا فیس آئی ڈی سے Pol کو غیر مقفل کریں۔</string>
     <string name="status_connected_control_port">ٹور سروس شروع ہو گئی ہے</string>
     <string name="status_handshake">ٹور نیٹ ورک کے داخلی راستے سے جڑ رہا ہے</string>
     <string name="status_handshake_done">ٹور نیٹ ورک میں داخل ہو رہا ہے</string>
@@ -259,9 +259,9 @@
     <string name="my_country_optional">میرا ملک (اختیاری)</string>
     <string name="limit_dns_tunnel_use">DNS ٹنل کے استعمال کو محدود کریں</string>
     <string name="dns_tunnel_usage_description">DNS سرنگیں رفتار سے زیادہ رسائی کو ترجیح دیتی ہیں اور سست محسوس کر سکتی ہیں۔ ہم انہیں صرف ضروری ایپس کے لیے فعال کرنے کی تجویز کرتے ہیں۔ ویڈیو سلسلہ بندی کی سفارش نہیں کی جاتی ہے۔</string>
-    <string name="unable_to_start_orbot_vpn_title">Orbot VPN شروع کرنے سے قاصر</string>
+    <string name="unable_to_start_orbot_vpn_title">Pol VPN شروع کرنے سے قاصر</string>
     <string name="unable_to_start_legacy_vpn_error_msg">ایک حسب ضرورت VPN پروفائل ہے جسے \"ہمیشہ آن\" VPN کے طور پر ترتیب دیا گیا ہے۔ براہ کرم اوربوٹ شروع کرنے سے پہلے اسے غیر فعال کر دیں۔</string>
     <string name="unable_to_start_other_vpn_app_error_msg">ایپ %1$s کو \"ہمیشہ آن\" VPN کے لیے کنفیگر کیا گیا ہے۔ براہ کرم اوربوٹ شروع کرنے سے پہلے اسے غیر فعال کر دیں۔</string>
-    <string name="unable_to_start_unknown_reason_error_msg">VPN کی اجازت مسترد کر دی گئی یا کسی اور VPN ایپ میں \"ہمیشہ آن VPN\" خصوصیت فعال ہے۔ اگر آپ غلطی سے پچھلے VPN درخواست کے ڈائیلاگ سے باہر ہو گئے تو آپ اسے برخاست کر سکتے ہیں اور دوبارہ جڑ سکتے ہیں۔ تکنیکی صارفین ایک اور VPN ایپ استعمال کر سکتے ہیں اور Orbot کے پاور یوزر موڈ کو فعال کر کے Tor کو SOCKS پراکسی کے طور پر استعمال کر سکتے ہیں۔</string>
+    <string name="unable_to_start_unknown_reason_error_msg">VPN کی اجازت مسترد کر دی گئی یا کسی اور VPN ایپ میں \"ہمیشہ آن VPN\" خصوصیت فعال ہے۔ اگر آپ غلطی سے پچھلے VPN درخواست کے ڈائیلاگ سے باہر ہو گئے تو آپ اسے برخاست کر سکتے ہیں اور دوبارہ جڑ سکتے ہیں۔ تکنیکی صارفین ایک اور VPN ایپ استعمال کر سکتے ہیں اور Pol کے پاور یوزر موڈ کو فعال کر کے Tor کو SOCKS پراکسی کے طور پر استعمال کر سکتے ہیں۔</string>
     <string name="open_vpn_settings">اینڈرائیڈ وی پی این کی ترتیبات کھولیں</string>
 </resources>

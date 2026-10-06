@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Orbot</string>
-    <string name="app_description">Orbot is een vrije proxy-app die het andere apps mogelijk maakt het internet veiliger te gebruiken. Orbot gebruikt Tor om je internetverkeer te versleutelen en het vervolgens te verhullen het door het door een serie computers over de hele wereld te routeren. Tor is vrije software en een open netwerk dat je helpt te verdedigen tegen een vorm van netwerktoezicht, genaamd \'verkeersanalyse\', die persoonlijke vrijheid en privacy, vertrouwelijke bedrijfsactiviteiten en relaties en staatsveiligheid bedreigt.</string>
-    <string name="menu_settings">Orbot-instellingen</string>
+    <string name="app_name">Pol</string>
+    <string name="app_description">Pol is een vrije proxy-app die het andere apps mogelijk maakt het internet veiliger te gebruiken. Pol gebruikt Tor om je internetverkeer te versleutelen en het vervolgens te verhullen het door het door een serie computers over de hele wereld te routeren. Tor is vrije software en een open netwerk dat je helpt te verdedigen tegen een vorm van netwerktoezicht, genaamd \'verkeersanalyse\', die persoonlijke vrijheid en privacy, vertrouwelijke bedrijfsactiviteiten en relaties en staatsveiligheid bedreigt.</string>
+    <string name="menu_settings">Pol-instellingen</string>
     <string name="menu_log">Logboek</string>
     <string name="menu_about">Over</string>
     <string name="menu_exit">Sluiten</string>
     <!--Welcome Wizard strings (DJH)-->
-    <string name="wizard_details_msg">Orbot is een open-sourceapplicatie die Tor, IPtProxy (Lyrebird, Meek, Snowflake), hev-socks5-tunnel en LibEvent bevat. Het biedt een VPN-tunnel, een lokale HTTP Connect-proxy (HTTPS alleen op poort 8118) en een SOCKS-proxy (9050) naar het Tor-netwerk.</string>
+    <string name="wizard_details_msg">Pol is een open-sourceapplicatie die Tor, IPtProxy (Lyrebird, Meek, Snowflake), hev-socks5-tunnel en LibEvent bevat. Het biedt een VPN-tunnel, een lokale HTTP Connect-proxy (HTTPS alleen op poort 8118) en een SOCKS-proxy (9050) naar het Tor-netwerk.</string>
     <!--END Welcome Wizard strings (DJH)-->
     <string name="pref_general_group">Algemeen</string>
-    <string name="pref_start_boot_title">Start Orbot bij opstarten</string>
-    <string name="pref_start_boot_summary">Start Orbot en verbind automatisch met Tor wanneer je Android-toestel opstart</string>
+    <string name="pref_start_boot_title">Start Pol bij opstarten</string>
+    <string name="pref_start_boot_summary">Start Pol en verbind automatisch met Tor wanneer je Android-toestel opstart</string>
     <!--New Wizard Strings-->
     <!--Title Screen-->
     <!--Warning screen-->
@@ -78,7 +78,7 @@
     <string name="restore_backup">Back-up herstellen</string>
     <string name="confirm_service_deletion">Bevestig verwijderen van dienst</string>
     <string name="service_type">Diensttype</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">Herstart Orbot om de wijzigingen in te schakelen</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Herstart Pol om de wijzigingen in te schakelen</string>
     <string name="disable">Uitschakelen</string>
     <string name="enable">Inschakelen</string>
     <string name="consider_disable_battery_optimizations">Hosted services actief, overweeg batterijoptimalisaties uit te schakelen</string>
@@ -112,10 +112,10 @@
     <string name="pref_open_proxy_on_all_interfaces_summary">Sta Wi-Fi peers, verbonden apparaten en alle anderen die verbinden kunnen maken met jouw IP-adres toe om verbinding te maken met Tor</string>
     <string name="pref_open_proxy_on_all_interfaces_title">Open proxy op alle interfaces</string>
     <string name="pref_http_dialog">HTTP port configuratie</string>
-    <string name="status_starting_up">Orbot is bezig met starten…</string>
+    <string name="status_starting_up">Pol is bezig met starten…</string>
     <string name="status_activated">Verbonden met het Tor-netwerk</string>
-    <string name="status_disabled">Orbot is uitgeschakeld</string>
-    <string name="status_shutting_down">Orbot wordt afgesloten</string>
+    <string name="status_disabled">Pol is uitgeschakeld</string>
+    <string name="status_shutting_down">Pol wordt afgesloten</string>
     <string name="couldn_t_start_tor_process_">Kon Tor-proces niet starten: </string>
     <string name="unable_to_start_tor">Kan Tor niet starten:</string>
     <string name="set_transport">Transport instellen</string>
@@ -176,8 +176,8 @@
     <string name="custom_bridges_subtitle">Vraag binnen uw vertrouwde netwerken en organisaties of iemand een brug host. Zo niet, dan kan een vriend bruggen voor u regelen.</string>
     <string name="custom_bridges_description">Plak hieronder de brug-adressen die je hebt ontvangen. Of scan de QR-code om ze toe te voegen. Vrienden kunnen bruggen voor je krijgen op %1$s.</string>
     <string name="power_user_mode">Power User-modus</string>
-    <string name="power_user_description">Voor gebruikers die bekend zijn met Tor. Hiermee kunt u Orbot starten zonder de VPN-instelling en worden open SOCKS- en HTTP-poorten weergegeven</string>
-    <string name="app_suggested_subtitle">Orbot werkt het beste met berichten- en sociale media-apps.</string>
+    <string name="power_user_description">Voor gebruikers die bekend zijn met Tor. Hiermee kunt u Pol starten zonder de VPN-instelling en worden open SOCKS- en HTTP-poorten weergegeven</string>
+    <string name="app_suggested_subtitle">Pol werkt het beste met berichten- en sociale media-apps.</string>
     <string name="apps_suggested_title">Aanbevolen apps</string>
     <string name="apps_other_apps">Andere apps</string>
     <string name="btn_copy_log">Kopieerlog</string>
@@ -187,12 +187,12 @@
     <string name="many_ways">Er zijn veel manieren om Tor te bereiken. Sommige werken misschien beter voor u dan andere.</string>
     <string name="asking">VRAGEN…</string>
     <string name="no_internet_title">Verbinding maken met internet</string>
-    <string name="no_internet_subtitle">Je hebt een internetverbinding nodig om Orbot te kunnen gebruiken.</string>
+    <string name="no_internet_subtitle">Je hebt een internetverbinding nodig om Pol te kunnen gebruiken.</string>
     <string name="kindness_config_detail">Configureer hoe en wanneer uw apparaat als Snowflake-proxy voor andere Tor-gebruikers kan fungeren.</string>
     <string name="menu_kindness">Vriendelijkheid</string>
     <string name="option_only_on_wifi">Alleen via wifi</string>
     <string name="option_only_when_charging">Alleen tijdens het opladen</string>
-    <string name="root_warning">Orbot heeft gedetecteerd dat uw apparaat geroot is, wat veiligheidsproblemen kan veroorzaken.</string>
+    <string name="root_warning">Pol heeft gedetecteerd dat uw apparaat geroot is, wat veiligheidsproblemen kan veroorzaken.</string>
     <string name="pref_detect_root_summary">Waarschuw bij het opstarten als root-rechten zijn ingeschakeld op dit apparaat</string>
     <string name="pref_detect_root_title">Rootdetectie</string>
     <string name="app_icon_chooser_label_night_watch">Sterrenwachten</string>
@@ -204,15 +204,15 @@
     <string name="app_icon_chooser_label_birdie">Vogeltje</string>
     <string name="app_icon_dialog_title" formatted="true">Overschakelen naar %1$s</string>
     <string name="app_icon_dialog_msg" formatted="true">Door over te schakelen naar %1$s wordt de app opnieuw gestart</string>
-    <string name="camo_samsung_instructions">Op je Samsung Galaxy-apparaat kun je de pictogrammen van Orbot-meldingen alleen wijzigen door Instellingen -&gt; Meldingen -&gt; Geavanceerde instellingen te openen en \"App-pictogram weergeven in meldingen\" uit te schakelen. Klik hier om de meldingsinstellingen te openen.</string>
+    <string name="camo_samsung_instructions">Op je Samsung Galaxy-apparaat kun je de pictogrammen van Pol-meldingen alleen wijzigen door Instellingen -&gt; Meldingen -&gt; Geavanceerde instellingen te openen en \"App-pictogram weergeven in meldingen\" uit te schakelen. Klik hier om de meldingsinstellingen te openen.</string>
     <string name="power_user_mode_permission">Alarmen en herinneringen Toestemming vereist voor Power User-modus</string>
-    <string name="power_user_mode_permission_msg">Geef Orbot toestemming om alarmen en herinneringen in te stellen om de power user-modus te kunnen gebruiken. Hierdoor worden er geen alarmen op uw apparaat ingesteld. Deze toestemming is nodig om het systeem OrbotService te laten draaien wanneer Orbot niet als systeembrede VPN wordt gebruikt.</string>
-    <string name="request_notification_permission">Schakel meldingen voor Orbot in</string>
-    <string name="request_notification_permission_msg">Zonder meldingen in te schakelen kan Orbot niet als Tor VPN fungeren of de Vriendelijkheids Mode gebruiken.\n\nWanneer deze functie is ingeschakeld, tonen we slechts één melding wanneer Orbot actief is.</string>
+    <string name="power_user_mode_permission_msg">Geef Pol toestemming om alarmen en herinneringen in te stellen om de power user-modus te kunnen gebruiken. Hierdoor worden er geen alarmen op uw apparaat ingesteld. Deze toestemming is nodig om het systeem OrbotService te laten draaien wanneer Pol niet als systeembrede VPN wordt gebruikt.</string>
+    <string name="request_notification_permission">Schakel meldingen voor Pol in</string>
+    <string name="request_notification_permission_msg">Zonder meldingen in te schakelen kan Pol niet als Tor VPN fungeren of de Vriendelijkheids Mode gebruiken.\n\nWanneer deze functie is ingeschakeld, tonen we slechts één melding wanneer Pol actief is.</string>
     <string name="open_settings">Open Instellingen</string>
     <string name="error_no_password_set">U moet een wachtwoord instellen voor uw Android-apparaat om de functie ‘Vergrendelingsscherm’ te kunnen gebruiken</string>
-    <string name="device_lock_unsupported">Orbot-authenticatie wordt niet ondersteund op uw apparaat</string>
-    <string name="device_lock_security_update_needed">U moet Android-beveiligingsupdates voor uw apparaat downloaden om Orbot Authentication te kunnen gebruiken</string>
+    <string name="device_lock_unsupported">Pol-authenticatie wordt niet ondersteund op uw apparaat</string>
+    <string name="device_lock_security_update_needed">U moet Android-beveiligingsupdates voor uw apparaat downloaden om Pol Authentication te kunnen gebruiken</string>
     <string name="invalid_bridge_format">Ongeldig brugformaat</string>
     <string name="error_asking_tor_for_bridges">Fout bij het vragen aan Tor hoe verbinding te maken</string>
     <string name="enter_bridge_address">Voer het adres van de brug in</string>
@@ -221,10 +221,10 @@
     <string name="unlock_app_msg" formatted="true">Ontgrendel uw apparaat om %s te kunnen gebruiken</string>
     <string name="run_smart_connect_">Start Smart Connect om de beste route te vinden</string>
     <string name="scan_qr_code">Scan QR-code</string>
-    <string name="orbot_vpn">Orbot VPN</string>
-    <string name="open_orbot_to_connect_to_tor">Open Orbot om verbinding te maken met Tor</string>
+    <string name="orbot_vpn">Pol VPN</string>
+    <string name="open_orbot_to_connect_to_tor">Open Pol om verbinding te maken met Tor</string>
     <string name="connect_to_tor">Verbinding maken met Tor</string>
-    <string name="orbot_config_invalid">Orbot-configuratie ongeldig</string>
+    <string name="orbot_config_invalid">Pol-configuratie ongeldig</string>
     <string name="kibibyte_per_second">KiB/s</string>
     <string name="mebibyte_per_second">MiB/s</string>
     <string name="snowflake_proxy_client_connected_msg">%1$s Vriendelijkheids Mode hielp iemand censuur te omzeilen %2$s</string>
@@ -235,13 +235,13 @@
     <string name="apps_updated_msg">Apps bijgewerkt</string>
     <string name="title_safety">Veiligheid</string>
     <string name="setting_app_icon_title">App-pictogram</string>
-    <string name="setting_app_icon_description">Kies hoe Orbot op je apparaat wordt weergegeven</string>
+    <string name="setting_app_icon_description">Kies hoe Pol op je apparaat wordt weergegeven</string>
     <string name="setting_block_screenshot_title">Blokkeer screenshots</string>
     <string name="setting_block_screenshot_description">Voorkomt dat iemand screenshots van deze app maakt</string>
     <string name="setting_unlock_pass_title">Vergrendelingsscherm</string>
-    <string name="setting_unlock_pass_description">Vraag om de pincode, het wachtwoord of het veegpatroon van je apparaat om Orbot te openen</string>
+    <string name="setting_unlock_pass_description">Vraag om de pincode, het wachtwoord of het veegpatroon van je apparaat om Pol te openen</string>
     <string name="setting_unlock_with_biometrics_title">Gebruik biometrische gegevens (optioneel)</string>
-    <string name="setting_unlock_with_biometrics_description">Ontgrendel Orbot met je vingerafdruk of Face ID als dit op je apparaat is ingesteld.</string>
+    <string name="setting_unlock_with_biometrics_description">Ontgrendel Pol met je vingerafdruk of Face ID als dit op je apparaat is ingesteld.</string>
     <string name="status_connected_control_port">Tor-service is gestart</string>
     <string name="status_handshake">Verbinding maken met de ingang van het Tor-netwerk</string>
     <string name="status_handshake_done">Het Tor-netwerk betreden</string>

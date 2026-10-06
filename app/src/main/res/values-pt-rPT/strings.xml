@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Orbot</string>
-    <string name="app_description">Orbot é uma app de proxy livre que capacita outras aplicações a usar a internet com mais segurança. O Orbot usa o Tor para criptografar o seu tráfego na internet e então o esconde \"saltando\" entre uma série de computadores ao redor do mundo. Tor é um software livre e de rede aberta que ajuda a se defender de certas formas de vigilância que ameaçam privacidade e liberdade pessoais, atividades e relações comerciais confidenciais e segurança estatal conhecida como análise de tráfego.</string>
-    <string name="menu_settings">Definições do Orbot</string>
+    <string name="app_name">Pol</string>
+    <string name="app_description">Pol é uma app de proxy livre que capacita outras aplicações a usar a internet com mais segurança. O Pol usa o Tor para criptografar o seu tráfego na internet e então o esconde \"saltando\" entre uma série de computadores ao redor do mundo. Tor é um software livre e de rede aberta que ajuda a se defender de certas formas de vigilância que ameaçam privacidade e liberdade pessoais, atividades e relações comerciais confidenciais e segurança estatal conhecida como análise de tráfego.</string>
+    <string name="menu_settings">Definições do Pol</string>
     <string name="menu_log">Registo</string>
     <string name="menu_about">Sobre</string>
     <string name="menu_exit">Sair</string>
     <!--Welcome Wizard strings (DJH)-->
     <!--END Welcome Wizard strings (DJH)-->
     <string name="pref_general_group">Geral</string>
-    <string name="pref_start_boot_title">Iniciar o Orbot no Arranque</string>
-    <string name="pref_start_boot_summary">Iniciar automaticamente o Orbot e conetar o Tor quando o seu aparelho Android inicia</string>
+    <string name="pref_start_boot_title">Iniciar o Pol no Arranque</string>
+    <string name="pref_start_boot_summary">Iniciar automaticamente o Pol e conetar o Tor quando o seu aparelho Android inicia</string>
     <!--New Wizard Strings-->
     <!--Title Screen-->
     <!--Warning screen-->
@@ -32,7 +32,7 @@
     <string name="name">Nome</string>
     <string name="disable">Desativar</string>
     <string name="enable">Ativar</string>
-    <string name="wizard_details_msg">O Orbot é um software de código aberto que contem Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks, LibEvent. Ele fornece um proxy local HTTP (8118) e um proxy SOCKS (9050) como acesso a rede Tor. Orbot também tem a habilidade, em aparelhos com acesso root, de enviar todo o trafego de Internet via rede Tor.</string>
+    <string name="wizard_details_msg">O Pol é um software de código aberto que contem Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks, LibEvent. Ele fornece um proxy local HTTP (8118) e um proxy SOCKS (9050) como acesso a rede Tor. Pol também tem a habilidade, em aparelhos com acesso root, de enviar todo o trafego de Internet via rede Tor.</string>
     <string name="pref_proxy_username_summary">Nome do Utilizador do Proxy (Opcional)</string>
     <string name="pref_isolate_dest_summary">Usar um circuito diferente para cada endereço de destino</string>
     <string name="pref_open_proxy_on_all_interfaces_summary">Permita que pares Wi-Fi, aparelhos conectados e outros que se possam conectar ao seu IP, acessem o Tor</string>
@@ -70,7 +70,7 @@
     <string name="newnym">Mudou para uma nova identidade do Tor!</string>
     <string name="reachable_ports">Portas alcançáveis</string>
     <string name="full_device_vpn">VPN Para Todo o Aparelho</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">Por favor reinicie Orbot para ativar as mundanças</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Por favor reinicie Pol para ativar as mundanças</string>
     <string name="service_type">Tipo do Serviço</string>
     <string name="confirm_service_deletion">Confirmar a remoção do serviço</string>
     <string name="restore_backup">Restaurar Backup</string>
@@ -142,8 +142,8 @@
     <string name="connect">Conectar</string>
     <string name="next">Próximo</string>
     <string name="power_user_mode">Modo de utilizador avançado</string>
-    <string name="power_user_description">Para utilizadores familiarizados com Tor. Permite que inicie o Orbot sem a configuração VPN e mostra as portas SOCKS e HTTP que estejam abertas</string>
-    <string name="app_suggested_subtitle">O Orbot funciona melhor com apps de mensagens e mídias sociais.</string>
+    <string name="power_user_description">Para utilizadores familiarizados com Tor. Permite que inicie o Pol sem a configuração VPN e mostra as portas SOCKS e HTTP que estejam abertas</string>
+    <string name="app_suggested_subtitle">O Pol funciona melhor com apps de mensagens e mídias sociais.</string>
     <string name="apps_suggested_title">Sugestões de apps</string>
     <string name="apps_other_apps">Outras apps</string>
     <string name="setting_padding">Preenchimento</string>
@@ -160,9 +160,9 @@
     <string name="ask_tor">Pergunte ao Tor</string>
     <string name="many_ways">Existem muitas maneiras de se ligar ao Tor. Algumas podem funcionar melhor do que outras para você.</string>
     <string name="asking">A PERGUNTAR…</string>
-    <string name="no_internet_subtitle">Precisa de uma ligação à Internet para utilizar o Orbot.</string>
+    <string name="no_internet_subtitle">Precisa de uma ligação à Internet para utilizar o Pol.</string>
     <string name="kindness_config_detail">Configure como e quando seu dispositivo pode atuar como um proxy Snowflake para outros usuários Tor.</string>
-    <string name="root_warning">O Orbot detetou que o seu dispositivo foi \'\'rooted\'\', o que pode causar problemas de segurança.</string>
+    <string name="root_warning">O Pol detetou que o seu dispositivo foi \'\'rooted\'\', o que pode causar problemas de segurança.</string>
     <string name="pref_isolate_protocol_summary">Utilizar um circuito diferente para cada protocolo de ligação</string>
     <string name="snowflake_amp">Snowflake AMP</string>
     <string name="not_sure">Não tem a certeza\?</string>
@@ -180,9 +180,9 @@
     <string name="unlock_app_msg" formatted="true">É necessária a palavra-passe do seu dispositivo para desbloquear o dispositivo %s</string>
     <string name="mebibyte_per_second">MiB/s</string>
     <string name="kibibyte_per_second">KiB/s</string>
-    <string name="status_starting_up">Orbot está iniciando…</string>
+    <string name="status_starting_up">Pol está iniciando…</string>
     <string name="status_activated">Conectado à rede Tor</string>
-    <string name="status_disabled">Orbot está desativado</string>
+    <string name="status_disabled">Pol está desativado</string>
     <string name="status_shutting_down">TorService está desligando</string>
     <string name="couldn_t_start_tor_process_">Não foi possível iniciar o processo Tor: </string>
     <string name="unable_to_start_tor">Habilitar iniciar o Tor:</string>

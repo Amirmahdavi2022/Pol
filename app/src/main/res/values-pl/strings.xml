@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Orbot</string>
-    <string name="app_description">Orbot to bezpłatna aplikacja proxy, która umożliwia innym aplikacjom bezpieczniejsze korzystanie z Internetu. Orbot używa sieci Tor do szyfrowania ruchu internetowego, a następnie ukrywa go, przechodząc przez szereg komputerów na całym świecie. Tor to darmowe oprogramowanie i otwarta sieć, która pomaga bronić się przed formą nadzoru sieci, która zagraża wolności osobistej i prywatności, poufnym działaniom i relacjom biznesowym oraz bezpieczeństwu państwa, znanym jako analiza ruchu.</string>
-    <string name="menu_settings">Ustawienia Orbota</string>
+    <string name="app_name">Pol</string>
+    <string name="app_description">Pol to bezpłatna aplikacja proxy, która umożliwia innym aplikacjom bezpieczniejsze korzystanie z Internetu. Pol używa sieci Tor do szyfrowania ruchu internetowego, a następnie ukrywa go, przechodząc przez szereg komputerów na całym świecie. Tor to darmowe oprogramowanie i otwarta sieć, która pomaga bronić się przed formą nadzoru sieci, która zagraża wolności osobistej i prywatności, poufnym działaniom i relacjom biznesowym oraz bezpieczeństwu państwa, znanym jako analiza ruchu.</string>
+    <string name="menu_settings">Ustawienia Pola</string>
     <string name="menu_log">Dziennik</string>
     <string name="menu_about">O aplikacji</string>
     <string name="menu_exit">Wyjście</string>
     <string name="pref_general_group">Ogólne</string>
-    <string name="pref_start_boot_title">Uruchamiaj Orbota przy starcie</string>
-    <string name="pref_start_boot_summary">Automatycznie uruchamiaj Orbota i łącz się z Torem, gdy Twoje urządzenie z Androidem się uruchomi</string>
+    <string name="pref_start_boot_title">Uruchamiaj Pola przy starcie</string>
+    <string name="pref_start_boot_summary">Automatycznie uruchamiaj Pola i łącz się z Torem, gdy Twoje urządzenie z Androidem się uruchomi</string>
     <string name="pref_node_configuration">Konfiguracja węzła</string>
     <string name="pref_node_configuration_summary">Są to zaawansowane ustawienia, które mogą zmniejszyć Twoją anonimowość</string>
     <string name="pref_entrance_node">Węzły wejściowe</string>
@@ -60,7 +60,7 @@
     <string name="local_port">Lokalne porty</string>
     <string name="name">Nazwa</string>
     <string name="copy_address_to_clipboard">Skopiuj adres do schowka</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">Proszę zrestartować Orbot, aby zmiany mogły wejść w życie</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Proszę zrestartować Pol, aby zmiany mogły wejść w życie</string>
     <string name="disable">Wyłącz</string>
     <string name="enable">Włącz</string>
     <string name="pref_open_proxy_on_all_interfaces_title">Otwórz serwer proxy na wszystkich interfejsach</string>
@@ -77,7 +77,7 @@
     <string name="backup_restored">Przywrócono kopię zapasową</string>
     <string name="backup_saved_at_external_storage">Kopia zapasowa zapisywana w pamięci zewnętrznej</string>
     <string name="backup_service">Usługa kopii zapasowej (uwaga: może to ujawnić konfigurację usługi innym aplikacjom)</string>
-    <string name="wizard_details_msg">Orbot to aplikacja typu open source, która zawiera Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks i LibEvent. Zapewnia lokalny serwer Proxy HTTP (8118) i serwer Proxy SOCKS (9050) do sieci Tor. Orbot ma również możliwość, na zrootowanym urządzeniu, wysyłania całego ruchu internetowego przez Tor.</string>
+    <string name="wizard_details_msg">Pol to aplikacja typu open source, która zawiera Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks i LibEvent. Zapewnia lokalny serwer Proxy HTTP (8118) i serwer Proxy SOCKS (9050) do sieci Tor. Pol ma również możliwość, na zrootowanym urządzeniu, wysyłania całego ruchu internetowego przez Tor.</string>
     <string name="app_services">Usługi aplikacji</string>
     <string name="user_services">Usługi użytkownika</string>
     <string name="menu_new_identity">Nowa tożsamość</string>
@@ -95,11 +95,11 @@
     <string name="connected_title">Połączony</string>
     <string name="trying_to_connect_title">Łączenie…</string>
     <string name="secure_your_connection_subtitle">Ukryj aplikacje przed monitorowaniem sieci i uzyskaj dostęp, gdy zostaną zablokowane.</string>
-    <string name="power_user_description">Dla użytkowników zaznajomionych z Tor. Pozwala na uruchomienie Orbota bez ustawienia VPN i pokazuje otwarte porty SOCKS i HTTP</string>
+    <string name="power_user_description">Dla użytkowników zaznajomionych z Tor. Pozwala na uruchomienie Pola bez ustawienia VPN i pokazuje otwarte porty SOCKS i HTTP</string>
     <string name="apps_suggested_title">Sugerowane aplikacje</string>
     <string name="apps_other_apps">Inne aplikacje</string>
     <string name="snowflake_proxy_msg_title">Pokaż powiadomienie o połączeniu</string>
-    <string name="app_suggested_subtitle">Orbot działa najlepiej z komunikatorami i aplikacjami mediów społecznościowych.</string>
+    <string name="app_suggested_subtitle">Pol działa najlepiej z komunikatorami i aplikacjami mediów społecznościowych.</string>
     <string name="power_user_mode">Tryb użytkownika zaawansowanego</string>
     <string name="snowflake_subtitle">Łączy się przez wolontariuszy Tor. Pozwala obejść niektóre blokady sieci Tor.</string>
     <string name="pref_reduced_connection_padding_summary">Zamyka połączenia przekaźnikowe wcześniej i wysyła mniej pakietów wypełniających, aby zmniejszyć zużycie danych i baterii</string>
@@ -142,7 +142,7 @@
     <string name="pref_isolate_protocol">Izoluj protokoły klienta</string>
     <string name="snowflake_amp">Snowflake AMP</string>
     <string name="not_sure">Nie wiesz\?</string>
-    <string name="no_internet_subtitle">Do korzystania z Orbota potrzebne jest połączenie z internetem.</string>
+    <string name="no_internet_subtitle">Do korzystania z Pola potrzebne jest połączenie z internetem.</string>
     <string name="many_ways">Istnieje wiele sposobów na dotarcie do Tor. Niektóre z nich mogą działać lepiej niż inne dla Ciebie.</string>
     <string name="asking">PYTANIE…</string>
     <string name="pref_isolate_port_summary">Użyj innego obwodu dla każdego portu docelowego</string>
@@ -155,7 +155,7 @@
     <string name="setting_debug">Debugowanie</string>
     <string name="menu_more">Więcej</string>
     <string name="menu_kindness">Życzliwość</string>
-    <string name="root_warning">Orbot wykrył, że urządzenie jest zrootowane, co może powodować problemy z bezpieczeństwem.</string>
+    <string name="root_warning">Pol wykrył, że urządzenie jest zrootowane, co może powodować problemy z bezpieczeństwem.</string>
     <string name="option_only_when_charging">Tylko podczas ładowania</string>
     <string name="option_only_on_wifi">Tylko przez Wi-Fi</string>
     <string name="btn_copy_log">Skopiuj dziennik</string>
@@ -179,10 +179,10 @@
     <string name="app_icon_chooser_label_fit_grit">FitGrit</string>
     <string name="app_icon_chooser_label_birdie">Birdie</string>
     <string name="power_user_mode_permission">Alarmy i przypomnienia. Wymagane uprawnienia do trybu użytkownika zaawansowanego</string>
-    <string name="power_user_mode_permission_msg">Zezwól Orbotowi na ustawianie alarmów i przypomnień, aby móc korzystać z trybu użytkownika zaawansowanego. Nie spowoduje to ustawienia żadnych alarmów na Twoim urządzeniu. To uprawnienie jest potrzebne, aby system mógł utrzymać działanie usługi Orbot, gdy Orbot nie jest używany jako ogólnosystemowa sieć VPN.</string>
-    <string name="error_no_password_set">Aby móc korzystać z uwierzytelniania Orbota, zabezpiecz swoje urządzenie</string>
-    <string name="device_lock_unsupported">Uwierzytelnianie Orbota nie jest obsługiwane na Twoim urządzeniu</string>
-    <string name="device_lock_security_update_needed">Aby móc korzystać z uwierzytelniania Orbota, musisz pobrać aktualizacje zabezpieczeń systemu Android dla swojego urządzenia</string>
+    <string name="power_user_mode_permission_msg">Zezwól Polowi na ustawianie alarmów i przypomnień, aby móc korzystać z trybu użytkownika zaawansowanego. Nie spowoduje to ustawienia żadnych alarmów na Twoim urządzeniu. To uprawnienie jest potrzebne, aby system mógł utrzymać działanie usługi Pol, gdy Pol nie jest używany jako ogólnosystemowa sieć VPN.</string>
+    <string name="error_no_password_set">Aby móc korzystać z uwierzytelniania Pola, zabezpiecz swoje urządzenie</string>
+    <string name="device_lock_unsupported">Uwierzytelnianie Pola nie jest obsługiwane na Twoim urządzeniu</string>
+    <string name="device_lock_security_update_needed">Aby móc korzystać z uwierzytelniania Pola, musisz pobrać aktualizacje zabezpieczeń systemu Android dla swojego urządzenia</string>
     <string name="invalid_bridge_format">Nieprawidłowy format mostka</string>
     <string name="error_asking_tor_for_bridges">Błąd podczas pytania o połączenie z siecią Tor</string>
     <string name="enter_bridge_address">Wpisz adres mostka</string>
@@ -193,9 +193,9 @@
     <string name="app_icon_chooser_label_assistant">Asystent</string>
     <string name="app_icon_chooser_label_paint">Farba</string>
     <string name="scan_qr_code">Zeskanuj kod QR</string>
-    <string name="status_starting_up">Orbot startuje…</string>
+    <string name="status_starting_up">Pol startuje…</string>
     <string name="status_activated">Podłączony do sieci Tor</string>
-    <string name="status_disabled">Orbot wyłączony</string>
+    <string name="status_disabled">Pol wyłączony</string>
     <string name="status_shutting_down">TorService wyłącza się</string>
     <string name="couldn_t_start_tor_process_">Nie można było zainicjować procesu Tora:</string>
     <string name="unable_to_start_tor">Nie można wystartować aplikacji Tor:</string>

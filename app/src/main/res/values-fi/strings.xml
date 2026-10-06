@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Orbot</string>
-    <string name="app_description">Orbot on ilmainen välityspalvelinsovellus, joka tarjoaa muille sovelluksille mahdollisuuden käyttää internetiä turvallisemmin. Orbot käyttää Toria kryptaamaan verkkoliikenteesi ja sitten piilottaa sen kierrättämällä sitä usean tietokoneen kautta ympäri maailman. Tor on vapaa ohjelmisto ja avoin verkosto, jotka auttavat puolustautumaan vapautta ja yksityisyyttä uhkaavalta verkkovalvonnalta ja valtioiden verkonseurannalta sekä suojaamaan salaisia liiketoimintoja ja -yhteyksiä.</string>
+    <string name="app_name">Pol</string>
+    <string name="app_description">Pol on ilmainen välityspalvelinsovellus, joka tarjoaa muille sovelluksille mahdollisuuden käyttää internetiä turvallisemmin. Pol käyttää Toria kryptaamaan verkkoliikenteesi ja sitten piilottaa sen kierrättämällä sitä usean tietokoneen kautta ympäri maailman. Tor on vapaa ohjelmisto ja avoin verkosto, jotka auttavat puolustautumaan vapautta ja yksityisyyttä uhkaavalta verkkovalvonnalta ja valtioiden verkonseurannalta sekä suojaamaan salaisia liiketoimintoja ja -yhteyksiä.</string>
     <string name="menu_settings">Asetukset</string>
     <string name="menu_log">Loki</string>
     <string name="menu_about">Tietoja</string>
     <string name="menu_exit">Sulje</string>
     <string name="pref_general_group">Yleiset</string>
-    <string name="pref_start_boot_title">Käynnistä Orbot automaattisesti</string>
-    <string name="pref_start_boot_summary">Käynnistä Orbot ja muodosta Tor-yhteys automaattisesti Android-laitteesi käynnistyessä.</string>
+    <string name="pref_start_boot_title">Käynnistä Pol automaattisesti</string>
+    <string name="pref_start_boot_summary">Käynnistä Pol ja muodosta Tor-yhteys automaattisesti Android-laitteesi käynnistyessä.</string>
     <string name="pref_node_configuration">Solmumääritykset</string>
     <string name="pref_node_configuration_summary">Lisäasetuksia, jotka voivat heikentää anonyymiteettiäsi.</string>
     <string name="pref_entrance_node">Lähtösolmut</string>
@@ -58,10 +58,10 @@
     <string name="hidden_services">Onion-palvelut</string>
     <string name="save">Tallenna</string>
     <string name="name">Nimi</string>
-    <string name="please_restart_Orbot_to_enable_the_changes">Käynnistä Orbot uudelleen muutosten käyttöönottamiseksi.</string>
+    <string name="please_restart_Orbot_to_enable_the_changes">Käynnistä Pol uudelleen muutosten käyttöönottamiseksi.</string>
     <string name="disable">Poista käytöstä</string>
     <string name="enable">Ota käyttöön</string>
-    <string name="wizard_details_msg">Orbot-sovellus on avointa lähdekoodia ja se sisältää seuraavat: Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks ja LibEvent. Se tarjoaa VPN-tunnelin, paikallisen HTTP Connect -välityspalvelimen (HTTPS vain portissa 8118) ja SOCKS-välityspalvelimen (9050) Tor-verkkoon.</string>
+    <string name="wizard_details_msg">Pol-sovellus on avointa lähdekoodia ja se sisältää seuraavat: Tor, IPtProxy (Obfs4Proxy, Meek, Snowflake), Go-Tun2Socks ja LibEvent. Se tarjoaa VPN-tunnelin, paikallisen HTTP Connect -välityspalvelimen (HTTPS vain portissa 8118) ja SOCKS-välityspalvelimen (9050) Tor-verkkoon.</string>
     <string name="pref_http_title">Tori HTTP</string>
     <string name="pref_http_summary">Portti, jonka kautta Torin HTTP-välityspalvelin on tavoitettavissa (oletus on 8118 tai pois käytöstä arvolla 0).</string>
     <string name="pref_http_dialog">Syötä HTTP-porttimääritys</string>
@@ -126,9 +126,9 @@
     <string name="secure_your_connection_title">Valmis yhdistämään</string>
     <string name="trying_to_connect_title">Yhdistetään…</string>
     <string name="secure_your_connection_subtitle">Piilota sovelluksia verkkoseurannalta ja käytä estettyjä palveluita.</string>
-    <string name="power_user_description">Kokeneille Tor-käyttäjille. Mahdollistaa Orbotin käynnistyksen ilman VPN-asetusta ja näyttää avoimet SOCKS- ja HTTP-portit.</string>
+    <string name="power_user_description">Kokeneille Tor-käyttäjille. Mahdollistaa Polin käynnistyksen ilman VPN-asetusta ja näyttää avoimet SOCKS- ja HTTP-portit.</string>
     <string name="power_user_mode">Tehokäyttäjätila</string>
-    <string name="app_suggested_subtitle">Orbot toimii parhaiten viestintäsovellusten ja sosiaalisen median sovellusten kanssa.</string>
+    <string name="app_suggested_subtitle">Pol toimii parhaiten viestintäsovellusten ja sosiaalisen median sovellusten kanssa.</string>
     <string name="apps_other_apps">Muut sovellukset</string>
     <string name="apps_suggested_title">Ehdotetut sovellukset</string>
     <string name="smart_connect">Älykäs yhdistäminen (oletus)</string>
@@ -142,7 +142,7 @@
     <string name="snowflake_amp">Snowflake (AMP)</string>
     <string name="ask_tor">Kysy Torilta</string>
     <string name="asking">KYSYTÄÄN…</string>
-    <string name="no_internet_subtitle">Tarvitset Internet-yhteyden Orbotin käyttöön.</string>
+    <string name="no_internet_subtitle">Tarvitset Internet-yhteyden Polin käyttöön.</string>
     <string name="kindness_config_detail">Määritä miten ja milloin laitteesi voi toimia Snowflake-välityspalvelimena muille Tor-käyttäjille.</string>
     <string name="not_sure">Etkö osaa valita\?</string>
     <string name="many_ways">Tor voidaan tavoittaa monilla tavoilla. Jotkin saattavat sopia sinulle muita paremmin.</string>
@@ -158,12 +158,12 @@
     <string name="option_only_when_charging">Vain ladattaessa</string>
     <string name="menu_kindness">Ystävällisyys</string>
     <string name="btn_copy_log">Kopioi loki</string>
-    <string name="root_warning">Orbot on havainnut laitteesi olevan rootattu ja tästä voi aiheutua tietoturvaongelmia.</string>
+    <string name="root_warning">Pol on havainnut laitteesi olevan rootattu ja tästä voi aiheutua tietoturvaongelmia.</string>
     <string name="pref_detect_root_summary">Varoita käynnistettäessä, jos laitetta käytetään root-oikeuksilla</string>
     <string name="pref_detect_root_title">Root-tunnistus</string>
-    <string name="status_starting_up">Orbot käynnistyy…</string>
+    <string name="status_starting_up">Pol käynnistyy…</string>
     <string name="status_activated">Yhdistetty Tor-verkkoon</string>
-    <string name="status_disabled">Orbot on poistettu käytöstä</string>
+    <string name="status_disabled">Pol on poistettu käytöstä</string>
     <string name="couldn_t_start_tor_process_">Tor-prosessin käynnistäminen epäonnistui:</string>
     <string name="unable_to_start_tor">Torin käynnistys epäonnistui:</string>
     <string name="set_transport">Aseta kuljetus</string>
