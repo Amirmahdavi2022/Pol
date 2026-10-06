@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottom_sheet_rounded"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/bottom_sheet_constraint_padding"
+        android:paddingEnd="@dimen/bottom_sheet_constraint_padding">
+
+        <View
+            android:id="@+id/handle"
+            android:layout_width="30dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvCustomBridgeHeader"
+            style="@style/BottomSheetHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/custom_bridges"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/handle" />
+
+        <TextView
+            android:id="@+id/tvCustomBridgeSubHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:autoLink="web"
+            android:text="@string/custom_bridges_description"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCustomBridgeHeader" />
+
+        <org.torproject.android.ui.core.NoPersonalizedLearningEditText
+            android:id="@+id/etBridges"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+            android:gravity="top|start"
+            android:hint="@string/enter_bridge_address"
+            android:inputType="textMultiLine"
+            android:lines="22"
+            android:scrollbars="vertical"
+            android:scrollHorizontally="false"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            app:layout_constraintBottom_toTopOf="@id/btnAction"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvCustomBridgeSubHeader" />
+
+        <ImageButton
+            android:id="@+id/btnScan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/btn_shape_round"
+            android:contentDescription="@string/scan_qr_code"
+            android:padding="@dimen/bottom_sheet_constraint_padding"
+            android:scaleType="centerInside"
+            android:src="@drawable/qrcode_viewfinder"
+            app:backgroundTint="@color/orbot_btn_enabled_purple"
+            app:layout_constraintBottom_toBottomOf="@id/etBridges"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tint="@android:color/white" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/mainGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="@dimen/bottom_sheet_btn_guideline_percent" />
+
+        <TextView
+            android:id="@+id/tvCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/bottom_sheet_btn_padding"
+            android:paddingEnd="@dimen/bottom_sheet_btn_padding"
+            android:text="@android:string/cancel"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_constraintBaseline_toBaselineOf="@id/btnAction"
+            app:layout_constraintEnd_toStartOf="@id/btnAction"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="50" />
+
+        <Button
+            android:id="@+id/btnAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_shape_round"
+            android:enabled="false"
+            android:paddingStart="@dimen/bottom_sheet_btn_padding"
+            android:paddingEnd="@dimen/bottom_sheet_btn_padding"
+            android:text="@string/connect"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:backgroundTint="@color/orbot_btn_enabled_purple"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/tvCancel"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/mainGuideline"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="50" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

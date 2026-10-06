@@ -1,0 +1,48 @@
+# Built application files
+*.apk
+*.ap_
+*.aab
+
+# Java class files
+*.class
+
+# Local configuration file (sdk path, etc)
+local.properties
+keystore.properties
+
+# Windows thumbnail db
+Thumbs.db
+
+# macOS files
+.DS_Store
+
+# Android Studio
+*.iml
+.idea
+.gradle
+/build
+build/
+captures/
+
+# NDK
+obj/
+.cxx
+.externalNativeBuild
+
+# Fastlane
+/fastlane/report.xml
+/fastlane/README.md
+
+# License (copied to app from project ROOT)
+app/src/main/assets/LICENSE
+
+# Local Kotlin config
+.kotlin/
+
+# build_shadowsocks.sh script log:
+build_shadowsocks.log
+
+# for messing with fastlane screengrab locally
+screenshot_sandbox*/
+
+app/fullperm/release

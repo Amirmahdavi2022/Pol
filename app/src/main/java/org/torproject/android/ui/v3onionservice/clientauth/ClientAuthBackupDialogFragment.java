@@ -1,0 +1,124 @@
+package org.torproject.android.ui.v3onionservice.clientauth;
+
+import android.app.Dialog;
+import android.content.DialogInterface;
+import android.net.Uri;
+import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextUtils;
+import android.text.TextWatcher;
+import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import android.widget.Toast;
+
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.core.content.ContextCompat;
+import androidx.fragment.app.DialogFragment;
+
+import org.torproject.android.R;
+import org.torproject.android.ui.core.NoPersonalizedLearningEditText;
+import org.torproject.android.ui.v3onionservice.V3BackupUtils;
+
+import java.util.Objects;
+
+public class ClientAuthBackupDialogFragment extends DialogFragment {
+
+    private NoPersonalizedLearningEditText etFilename;
+    private TextWatcher fileNameTextWatcher;
+
+
+    private final ActivityResultLauncher<String> createBackupLauncher = registerForActivityResult(
+            new ActivityResultContracts.CreateDocument(ClientAuthActivity.CLIENT_AUTH_SAF_MIME_TYPE), this::attemptToWriteBackup
+    );
+
+    private static final String BUNDLE_KEY_FILENAME = "filename";
+
+    public ClientAuthBackupDialogFragment() {
+    }
+
+    public ClientAuthBackupDialogFragment(Bundle args) {
+        super();
+        setArguments(args);
+    }
+
+    @NonNull
+    @Override
+    public Dialog onCreateDialog(Bundle savedInstanceState) {
+        var ad = new AlertDialog.Builder(requireContext())
+                .setTitle(R.string.v3_backup_key)
+                .setMessage(R.string.v3_backup_key_warning)
+                .setPositiveButton(R.string.confirm, null)
+                .setNegativeButton(android.R.string.cancel, (dialog, _) -> dialog.dismiss())
+                .create();
+        ad.setOnShowListener(_ -> ad.getButton(AlertDialog.BUTTON_POSITIVE).setOnClickListener(_ -> doBackup()));
+        var container = new FrameLayout(ad.getContext());
+        var params = new FrameLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        int margin = getResources().getDimensionPixelOffset(R.dimen.alert_dialog_margin);
+        params.leftMargin = margin;
+        params.rightMargin = margin;
+        etFilename = new NoPersonalizedLearningEditText(ad.getContext(), null);
+        etFilename.setSingleLine(true);
+        etFilename.setHint(R.string.v3_backup_name_hint);
+        etFilename.setHintTextColor(ContextCompat.getColor(requireContext(), R.color.light_grey));
+        if (savedInstanceState != null)
+            etFilename.setText(savedInstanceState.getString(BUNDLE_KEY_FILENAME, ""));
+        fileNameTextWatcher = new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                var isEnabled = !TextUtils.isEmpty(s.toString().trim());
+                ad.getButton(DialogInterface.BUTTON_POSITIVE).setEnabled(isEnabled);
+                ad.getButton(DialogInterface.BUTTON_POSITIVE).setTextColor(ContextCompat.getColor(requireContext(),
+                        isEnabled ? android.R.color.white : R.color.orbot_btn_disable_grey));
+
+            }
+        };
+        etFilename.addTextChangedListener(fileNameTextWatcher);
+        etFilename.setLayoutParams(params);
+        container.addView(etFilename);
+        ad.setView(container);
+        return ad;
+    }
+
+    @Override
+    public void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putString(BUNDLE_KEY_FILENAME, Objects.requireNonNull(etFilename.getText()).toString());
+    }
+
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        fileNameTextWatcher.afterTextChanged(etFilename.getEditableText());
+    }
+
+
+    private void doBackup() {
+        String filename = Objects.requireNonNull(etFilename.getText()).toString().trim();
+        if (!filename.endsWith(ClientAuthActivity.CLIENT_AUTH_FILE_EXTENSION))
+            filename += ClientAuthActivity.CLIENT_AUTH_FILE_EXTENSION;
+        createBackupLauncher.launch(filename);
+    }
+
+    private void attemptToWriteBackup(Uri outputFile) {
+        if (outputFile == null) return;
+        assert getArguments() != null;
+        var v3BackupUtils = new V3BackupUtils(getContext());
+        var domain = getArguments().getString(ClientAuthActivity.BUNDLE_KEY_DOMAIN);
+        var hash = getArguments().getString(ClientAuthActivity.BUNDLE_KEY_HASH);
+        var backup = v3BackupUtils.createV3AuthBackup(domain, hash, outputFile);
+        Toast.makeText(getContext(), backup != null ? R.string.backup_saved_at_external_storage : R.string.error, Toast.LENGTH_LONG).show();
+        dismiss();
+    }
+}

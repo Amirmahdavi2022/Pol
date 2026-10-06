@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_modal_rounded"
+    android:padding="?dialogPreferredPadding">
+
+    <TextView
+        android:id="@+id/tvActivateKindness"
+        style="@style/TextAppearance.Material3.TitleMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/activate_kindness_mode"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvKindnessExplanation"
+        style="@style/TextAppearance.Material3.HeadlineLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/running_kindness_mode_on_android"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvActivateKindness" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintHeight_max="@dimen/testing_dialog_scroll_max_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvKindnessExplanation">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvWifi"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:importantForAccessibility="no"
+                    android:padding="10dp"
+                    android:src="@drawable/wifi"
+                    app:tint="@android:color/white" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvWifiExplanation"
+                style="@style/TextAppearance.Material3.BodyMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:paddingEnd="50dp"
+                android:text="@string/kindness_mode_runs_when_the_device_is_connected_to_wifi"
+                app:layout_constraintBottom_toBottomOf="@id/cvWifi"
+                app:layout_constraintStart_toEndOf="@id/cvWifi"
+                app:layout_constraintTop_toTopOf="@id/cvWifi"
+                tools:ignore="RtlSymmetry" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvSettings"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginVertical="16dp"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cvWifi">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:importantForAccessibility="no"
+                    android:padding="12dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/slider_horizontal_2_square"
+                    app:tint="@android:color/white" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                style="@style/TextAppearance.Material3.BodyMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:paddingEnd="50dp"
+                android:text="@string/you_can_change_the_settings_anytime"
+                app:layout_constraintBottom_toBottomOf="@id/cvSettings"
+                app:layout_constraintStart_toEndOf="@id/cvSettings"
+                app:layout_constraintTop_toTopOf="@id/cvSettings"
+                tools:ignore="RtlSymmetry" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvCharging"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginVertical="16dp"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cvSettings">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:importantForAccessibility="no"
+                    android:padding="10dp"
+                    android:src="@drawable/bolt"
+                    app:tint="@android:color/white" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                style="@style/TextAppearance.Material3.BodyMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:paddingEnd="80dp"
+                android:text="@string/we_recommend_charging_the_device_when_running_kindness_mode"
+                app:layout_constraintBottom_toBottomOf="@id/cvCharging"
+                app:layout_constraintStart_toEndOf="@id/cvCharging"
+                app:layout_constraintTop_toTopOf="@id/cvCharging"
+                tools:ignore="RtlSymmetry" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvOtherVpn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginVertical="16dp"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cvCharging">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:importantForAccessibility="no"
+                    android:padding="10dp"
+                    android:src="@drawable/heart_slash"
+                    app:tint="@android:color/white" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                style="@style/TextAppearance.Material3.BodyMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:paddingEnd="80dp"
+                android:text="@string/turn_off_kindness_mode_when_you_use_another_vpn_on_this_device"
+                app:layout_constraintBottom_toBottomOf="@id/cvOtherVpn"
+                app:layout_constraintStart_toEndOf="@id/cvOtherVpn"
+                app:layout_constraintTop_toTopOf="@id/cvOtherVpn"
+                tools:ignore="RtlSymmetry" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/btn_shape_round"
+                android:backgroundTint="@color/orbot_btn_disable_grey"
+                android:text="@android:string/cancel"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cvOtherVpn" />
+
+            <Button
+                android:id="@+id/btnContinue"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btn_shape_round"
+                android:backgroundTint="@color/orbot_btn_enabled_purple"
+                android:text="@string/testing_continue"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnCancel"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

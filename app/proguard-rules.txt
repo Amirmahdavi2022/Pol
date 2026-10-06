@@ -1,0 +1,7 @@
+-dontobfuscate
+# https://stackoverflow.com/questions/9651703/using-proguard-with-android-without-obfuscation
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*,!code/allocation/variable
+
+-keepattributes Signature
+-keepattributes Annotation
+

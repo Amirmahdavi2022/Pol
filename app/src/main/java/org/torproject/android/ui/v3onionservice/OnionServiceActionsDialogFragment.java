@@ -1,0 +1,105 @@
+package org.torproject.android.ui.v3onionservice;
+
+import android.app.Dialog;
+import android.content.Context;
+import android.graphics.Typeface;
+import android.net.Uri;
+import android.os.Bundle;
+import android.text.SpannableString;
+import android.text.Spanned;
+import android.text.style.StyleSpan;
+import android.view.View;
+import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.core.content.ContextCompat;
+import androidx.fragment.app.DialogFragment;
+
+import org.torproject.android.R;
+import org.torproject.android.util.StringUtils;
+
+public class OnionServiceActionsDialogFragment extends DialogFragment {
+
+    private final ActivityResultLauncher<String> createBackupLauncher = registerForActivityResult(
+            new ActivityResultContracts.CreateDocument(ZipUtilities.ZIP_MIME_TYPE), this::attemptToWriteBackup
+    );
+
+    OnionServiceActionsDialogFragment(Bundle arguments) {
+        super();
+        setArguments(arguments);
+    }
+
+    @NonNull
+    @Override
+    public Dialog onCreateDialog(Bundle savedInstanceState) {
+        var arguments = getArguments();
+        var backupServiceText = new SpannableString(getString(R.string.backup_service));
+        backupServiceText.setSpan(new StyleSpan(Typeface.BOLD), 0, backupServiceText.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+
+        var ad = new AlertDialog.Builder(requireActivity())
+                .setItems(new CharSequence[]{
+                        getString(R.string.copy_address_to_clipboard),
+                        backupServiceText,
+                        getString(R.string.delete_service)}, null)
+                .setNegativeButton(android.R.string.cancel, (dialog, _) -> dialog.dismiss())
+                .setTitle(R.string.hidden_services)
+                .create();
+        ad.setOnShowListener(_ -> {
+            ListView listView = ad.getListView();
+            int color = ContextCompat.getColor(requireContext(), android.R.color.white);
+
+            for (int i = 0; i < listView.getChildCount(); i++) {
+                View v = listView.getChildAt(i);
+                if (v instanceof TextView) {
+                    ((TextView) v).setTextColor(color);
+                }
+            }
+        });
+        // done this way so we can startActivityForResult on backup without the dialog vanishing
+        ad.getListView().setOnItemClickListener((_, _, position, _) -> {
+            if (position == 0) {
+                assert arguments != null;
+                doCopy(arguments, getContext());
+            } else if (position == 1) {
+                assert arguments != null;
+                doBackup(arguments, getContext());
+            } else if (position == 2) {
+                new OnionServiceDeleteDialogFragment(arguments).show(getParentFragmentManager(), OnionServiceDeleteDialogFragment.class.getSimpleName());
+            }
+            if (position != 1) dismiss();
+        });
+        return ad;
+    }
+
+    private void doCopy(Bundle arguments, Context context) {
+        var onion = arguments.getString(OnionServiceActivity.BUNDLE_KEY_DOMAIN);
+        if (onion == null)
+            Toast.makeText(context, R.string.please_restart_Orbot_to_enable_the_changes, Toast.LENGTH_LONG).show();
+        else
+            StringUtils.copyToClipboard("onion", onion, context);
+    }
+
+    private void doBackup(Bundle arguments, Context context) {
+        var filename = "onion_service" + arguments.getString(OnionServiceActivity.BUNDLE_KEY_PORT) + ".zip";
+        if (arguments.getString(OnionServiceActivity.BUNDLE_KEY_DOMAIN) == null) {
+            Toast.makeText(context, R.string.please_restart_Orbot_to_enable_the_changes, Toast.LENGTH_LONG).show();
+            return;
+        }
+        createBackupLauncher.launch(filename);
+    }
+
+    private void attemptToWriteBackup(Uri outputFile) {
+        assert getArguments() != null;
+        var relativePath = getArguments().getString(OnionServiceActivity.BUNDLE_KEY_PATH);
+        var v3BackupUtils = new V3BackupUtils(getContext());
+        var backup = v3BackupUtils.createV3ZipBackup(relativePath, outputFile);
+        Toast.makeText(getContext(), backup != null ? R.string.backup_saved_at_external_storage : R.string.error, Toast.LENGTH_LONG).show();
+        dismiss();
+    }
+
+}

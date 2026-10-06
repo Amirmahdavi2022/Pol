@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_modal_rounded"
+    android:padding="?dialogPreferredPadding">
+
+    <TextView
+        android:id="@+id/tvActivateKindness"
+        style="@style/TextAppearance.Material3.TitleMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/activate_kindness_mode"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvKindnessExplanation"
+        style="@style/TextAppearance.Material3.HeadlineLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp"
+        android:text="@string/test_connection"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvActivateKindness" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintHeight_max="@dimen/testing_dialog_scroll_max_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvKindnessExplanation">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvOrbotWillTest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="16dp"
+                android:text="@string/orbot_will_test_your_connection_to_determine_if_you_can_be_a_snowflake_proxy_for_others"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+                android:textColor="@android:color/darker_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvDirectConnect"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvOrbotWillTest">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:importantForAccessibility="no"
+                    android:padding="10dp"
+                    android:src="@drawable/point_topright_arrow_triangle_backward_to_point_bottomleft_scurvepath"
+                    app:tint="@android:color/white" />
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/exclamationmark_triangle_fill"
+                android:translationZ="2dp"
+                app:layout_constraintBottom_toBottomOf="@id/cvDirectConnect"
+                app:layout_constraintEnd_toEndOf="@id/cvDirectConnect"
+                app:tint="@android:color/holo_orange_light" />
+
+            <TextView
+                style="@style/TextAppearance.Material3.BodyMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:paddingEnd="90dp"
+                android:text="@string/the_test_will_try_to_connect_directly_to_the_tor_network"
+                app:layout_constraintBottom_toBottomOf="@id/cvDirectConnect"
+                app:layout_constraintStart_toEndOf="@id/cvDirectConnect"
+                app:layout_constraintTop_toTopOf="@id/cvDirectConnect"
+                tools:ignore="RtlSymmetry" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvTorDisconnect"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginVertical="16dp"
+                android:layout_marginEnd="8dp"
+                app:cardCornerRadius="24dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cvDirectConnect">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:importantForAccessibility="no"
+                    android:padding="10dp"
+                    android:src="@drawable/slash_circle"
+                    app:tint="@android:color/white" />
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/exclamationmark_triangle_fill"
+                android:translationZ="2dp"
+                app:layout_constraintBottom_toBottomOf="@id/cvTorDisconnect"
+                app:layout_constraintEnd_toEndOf="@id/cvTorDisconnect"
+                app:tint="@android:color/holo_orange_light" />
+
+            <TextView
+                style="@style/TextAppearance.Material3.BodyMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:paddingEnd="90dp"
+                android:text="@string/if_you_are_using_tor_bridges_they_will_temporarily_be_disconnected"
+                app:layout_constraintBottom_toBottomOf="@id/cvTorDisconnect"
+                app:layout_constraintStart_toEndOf="@id/cvTorDisconnect"
+                app:layout_constraintTop_toTopOf="@id/cvTorDisconnect"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/tvDisclaimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/i_acknowledge_i_have_read_the_above"
+                app:layout_constraintEnd_toStartOf="@id/swAcknowledge"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cvTorDisconnect" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/swAcknowledge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@id/tvDisclaimer"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tvDisclaimer"
+                app:layout_constraintTop_toTopOf="@id/tvDisclaimer" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/btn_shape_round"
+                android:backgroundTint="@color/orbot_btn_disable_grey"
+                android:text="@android:string/cancel"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvDisclaimer" />
+
+            <Button
+                android:id="@+id/btnContinue"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/btn_shape_round"
+                android:backgroundTint="@color/orbot_btn_disable_grey"
+                android:enabled="false"
+                android:text="@string/test_connection"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnCancel"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

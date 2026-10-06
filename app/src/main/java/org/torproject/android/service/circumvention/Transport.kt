@@ -1,0 +1,348 @@
+package org.torproject.android.service.circumvention
+
+import IPtProxy.Controller
+import IPtProxy.IPtProxy
+import IPtProxy.OnTransportEvents
+import android.content.Context
+import android.util.Log
+import org.torproject.android.service.tor.ShadowSocks
+import org.torproject.android.util.Prefs
+import java.net.URI
+
+enum class Transport(val id: String) {
+
+    /**
+     * Represents a direct connection to Tor with no bridges.
+     */
+    NONE("direct"),
+
+    MEEK("meek"),
+    OBFS4("obfs4"),
+
+    /**
+     * Tor connection with Snowflake, settable from ConfigConnectionBottomSheet.
+     */
+    SNOWFLAKE("snowflake"),
+
+    /**
+     * Tor connection with Snowflake using AMP brokers, settable from ConfigConnectionBottomSheet.
+     */
+    SNOWFLAKE_AMP("snowflake_amp"),
+
+    /**
+     * Use AMP brokers and start Snowflake with SQS rendezvous. Currently, there's no way to
+     * set SQS setting in app, if you force it, a runtime exception is thrown in
+     * {@link org.torproject.android.service.circumvention.SnowflakeClient#startWithSqsRendezvous(Controller)}
+     */
+    SNOWFLAKE_SQS("snowflake_sqs"),
+
+    WEBTUNNEL("webtunnel"),
+
+    DNSTT("dnstt"),
+
+    /**
+     * Start lyrebird with obfs4 bridges stored in @{link {@link #getBridgesList()}}
+     * This can be set in manually via the CustomBridgeBottomSheet.
+     */
+    CUSTOM("custom");
+
+    companion object {
+        var stateLocation = ""
+
+        const val TAG = "Transport"
+
+        val controller: Controller by lazy {
+            Controller(stateLocation, true, false, "INFO", statusCollector)
+        }
+
+        fun fromId(id: String): Transport {
+            return when (id) {
+                MEEK.id -> MEEK
+                OBFS4.id -> OBFS4
+                SNOWFLAKE.id -> SNOWFLAKE
+                SNOWFLAKE_AMP.id -> SNOWFLAKE_AMP
+                SNOWFLAKE_SQS.id -> SNOWFLAKE_SQS
+                WEBTUNNEL.id -> WEBTUNNEL
+                DNSTT.id -> DNSTT
+                CUSTOM.id -> CUSTOM
+                else -> NONE
+            }
+        }
+
+        private val statusCollector = object : OnTransportEvents {
+            override fun connected(name: String?) {
+                if (name == null) return
+
+                Log.d(TAG, "$name connected")
+            }
+
+            override fun error(name: String?, error: Exception?) {
+                if (name == null) return
+
+                Log.e(TAG, "$name error: $error")
+            }
+
+            override fun stopped(name: String?, error: Exception?) {
+                if (name == null) return
+
+                if (error != null) {
+                    Log.e(
+                        TAG,
+                        "$name stopped: ${error.localizedMessage}"
+                    )
+                } else {
+                    Log.d(TAG, "$name stopped.")
+                }
+            }
+
+        }
+
+        private const val AMP_BROKER = "https://snowflake-broker.torproject.net/"
+        private val ampFronts = listOf("www.google.com")
+        private const val AMP_CACHE = "https://cdn.ampproject.org/"
+        private const val SQS_QUEUE =
+            "https://sqs.us-east-1.amazonaws.com/893902434899/snowflake-broker"
+    }
+
+    private val transportNames: Set<String>
+        get() {
+            return when (this) {
+                NONE -> emptySet()
+                MEEK -> setOf(IPtProxy.MeekLite)
+                OBFS4 -> setOf(IPtProxy.Obfs4)
+                WEBTUNNEL -> setOf(IPtProxy.Webtunnel)
+                DNSTT -> setOf(IPtProxy.Dnstt)
+                CUSTOM -> {
+                    Prefs.bridgesList
+                        .mapNotNull { Bridge(it).transport }
+                        .filter { it.isNotBlank() }
+                        .toSet()
+                }
+
+                else -> setOf(IPtProxy.Snowflake)
+            }
+        }
+
+    val port: Long
+        get() {
+            val transport = transportNames.firstOrNull() ?: return 0
+
+            return controller.port(transport)
+        }
+
+    fun getTorConfig(context: Context): List<String> {
+        val result = mutableListOf<String>()
+        result.add("UseBridges ${if (this == NONE) "0" else "1"}")
+
+        for (transport in transportNames) {
+            val port = controller.port(transport)
+
+            // Sometimes port == 0, which is invalid.
+            if (port in 1..<65536) {
+                result.add("ClientTransportPlugin $transport socks5 127.0.0.1:$port")
+            }
+        }
+
+        when (this) {
+            NONE -> {
+                val proxy = Prefs.outboundProxy.first
+                if (proxy != null) {
+                    var hostPort = proxy.host
+                    if (proxy.port in 1..<65536) hostPort += ":${proxy.port}"
+
+                    // Modern tor only supports https, socks4 and socks5. *No* http!
+                    when (proxy.scheme) {
+                        "https" -> {
+                            result.add("HTTPSProxy $hostPort")
+
+                            if (!proxy.userInfo.isNullOrBlank()) {
+                                result.add("HTTPSProxyAuthenticator ${proxy.userInfo}")
+                            }
+                        }
+
+                        "socks4" -> {
+                            result.add("Socks4Proxy $hostPort")
+                        }
+
+                        "socks5" -> {
+                            result.add("Socks5Proxy $hostPort")
+
+                            val userInfo = proxy.userInfo?.split(":")
+
+                            if (!userInfo?.getOrNull(0).isNullOrEmpty()) {
+                                result.add("Socks5ProxyUsername ${userInfo[0]}")
+
+                                var password = userInfo.getOrNull(1) ?: " "
+                                if (password.isEmpty()) password = " "
+
+                                result.add("Socks5ProxyPassword $password")
+                            }
+                        }
+
+                        ShadowSocks.SCHEME -> {
+                            // Start built-in ShadowSocks client, if supported.
+                            val address = ShadowSocks.start(context, proxy.toString())
+
+                            if (!address.isNullOrEmpty()) {
+                                // Set local address of ShadowSocks client as proxy.
+                                result.add("Socks5Proxy $address")
+                            }
+                        }
+                    }
+                }
+            }
+
+            MEEK -> {
+                BuiltInBridges.getInstance(context)?.meek?.forEach {
+                    result.add("Bridge ${it.raw}")
+                }
+            }
+
+            OBFS4 -> {
+                BuiltInBridges.getInstance(context)?.obfs4?.forEach {
+                    result.add("Bridge ${it.raw}")
+                }
+            }
+
+            SNOWFLAKE -> {
+                BuiltInBridges.getInstance(context)?.snowflake?.forEach {
+                    result.add("Bridge ${it.raw}")
+                }
+            }
+
+            SNOWFLAKE_AMP -> {
+                BuiltInBridges.getInstance(context)?.snowflake?.forEachIndexed { idx, it ->
+                    val builder = Bridge.Builder(it)
+                    builder.ip = "192.0.2.${5 + idx}"
+                    builder.url = AMP_BROKER
+                    builder.fronts = ampFronts.toMutableSet()
+
+                    result.add("Bridge ${builder.build().raw}")
+                }
+            }
+
+            SNOWFLAKE_SQS -> {
+                BuiltInBridges.getInstance(context)?.snowflake?.forEachIndexed { idx, it ->
+                    val builder = Bridge.Builder(it)
+                    builder.ip = "192.0.2.${5 + idx}"
+                    builder.url = null
+                    builder.fronts.clear()
+
+                    result.add("Bridge ${builder.build().raw}")
+                }
+            }
+
+            WEBTUNNEL -> {
+                BuiltInBridges.getInstance(context)?.webtunnel?.forEach {
+                    result.add("Bridge ${it.raw}")
+                }
+            }
+
+            DNSTT -> {
+                BuiltInBridges.getInstance(context)?.dnstt?.forEach {
+                    result.add("Bridge ${it.raw}")
+                }
+
+                (BuiltInBridges.getInstance(context)
+                    ?.getUdpDnstt(context, Prefs.bridgeCountry)
+                    ?: BuiltInBridges.dnsttBridges)
+                    .forEach {
+                        result.add("Bridge ${it.raw}")
+                    }
+            }
+
+            CUSTOM -> {
+                Prefs.bridgesList.forEach {
+                    result.add("Bridge $it")
+                }
+            }
+        }
+
+        return result
+    }
+
+    /**
+     * @throws Exception if the transport cannot be initialized or if it couldn't bind a port for listening.
+     */
+    @Suppress("KotlinUnreachableCode") // unreachable code is disabled SQS logic
+    fun start(context: Context) {
+        when (this) {
+            SNOWFLAKE -> {
+                val snowflake = BuiltInBridges.getInstance(context)?.snowflake?.firstOrNull()
+
+                // Seems more reliable in certain countries than the currently advertised one.
+                val fronts = mutableSetOf<String>()
+                snowflake?.front?.let { fronts.add(it) }
+                snowflake?.fronts?.let { fronts.addAll(it) }
+
+                controller.snowflakeIceServers = snowflake?.ice ?: ""
+                controller.snowflakeBrokerUrl = snowflake?.url ?: ""
+                controller.snowflakeFrontDomains = fronts.joinToString(",")
+                controller.snowflakeAmpCacheUrl = ""
+                controller.snowflakeSqsUrl = ""
+                controller.snowflakeSqsCreds = ""
+            }
+
+            SNOWFLAKE_AMP -> {
+                controller.snowflakeIceServers =
+                    BuiltInBridges.getInstance(context)?.snowflake?.firstOrNull()?.ice ?: ""
+                controller.snowflakeBrokerUrl = AMP_BROKER
+                controller.snowflakeFrontDomains = ampFronts.joinToString(",")
+                controller.snowflakeAmpCacheUrl = AMP_CACHE
+                controller.snowflakeSqsUrl = ""
+                controller.snowflakeSqsCreds = ""
+            }
+
+            SNOWFLAKE_SQS -> {
+                /* TODO Make sure SQS queue and credentials are up to date in assets/fronts when
+                    re-enabling this feature. also remove android:visibility="gone" from the SQS
+                    container in app project's layout/config_connection_bottom_sheet.xml
+                    */
+                throw RuntimeException("Snowflake SQS Not supported right now https://github.com/guardianproject/orbot-android/issues/1320")
+
+                controller.snowflakeIceServers =
+                    BuiltInBridges.getInstance(context)?.snowflake?.firstOrNull()?.ice ?: ""
+                controller.snowflakeBrokerUrl = ""
+                controller.snowflakeFrontDomains = ""
+                controller.snowflakeAmpCacheUrl = ""
+                controller.snowflakeSqsUrl = SQS_QUEUE
+                controller.snowflakeSqsCreds = ""
+            }
+
+            else -> Unit
+        }
+
+        var proxy = Prefs.outboundProxy.first
+
+        for (transport in transportNames) {
+            when (transport) {
+                IPtProxy.Snowflake, IPtProxy.Dnstt -> {
+                    controller.start(transport, null)
+                }
+
+                else -> {
+                    // Still need to start ShadowSocks and get the right proxy config.
+                    if (proxy?.scheme == ShadowSocks.SCHEME) {
+                        val address = ShadowSocks.start(context, proxy.toString())
+
+                        if (!address.isNullOrEmpty()) {
+                            // Since we rewrite `proxy` from `ss://` to `socks5://`, this won't be called again.
+                            proxy = URI("socks5://$address")
+                        }
+                    }
+
+                    // VERY IMPORTANT  we say proxy?.toString() instead of proxy.toString()
+                    // the first returns null or a string representation whereas the second returns
+                    // either the string literal "null" or a string representation of proxy
+                    controller.start(transport, proxy?.toString())
+                }
+            }
+        }
+    }
+
+    fun stop() {
+        for (transport in transportNames) {
+            controller.stop(transport)
+        }
+    }
+}

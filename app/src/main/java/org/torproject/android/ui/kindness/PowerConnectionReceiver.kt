@@ -1,0 +1,16 @@
+package org.torproject.android.ui.kindness
+
+import android.content.BroadcastReceiver
+import android.content.Context
+import android.content.Intent
+import org.torproject.android.util.Prefs
+
+class PowerConnectionReceiver(private val snowflakeProxyService: SnowflakeProxyService) :
+    BroadcastReceiver() {
+    override fun onReceive(context: Context, intent: Intent) {
+        if (!Prefs.limitSnowflakeProxyingCharging()) return
+        if (intent.action == Intent.ACTION_POWER_CONNECTED || intent.action == Intent.ACTION_POWER_DISCONNECTED) {
+            snowflakeProxyService.startOrStopBasedOnConstraints("PowerConnectionReceiver triggered (${intent.action}")
+        }
+    }
+}
